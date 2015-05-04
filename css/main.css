@@ -6886,15 +6886,19 @@ body {
   background: whitesmoke; }
 
 /* line 108, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.btn {
+  margin-top: 20px; }
+
+/* line 112, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .section {
   padding: 0 15%;
   text-align: center; }
 
-/* line 114, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 118, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .item-wrapper {
   margin: 100px 0px; }
 
-/* line 118, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 122, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #canvas-holder {
   margin: 40px; }
 
