@@ -30,16 +30,18 @@
    
                 
         <div class="row">
-            <div class="col-md-6">
-    
+            <div class="col-md-4">
+    <div class="item-wrapper">
         <div id="canvas-holder">
 			<canvas id="MyChart1" width="200" height="200"/>
 		</div>
-
-
+            
+                <h3>What the fuck</h3>
+                <p>Etiam pharetra ipsum eu malesuada condimentum. Quisque mattis vehicula odio eget vehicula. Curabitur a erat ut arcu fringilla venenatis.</p>
+</div> <!-- item-wrapper end -->
+        
 	<script>
-
-		var doughnutData = [
+		var chart1Data = [
 				{
 					value: 300,
 					color:"#F7464A",
@@ -70,33 +72,28 @@
 					highlight: "#616774",
 					label: "Dark Grey"
 				}
-
 			];
-
-			     window.onload = function(){
-				var ctx = document.getElementById("MyChart1").getContext("2d");
-				window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : true});
-			};
-
-
-
 	</script>
     
         
         </div> <!-- col end -->
         
-        <div class="col-md-6">
-        
+        <div class="col-md-4">
+        <div class="item-wrapper">
         <div id="canvas-holder">
 			<canvas id="MyChart2" width="200" height="200"/>
 		</div>
+<h3>What the fuck</h3>
+                <p>Etiam pharetra ipsum eu malesuada condimentum. Quisque mattis vehicula odio eget vehicula. Curabitur a erat ut arcu fringilla venenatis.</p>
 
-
+            </div> <!-- item-wrapper end -->
+            
+            
 	<script>
         
         
 
-		var pieData = [
+		var chart2Data = [
 				{
 					value: 200,
 					color:"#F7464A",
@@ -104,7 +101,7 @@
 					label: "Red"
 				},
 				{
-					value: 50,
+					value: 150,
 					color: "#46BFBD",
 					highlight: "#5AD3D1",
 					label: "Green"
@@ -130,18 +127,73 @@
 
 			];
         
-            
-
-			window.onload = function(){
-				var ctx = document.getElementById("MyChart2").getContext("2d");
-				window.myPieChart = new Chart(ctx).Pie(pieData, {responsive : true});
-			};
-
-
-
 	</script>
         
             </div>  <!-- col end -->
+            
+            <div class="col-md-4">
+    
+        <div class="item-wrapper">
+        <div id="canvas-holder">
+			<canvas id="MyChart3" width="200" height="200"/>
+		</div>
+            
+                <h3>What the fuck</h3>
+                <p>Etiam pharetra ipsum eu malesuada condimentum. Quisque mattis vehicula odio eget vehicula. Curabitur a erat ut arcu fringilla venenatis.</p>
+
+            </div> <!-- item-wrapper end -->
+            
+	<script>
+		var chart3Data = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+			];
+        
+                    window.onload = function(){
+                     var ctx = document.getElementById("MyChart1").getContext("2d");
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart1Data, {responsive : true});
+                     
+                     var ctx = document.getElementById("MyChart2").getContext("2d");
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart2Data, {responsive : true});
+                        
+                    var ctx = document.getElementById("MyChart3").getContext("2d");
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart3Data, {responsive : true});
+                
+			};
+        
+        
+	</script>
+    
+        
+        </div> <!-- col end -->
         
         </div> <!-- row end -->
     </div>  <!-- section end -->

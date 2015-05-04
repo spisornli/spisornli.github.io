@@ -97,3 +97,24 @@ $on-laptop:        810px;
 // Utility classes
 @import "bootstrap/utilities";
 @import "bootstrap/responsive-utilities";
+
+
+
+
+body {
+    background: whitesmoke;
+}
+
+.section {
+    padding: 0 15%;
+    text-align: center;
+}
+
+
+.item-wrapper {
+    margin: 100px 0px;
+}
+
+#canvas-holder {
+    margin: 40px;
+}
