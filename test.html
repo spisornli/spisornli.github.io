@@ -13,6 +13,9 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
+                anchors:['firstPage', 'secondPage', 'thirdPage'],
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+                
 				verticalCentered: true
 
 			});
@@ -22,11 +25,18 @@
     
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top" id="">
+    <ul id="myMenu" class="nav navbar-nav">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+    </ul>
+</nav>
     
     
-    <div id="fullpage">
+<div id="fullpage">
     
-            <div class="section">
+            <div id="section0" class="section">
    
                 
         <div class="row">
@@ -35,9 +45,19 @@
         <div id="canvas-holder">
 			<canvas id="MyChart1" width="200" height="200"/>
 		</div>
-            
+        <span class="label label-default">Default</span>
+        <span class="label label-warning">Default</span>
+        <span class="label label-warning">Default</span>
+        <span class="label label-warning">Default</span>
+        <span class="label label-warning">Default</span>
+        
+        
+        
+        
                 <h3>What the fuck</h3>
                 <p>Etiam pharetra ipsum eu malesuada condimentum. Quisque mattis vehicula odio eget vehicula. Curabitur a erat ut arcu fringilla venenatis.</p>
+        
+      
         
         <button class="btn btn-primary">Læs mere</button>
 </div> <!-- item-wrapper end -->
@@ -181,13 +201,13 @@
         
                     window.onload = function(){
                      var ctx = document.getElementById("MyChart1").getContext("2d");
-                     window.myDoughnut = new Chart(ctx).Doughnut(chart1Data, {responsive : true});
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart1Data, {animateScale: true, responsive : true});
                      
                      var ctx = document.getElementById("MyChart2").getContext("2d");
-                     window.myDoughnut = new Chart(ctx).Doughnut(chart2Data, {responsive : true});
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart2Data, {animateScale: true,responsive : true});
                         
                     var ctx = document.getElementById("MyChart3").getContext("2d");
-                     window.myDoughnut = new Chart(ctx).Doughnut(chart3Data, {responsive : true});
+                     window.myDoughnut = new Chart(ctx).Doughnut(chart3Data, {animateScale: true,responsive : true});
                 
 			};
         
@@ -201,7 +221,7 @@
     </div>  <!-- section end -->
 
     
-    <div class="section">
+    <div id="section1" class="section">
     
     
     <div class="slide"> Slide 1 </div>
@@ -212,8 +232,16 @@
     
     </div>
         
-        
+    <div id="section2" class="section">
+    
+    
+    <h1>Hello World</h1>
+    <p>Take a look at this!</p>
+    
     </div>
+        
+        
+    </div> <!-- fullpage end -->
     
 </body>
 </html>
