@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900,300italic,400italic);
 /**
  * Reset some basic elements
  */
@@ -11,7 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
  */
 /* line 16, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -1908,7 +1909,7 @@ html {
 
 /* line 27, /Users/MRH/Documents/GitHub/spisornli.github.io/css/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #111;
@@ -6203,7 +6204,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -6314,7 +6315,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857;
@@ -6881,20 +6882,20 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-/* line 104, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 103, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 body {
   background: whitesmoke; }
 
-/* line 108, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 107, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn {
   margin-top: 20px; }
 
-/* line 112, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 111, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .section {
-  padding: 0 15%;
+  padding: 0 12%;
   text-align: center; }
 
-/* line 122, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 121, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #canvas-holder {
   margin: 40px; }
 

@@ -1,36 +1,6 @@
 @charset "utf-8";
-
-
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        810px;
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300,400italic,300italic);
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -110,7 +80,7 @@ body {
 }
 
 .section {
-    padding: 0 15%;
+    padding: 0 12%;
     text-align: center;
 }
 
