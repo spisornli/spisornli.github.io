@@ -6523,25 +6523,21 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-/* line 72, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-body {
-  background: whitesmoke; }
-
-/* line 76, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 77, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .top-menu {
   font-size: 13px;
   margin: 0; }
 
-/* line 81, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 82, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn {
   margin-top: 20px; }
 
-/* line 85, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 86, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .section {
   padding: 0 12%;
   text-align: center; }
 
-/* line 95, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 96, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #canvas-holder {
   margin: 40px; }
 
