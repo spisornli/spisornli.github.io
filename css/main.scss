@@ -98,8 +98,13 @@ $on-laptop:        810px;
 body {}
 
 .top-menu {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
     font-size: 13px;
     margin: 0;
+    z-index: 1;
 }
 
 .btn {
@@ -117,5 +122,5 @@ body {}
 }
 
 #canvas-holder {
-    margin: 40px;
+   
 }

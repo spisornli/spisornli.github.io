@@ -6884,20 +6884,22 @@ button.close {
 
 /* line 100, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-size: 13px;
-  margin: 0; }
+  margin: 0;
+  z-index: 1; }
 
-/* line 105, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 110, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn {
   margin-top: 20px; }
 
-/* line 109, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 114, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .section {
   padding: 0 12%;
   text-align: center; }
 
-/* line 119, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-#canvas-holder {
-  margin: 40px; }
 
 /*# sourceMappingURL=main.css.map */
