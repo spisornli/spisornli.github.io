@@ -40,7 +40,7 @@ $on-laptop:        810px;
 
  
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "jquery.fullPage", "_base", "_layout", "font-awesome";
+@import "jquery.fullPage", "_base", "_layout", "font-awesome", "../scss/font-awesome";
 
 
 // Core variables and mixins
@@ -155,6 +155,13 @@ ul.content-menu {
     padding: 0 0;
     margin: 20px 0;
     list-style: none;
+}
+
+
+
+.nav-slide {
+    font-size: 3em;
+
 }
 
 
