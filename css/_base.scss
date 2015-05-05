@@ -91,6 +91,11 @@ a {
     color: $brand-color;
     text-decoration: none;
 
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+    
     &:visited {
         color: darken($brand-color, 15%);
     }
@@ -98,6 +103,11 @@ a {
     &:hover {
         color: $text-color;
         text-decoration: underline;
+            
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
     }
 }
 

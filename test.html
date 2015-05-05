@@ -17,6 +17,8 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
+            
+        function initialization(){
 			$('#fullpage').fullpage({
                 anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#f2f2f2', '#4BBFC3', '#7BAABE'],
@@ -25,11 +27,31 @@
                 slidesNavigation: false,
                 slidesNavPosition: 'bottom',
                 controlArrows: false,
-                loopHorizontal: false,
-                paddingTop: '1.5em'
+                loopHorizontal: true,
+                paddingTop: '0em',
+                css3: true,
+					onLeave: function(index, nextIndex, direction){
+						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+					},
+	       			afterLoad: function(anchorLink, index){
+						console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+	       			},
+					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+						console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+					},
+	        		onSlideLeave: function(anchorLink, index, slideIndex, direction){
+						console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+	        		},
+	        		afterRender: function(){
+						console.log("afterRender");
+	        		},
+	        		afterResize: function(){
+						console.log("afterResize");
+	        		}
 			});
-		});
+		}
         
+       
         //fullPage.js initialization
             initialization();
 
@@ -43,8 +65,13 @@
 				e.preventDefault();
 				$.fn.fullpage.moveSectionDown();
 			});
-        
-            $('#moveSlideRight').click(function(e){
+
+			$('#moveTo').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveTo(3, 2);
+			});
+
+			$('#moveSlideRight').click(function(e){
 				e.preventDefault();
 				$.fn.fullpage.moveSlideRight();
 			});
@@ -53,8 +80,84 @@
 				e.preventDefault();
 				$.fn.fullpage.moveSlideLeft();
 			});
-        
-        
+
+			$('#setAutoScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(false);
+			});
+
+			$('#setAutoScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(true);
+			});
+
+			$('#setAllowScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(false);
+			});
+
+			$('#setAllowScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(true);
+			});
+
+			$('#setKeyboardScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(false);
+			});
+
+			$('#setKeyboardScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(true);
+			});
+
+			$('#setScrollingSpeed1500').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(2500);
+			});
+
+			$('#setScrollingSpeed700').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(700);
+			});
+
+			$('#destroy').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.destroy('all');
+			});
+
+			$('#undestroy').click(function(e){
+				e.preventDefault();
+
+				//fullPage.js initialization
+				initialization();
+			});
+
+			$('#reBuild').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.reBuild();
+			});
+
+			$('#setFitToSectionTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(true);
+			});
+
+			$('#setFitToSectionFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(false);
+			});
+
+			$('#setRecordHistoryTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(true);
+			});
+
+			$('#setRecordHistoryFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(false);
+			});
+        });
 	</script>
     
     
@@ -72,43 +175,44 @@
     </ul>
 </nav>
     
-    
+    <a class="slide-pagination slide-pagination-left" id="moveSlideLeft" href="#">«</a>
+<a class="slide-pagination slide-pagination-right" id="moveSlideRight" href="#">»</a>
 <div id="fullpage">
     <div id="section0" class="section">
+
         <div class="slide">
             <h1 class="page-title top-title">Er din mad god for klimaet?</h1>
             
             <div class="row">
                 
-                <div class="col-md-12">
-                
-                
+                <div class="col-md-12">                
                 <big>Har du tænkt på, at det du spiser har betydning for klimaet? Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget hvad vi spiser – og du kan være med til at mindske klimaforandringerne. </big>
-              
-                   
-                    
                 </div>
                 
             </div> <!-- row end -->
+<a class="main-nav-pagination" href="#firstPage/1"><i class="fa fa-hand-o-right"></i></a>
+            
+
         </div> <!-- slide end -->
-        <a class="nav-slide nav-slide-left disabled" id="moveSlideLeft" href="#"><i class="fa fa-arrow-left"></i></a>
-        <a class="nav-slide nav-slide-down" id="moveSectionDown" href="#"><i class="fa fa-arrow-down"></i></a>
-        <a class="nav-slide nav-slide-right" id="moveSlideRight" href="#"><i class="fa fa-arrow-right"></i></a>
 
         
+ 
+        
         <div class="slide">
+            
+             <h1 class="page-title top-title">Lad os komme igang!</h1>
             <div class="row">
                 
-                <div class="col-md-6">
-<p>Her skal du undersøge hvad klimavenlig mad er og om din madpakke er klimavenlig. Du skal undersøge drivhuseffekten og CO2-indholdet i din madpakke. Du skal også undersøge om kosten er blevet mere eller mindre klimavenlig gennem tiden. </p>
-                </div>
-                    <div class="col-md-6">
-<p>BOKS: Der er forskel på miljø og klima. Miljø er... Klima er... Så selvom maden er klimavenlig kan den stadig bidrage til andre miljøproblemer.</p>
+                <div class="col-md-12">
+<big>Her skal du undersøge hvad klimavenlig mad er og om din madpakke er klimavenlig. Du skal undersøge drivhuseffekten og CO2-indholdet i din madpakke. Du skal også undersøge om kosten er blevet mere eller mindre klimavenlig gennem tiden. </big><br>
+                
+<p>BOKS: Der er forskel på miljø og klima. Miljø er... Klima er... <br>Så selvom maden er klimavenlig kan den stadig bidrage til andre miljøproblemer.</p>
                 </div>
              
                 
                 
             </div> <!-- row end -->
+<a class="main-nav-pagination" href="#secondPage"><i class="fa fa-hand-o-down"></i></a>
         </div> <!-- slide end -->
         
         
@@ -122,7 +226,7 @@
     <div class="slide">
         <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-md-12">
         <h1 class="top-title">Madkundskab</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
        <ul class="content-menu">
@@ -131,15 +235,13 @@
         </ul>
                     </div>
                 
-            <div class="col-md-6">
-       
-        
-                    </div>
+         
             
             
             
             
             </div> <!-- row end -->
+        <a class="main-nav-pagination" href="#secondPage/1"><i class="fa fa-hand-o-right"></i></a>
     </div> <!-- slide end -->
         
     <div class="slide"> Slide 2 </div>
@@ -204,6 +306,7 @@
         
         
     </div> <!-- fullpage end -->
+ 
     
 </body>
 </html>
