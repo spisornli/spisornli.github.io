@@ -113,7 +113,7 @@ body {
 }
 
 .section {
-    padding: 20px 12% 0 12% ;
+    padding: 0 12% 0 12%;
     text-align: center;
 }
 
@@ -125,6 +125,32 @@ body {
 #canvas-holder {
    max-width: 150px;
     margin: 0 auto;
+}
+
+
+.top-title {
+    margin-top: 0;
+}
+
+.page-title {
+    padding-bottom: 2em;
+    font-weight: 300;
+
+}
+
+ul.content-menu {
+    padding: 0 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+
+
+h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
+    font-weight: inherit;
+    line-height: 1;
+    color: rgba(0,0,0,0.5);
+    font-size: 60%;
 }
 
 
