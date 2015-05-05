@@ -95,24 +95,25 @@ $on-laptop:        810px;
 
 
 
-body {}
+body {
 
-.top-menu {
-    position: fixed;
-    top:0;
-    left:0;
-    right: 0;
-    font-size: 13px;
-    margin: 0;
-    z-index: 1;
+
 }
+
+
+#fullpage {
+    
+
+}
+
+
 
 .btn {
     margin-top: 20px;
 }
 
 .section {
-    padding: 0 12%;
+    padding: 20px 12% 0 12% ;
     text-align: center;
 }
 
@@ -122,5 +123,31 @@ body {}
 }
 
 #canvas-holder {
-   
+   max-width: 150px;
+    margin: 0 auto;
 }
+
+
+
+// MAIN MENU
+
+
+.top-menu {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    font-size: 13px;
+    margin: 0;
+    z-index: 1;
+    border:none;
+    border-radius: none;
+}
+
+.navbar-default .navbar-nav > .course1 > a {
+    font-weight: 400;
+    background: red;
+    color: whitesmoke;
+}
+
+
