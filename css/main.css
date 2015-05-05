@@ -9193,14 +9193,51 @@ ul.content-menu {
   margin: 20px 0;
   list-style: none; }
 
-/* line 162, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 160, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.nav-slide {
+  position: absolute;
+  bottom: 60px;
+  display: inline-block;
+  z-index: 1; }
+  /* line 166, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .nav-slide .fa {
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.6); }
+
+/* line 174, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.nav-slide-left {
+  left: 60px;
+  right: auto;
+  bottom: 60px; }
+
+/* line 180, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.nav-slide-right {
+  left: auto;
+  right: 60px;
+  bottom: 60px; }
+
+/* line 186, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.nav-slide-down {
+  left: auto;
+  right: auto;
+  bottom: 60px; }
+
+/* line 192, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.disabled .fa {
+  color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed; }
+  /* line 195, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .disabled .fa:hover {
+    color: rgba(0, 0, 0, 0.1); }
+
+/* line 202, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
   font-weight: inherit;
   line-height: 1;
   color: rgba(0, 0, 0, 0.4);
   font-size: 60%; }
 
-/* line 174, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 214, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .top-menu {
   position: fixed;
   top: 0;
@@ -9212,7 +9249,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   border: none;
   border-radius: none; }
 
-/* line 186, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 226, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-default .navbar-nav > .course1 > a {
   font-weight: 400;
   background: indianred;

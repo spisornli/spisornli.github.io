@@ -22,13 +22,39 @@
                 sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#f2f2f2', '#4BBFC3', '#7BAABE'],
                 menu: '#myMenu',
 				verticalCentered: true,
-                slidesNavigation: true,
+                slidesNavigation: false,
                 slidesNavPosition: 'bottom',
-                controlArrows: true,
+                controlArrows: false,
                 loopHorizontal: false,
                 paddingTop: '1.5em'
 			});
 		});
+        
+        //fullPage.js initialization
+            initialization();
+
+
+			$('#moveSectionUp').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionUp();
+			});
+
+			$('#moveSectionDown').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+        
+            $('#moveSlideRight').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideRight();
+			});
+
+			$('#moveSlideLeft').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideLeft();
+			});
+        
+        
 	</script>
     
     
@@ -59,13 +85,16 @@
                 
                 <big>Har du tænkt på, at det du spiser har betydning for klimaet? Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget hvad vi spiser – og du kan være med til at mindske klimaforandringerne. </big>
               
-                    <a class="nav-slide nav-slide-right" href="#"><i class="fa fa-arrow-right"></i></a>
+                   
                     
                 </div>
                 
             </div> <!-- row end -->
         </div> <!-- slide end -->
-        
+        <a class="nav-slide nav-slide-left disabled" id="moveSlideLeft" href="#"><i class="fa fa-arrow-left"></i></a>
+        <a class="nav-slide nav-slide-down" id="moveSectionDown" href="#"><i class="fa fa-arrow-down"></i></a>
+        <a class="nav-slide nav-slide-right" id="moveSlideRight" href="#"><i class="fa fa-arrow-right"></i></a>
+
         
         <div class="slide">
             <div class="row">

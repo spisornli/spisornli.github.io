@@ -40,7 +40,7 @@ $on-laptop:        810px;
 
  
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "jquery.fullPage", "_base", "_layout", "font-awesome", "../scss/font-awesome";
+@import "jquery.fullPage", "_base", "_layout", "../scss/font-awesome";
 
 
 // Core variables and mixins
@@ -157,11 +157,44 @@ ul.content-menu {
     list-style: none;
 }
 
-
-
 .nav-slide {
-    font-size: 3em;
+    position: absolute;
+    bottom: 60px;
+    display: inline-block;
+    z-index: 1;
+    
+    .fa {
+        font-size: 5em;
+        color: rgba(0,0,0,0.6);
+    }
+    
+    
+}
 
+.nav-slide-left {
+    left: 60px;
+    right: auto;
+    bottom: 60px;
+}
+
+.nav-slide-right {
+    left: auto;
+    right: 60px;
+    bottom: 60px;
+}
+
+.nav-slide-down {
+    left: auto;
+    right: auto;
+    bottom: 60px;
+}
+
+.disabled .fa {
+    color: rgba(0,0,0,0.1);
+    cursor: not-allowed;
+    &:hover {
+    color: rgba(0,0,0,0.1);
+    }
 }
 
 
