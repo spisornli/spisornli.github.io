@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900,300italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -39,7 +40,7 @@ $on-laptop:        810px;
 
  
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "jquery.fullPage", "_base", "_layout";
+@import "jquery.fullPage", "_base", "_layout", "font-awesome";
 
 
 // Core variables and mixins
@@ -114,7 +115,7 @@ body {
 
 .section {
     padding: 0 12% 0 12%;
-    text-align: center;
+    text-align:center;
 }
 
 
@@ -133,9 +134,21 @@ body {
 }
 
 .page-title {
-    padding-bottom: 2em;
-    font-weight: 300;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 0 20px .5em 0;
+    margin: 0 10% 40px 10%;
+    text-transform: uppercase;
+    text-align: center;
+}
 
+big {
+    display: block;
+  
+}
+
+.page-title-wrapper {
+    margin-bottom: 4em;
 }
 
 ul.content-menu {
@@ -149,7 +162,7 @@ ul.content-menu {
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
     font-weight: inherit;
     line-height: 1;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.4);
     font-size: 60%;
 }
 
@@ -172,7 +185,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .navbar-default .navbar-nav > .course1 > a {
     font-weight: 400;
-    background: red;
+    background: indianred;
     color: whitesmoke;
 }
 
