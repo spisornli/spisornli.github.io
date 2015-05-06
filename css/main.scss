@@ -136,8 +136,8 @@ body {
 .page-title {
     font-weight: 400;
     border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding: 0 20px .5em 0;
-    margin: 0 10% 40px 10%;
+    padding: 0 15px .5em 0;
+    margin: 0 10% 30px 10%;
     text-transform: uppercase;
     text-align: center;
 }
@@ -164,7 +164,7 @@ ul.content-menu {
 
 a.slide-pagination {
     position: absolute;
-    top:100px;
+    top:50%;
     font-family: $headings-font-family;
     font-size: 5em;
     display: inline-block;
@@ -172,9 +172,9 @@ a.slide-pagination {
     color: rgba(0,0,0,0.2);
     text-decoration: none;
     
-    /* -ms-transform: translate(-50%,0%); 
-   	-webkit-transform: translate(-50%,0%); 
-    transform: translate(-50%,0%); */
+    -ms-transform: translate(0%,-50%); 
+   	-webkit-transform: translate(0%,-50%); 
+    transform: translate(0%,-50%);
     
     &:hover {
         color: rgba(0,0,0,0.6);
@@ -182,29 +182,29 @@ a.slide-pagination {
 }
 
 a.slide-pagination-left {
-    left:80px;
+    left:5%;
 }
 
 a.slide-pagination-right {
-    right:80px;
+    right:5%;
 }
 
 
 a.main-nav-pagination {
+    display: none;
     position: absolute;
-    bottom:10%;
+    bottom:12%;
     left:%50;
-    display: inline-block;
     z-index: 9999;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0,0,0,0.2);
     text-decoration: none;
-    font-size: 5em;
+    font-size: 4em;
     -ms-transform: translate(-50%,0%); 
    	-webkit-transform: translate(-50%,0%); 
     transform: translate(-50%,0%);
     
     &:hover {
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0,0.4);
     }
     
     
@@ -220,6 +220,22 @@ a.disabled  {
     }
 }
 
+.pagination-numb {
+    position: absolute;
+    font-family: $headings-font-family;
+    font-size: 2em;
+    font-weight: 700 !important;
+    color: rgba(0,0,0,0.5);
+    top:80px;
+    right:0;
+    background: white;
+    padding: .5em;
+    border-radius: 50%;
+    
+    /*-ms-transform: translate(-50%,0%); 
+   	-webkit-transform: translate(-50%,0%); 
+    transform: translate(-50%,0%);*/
+}
 
 
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
