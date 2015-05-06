@@ -32,7 +32,7 @@
   @include clearfix;
 
   @media (min-width: $grid-float-breakpoint) {
-    float: left;
+    float: right;
   }
 }
 
@@ -161,7 +161,7 @@
 // Brand/project name
 
 .navbar-brand {
-  float: right;
+  float: left;
   padding: $navbar-padding-vertical $navbar-padding-horizontal;
   font-size: $font-size-large;
   line-height: $line-height-computed;

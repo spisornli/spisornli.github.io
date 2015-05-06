@@ -6854,7 +6854,7 @@ tbody.collapse.in {
   clear: both; }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left; } }
+    float: right; } }
 
 /* line 50, /Users/MRH/Documents/GitHub/spisornli.github.io/css/bootstrap/_navbar.scss */
 .navbar-collapse {
@@ -6940,7 +6940,7 @@ tbody.collapse.in {
 
 /* line 163, /Users/MRH/Documents/GitHub/spisornli.github.io/css/bootstrap/_navbar.scss */
 .navbar-brand {
-  float: right;
+  float: left;
   padding: 14px 15px;
   font-size: 20px;
   line-height: 22px;
