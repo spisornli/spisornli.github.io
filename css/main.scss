@@ -164,7 +164,7 @@ ul.content-menu {
 
 a.slide-pagination {
     position: absolute;
-    top:50%;
+    bottom:5%;
     font-family: $headings-font-family;
     font-size: 5em;
     display: inline-block;
@@ -226,15 +226,15 @@ a.disabled  {
     font-size: 2em;
     font-weight: 700 !important;
     color: rgba(0,0,0,0.5);
-    top:80px;
-    right:0;
+    bottom:12%;
+    left:50%;
     background: white;
     padding: .5em;
     border-radius: 50%;
     
-    /*-ms-transform: translate(-50%,0%); 
+    ms-transform: translate(-50%,0%); 
    	-webkit-transform: translate(-50%,0%); 
-    transform: translate(-50%,0%);*/
+    transform: translate(-50%,0%);
 }
 
 

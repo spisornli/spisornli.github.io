@@ -6940,7 +6940,7 @@ tbody.collapse.in {
 
 /* line 163, /Users/MRH/Documents/GitHub/spisornli.github.io/css/bootstrap/_navbar.scss */
 .navbar-brand {
-  float: left;
+  float: right;
   padding: 14px 15px;
   font-size: 20px;
   line-height: 22px;
@@ -9208,7 +9208,7 @@ ul.content-menu {
 /* line 165, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.slide-pagination {
   position: absolute;
-  top: 50%;
+  bottom: 5%;
   font-family: 'Amatic SC', Helvetica, Arial, sans-serif;
   font-size: 5em;
   display: inline-block;
@@ -9262,14 +9262,14 @@ a.disabled {
   font-size: 2em;
   font-weight: 700 !important;
   color: rgba(0, 0, 0, 0.5);
-  top: 80px;
-  right: 0;
+  bottom: 12%;
+  left: 50%;
   background: white;
   padding: .5em;
   border-radius: 50%;
-  /*-ms-transform: translate(-50%,0%); 
-   	-webkit-transform: translate(-50%,0%); 
-    transform: translate(-50%,0%);*/ }
+  ms-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
 
 /* line 241, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
