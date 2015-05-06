@@ -238,6 +238,10 @@ a.disabled  {
 }
 
 
+
+
+
+
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
     font-weight: inherit;
     line-height: 1;
@@ -260,6 +264,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     z-index: 1;
     border:none;
     border-radius: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
 }
 
 .navbar-default .navbar-nav > .course1 > a {
@@ -269,3 +274,21 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
+.navbar-brand {
+    float: right;
+    padding: 10px 0;
+    display: block;
+    width: 150px;
+}
+
+.navbar-brand img {
+    max-height: 100%;
+    max-width: auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbar-header .navbar-toggle {
+    display:block;
+    float: right;
+}
