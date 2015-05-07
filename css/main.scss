@@ -114,10 +114,14 @@ body {
 }
 
 .section {
-    padding: 0 15% 0 15%;
-    text-align:center;
+    
 }
 
+.slide {
+    position: relative;
+    padding: 0 8% 0 8%;
+    text-align:center;
+}
 
 .item-wrapper {
 
@@ -157,9 +161,6 @@ ul.content-menu {
     list-style: none;
 }
 
-.slide {
-    position: relative;
-}
 
 
 a.slide-pagination {
@@ -169,7 +170,7 @@ a.slide-pagination {
     font-size: 5em;
     display: inline-block;
     z-index: 9999;
-    color: rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.1);
     text-decoration: none;
     
     -ms-transform: translate(0%,-50%); 
@@ -191,9 +192,9 @@ a.slide-pagination-right {
 
 
 a.main-nav-pagination {
-    display: none;
+    display: inline-block;
     position: absolute;
-    bottom:12%;
+    bottom:14%;
     left:%50;
     z-index: 9999;
     color: rgba(0,0,0,0.2);
@@ -223,18 +224,18 @@ a.disabled  {
 .pagination-numb {
     position: absolute;
     font-family: $headings-font-family;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 700 !important;
     color: rgba(0,0,0,0.5);
-    bottom:12%;
-    left:50%;
+    top:12%;
+    left:5%;
     background: white;
-    padding: .5em;
+    padding: .8em;
     border-radius: 50%;
     
-    ms-transform: translate(-50%,0%); 
+    /*ms-transform: translate(-50%,0%); 
    	-webkit-transform: translate(-50%,0%); 
-    transform: translate(-50%,0%);
+    transform: translate(-50%,0%);*/
 }
 
 
