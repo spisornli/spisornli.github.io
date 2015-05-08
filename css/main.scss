@@ -61,6 +61,11 @@ body {
     margin-top: 20px;
 }
 
+a.btn-info:visited {
+    color: $btn-info-color;
+}
+
+
 .section {
     
 }
@@ -260,15 +265,27 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     z-index: 1;
     border:none;
     border-radius: none;
-    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    border-radius: 0;
 }
 
 .navbar-default .navbar-nav > .course1 > a {
-    font-weight: 400;
+    font-weight: 700;
     background: indianred;
     color: whitesmoke;
+    letter-spacing: -0.02em;
+    padding: 14px 25px;
+    
+    &:hover {
+        background: #b85353;
+        color: whitesmoke;
+    
+    }
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #555;
+}
 
 .navbar-brand {
     float: right;
