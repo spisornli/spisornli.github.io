@@ -9350,7 +9350,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   letter-spacing: -0.02em;
   padding: 14px 25px; }
   /* line 278, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  .navbar-default .navbar-nav > .course1 > a:hover, .navbar-default .navbar-nav > .course1 > a:focus {
+  .navbar-default .navbar-nav > .course1 > a:hover {
     background: #b85353;
     color: whitesmoke; }
 
