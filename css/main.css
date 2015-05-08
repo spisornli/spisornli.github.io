@@ -9342,37 +9342,37 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 0; }
 
-/* line 271, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-.navbar-default .navbar-nav > .course1 > a {
+/* line 272, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.navbar-default .navbar-nav > .course1 > a, .navbar-default .navbar-nav > .active.course1 > a {
   font-weight: 700;
   background: indianred;
   color: whitesmoke;
   letter-spacing: -0.02em;
   padding: 14px 25px; }
-  /* line 278, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  .navbar-default .navbar-nav > .course1 > a:hover {
+  /* line 279, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .navbar-default .navbar-nav > .course1 > a:hover, .navbar-default .navbar-nav > .active.course1 > a:hover {
     background: #b85353;
     color: whitesmoke; }
 
-/* line 284, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 285, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #555; }
 
-/* line 288, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 289, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand {
   float: right;
   padding: 10px 0;
   display: block;
   width: 150px; }
 
-/* line 295, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 296, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand img {
   max-height: 100%;
   max-width: auto;
   width: 100%;
   overflow: auto; }
 
-/* line 302, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 303, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-header .navbar-toggle {
   display: block;
   float: right; }

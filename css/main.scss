@@ -268,7 +268,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     border-radius: 0;
 }
 
-.navbar-default .navbar-nav > .course1 > a {
+.navbar-default .navbar-nav > .course1 > a,
+.navbar-default .navbar-nav > .active.course1 > a {
     font-weight: 700;
     background: indianred;
     color: whitesmoke;
