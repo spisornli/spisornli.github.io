@@ -103,11 +103,15 @@ a {
     &:hover {
         color: $text-color;
         text-decoration: underline;
-            
+        outline: none;
             -webkit-transition: all .2s ease-in-out;
             -moz-transition: all .2s ease-in-out;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
+    }
+    
+    &:focus, &:active {
+        outline: none !important;
     }
 }
 

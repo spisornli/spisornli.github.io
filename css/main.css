@@ -302,15 +302,19 @@ a {
   a:hover {
     color: #111;
     text-decoration: underline;
+    outline: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
+  /* line 113, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+  a:focus, a:active {
+    outline: none !important; }
 
 /**
  * Blockquotes
  */
-/* line 119, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 123, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 blockquote {
   color: #828282;
   border-left: 4px solid #e8e8e8;
@@ -318,29 +322,29 @@ blockquote {
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic; }
-  /* line 127, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+  /* line 131, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
   blockquote > :last-child {
     margin-bottom: 0; }
 
 /**
  * Code formatting
  */
-/* line 138, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 142, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 pre, code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef; }
 
-/* line 145, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 149, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 code {
   padding: 1px 5px; }
 
-/* line 149, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 153, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 pre {
   padding: 8px 12px;
   overflow-x: scroll; }
-  /* line 153, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+  /* line 157, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
   pre > code {
     border: 0;
     padding-right: 0;
@@ -349,7 +353,7 @@ pre {
 /**
  * Wrapper
  */
-/* line 165, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 169, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 .wrapper {
   max-width: -webkit-calc(800px - (30px * 2));
   max-width: calc(800px - (30px * 2));
@@ -367,7 +371,7 @@ pre {
 /**
  * Clearfix
  */
-/* line 189, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 193, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 .wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
@@ -376,13 +380,13 @@ pre {
 /**
  * Icons
  */
-/* line 203, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+/* line 207, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
 .icon > svg {
   display: inline-block;
   width: 16px;
   height: 16px;
   vertical-align: middle; }
-  /* line 209, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
+  /* line 213, /Users/MRH/Documents/GitHub/spisornli.github.io/css/_base.scss */
   .icon > svg path {
     fill: #828282; }
 
@@ -9346,29 +9350,29 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   letter-spacing: -0.02em;
   padding: 14px 25px; }
   /* line 278, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  .navbar-default .navbar-nav > .course1 > a:hover {
+  .navbar-default .navbar-nav > .course1 > a:hover, .navbar-default .navbar-nav > .course1 > a:focus {
     background: #b85353;
     color: whitesmoke; }
 
-/* line 285, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 284, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #555; }
 
-/* line 289, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 288, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand {
   float: right;
   padding: 10px 0;
   display: block;
   width: 150px; }
 
-/* line 296, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 295, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand img {
   max-height: 100%;
   max-width: auto;
   width: 100%;
   overflow: auto; }
 
-/* line 303, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 302, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-header .navbar-toggle {
   display: block;
   float: right; }
