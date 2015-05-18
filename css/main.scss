@@ -16,16 +16,6 @@
 
 
 
-body {
-
-
-}
-
-
-#fullpage {
-    
-
-}
 
 
 
@@ -38,9 +28,6 @@ a.btn-info:visited {
 }
 
 
-.section {
-    
-}
 
 .slide {
     position: relative;
@@ -48,9 +35,6 @@ a.btn-info:visited {
     text-align: center;
 }
 
-.item-wrapper {
-
-}
 
 #canvas-holder {
    max-width: 150px;
@@ -78,8 +62,6 @@ big {
 .page-title-wrapper {
     margin-bottom: 4em;
 }
-
-
 
 
 a.slide-pagination {
@@ -159,8 +141,6 @@ a.disabled  {
 }
 
 
-
-
 .col-center {
     margin: 0 auto;
     float: none;
@@ -237,15 +217,29 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     color: rgba(0,0,0,0.2);
 }
 
-.illustration-placeholder {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: red;
-    margin: 0 auto 40px auto;
-
+.image-wrapper {
+    height: 240px;
+    background: rgba(30,67,68,1);
+    margin: -30px -20px 40px -20px;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
 }
 
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.item-wrapper {
+    background: whitesmoke;
+    padding: 50px 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    text-align: left;
+
+}
 
 // MAIN MENU
 
