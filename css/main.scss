@@ -54,14 +54,7 @@ a.btn-info:visited {
     text-align: center;
 }
 
-big {
-    display: block;
-  
-}
 
-.page-title-wrapper {
-    margin-bottom: 4em;
-}
 
 
 a.slide-pagination {
@@ -200,13 +193,82 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
+.item-info {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    padding: 0px 1px 10px 1px;
+    overflow: hidden;
+    text-align: left;
+    line-height: 1;
+    
+    .opg-num {
+        float: left;
+        color: rgba($madkundskab-dark, .5);
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px dotted rgba($madkundskab-dark, .8);
+        
+    }
+    
+    .item-menu {
+        color: rgba($madkundskab-dark, .7);        
+        
+        .fa {
+            margin-right: 3px;
+            
+        }
+        
+        &:hover {
+            color: rgba($madkundskab-dark, 1);
+            text-decoration: none;
+        }
+    }
+    
+    .opg-time {
+        float: right;
+        color: $madkundskab-dark;
+        
+        .fa {
+            margin-right: 3px;
+            color: rgba($madkundskab-dark, .5);
+        }
+    }
+}
+
+.item-wrapper {
+    background: $body-bg;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 14px;
+}
+
+.item-content {
+    background: darken($madkundskab-dark, 15%);
+    border-radius: 2px;
+    padding: 8% 10% 10% 10%;
+    
+    
+    
+    h1, h2, h3, h4, h5, h6,
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: $text-color-invert; 
+    }
+    
+    p {
+        color: lighten($madkundskab, 30%);
+        
+    }
+    
+  
+}
+
+
+
+
 .image-wrapper {
     height: 180px;
-    background: rgba(30,67,68,1);
-    margin: -15px -15px 20px -15px;
-    border-radius: 2px;
-    padding: 10px;
-    text-align: center;
 }
 
 .image-wrapper img {
@@ -214,15 +276,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     height: 100%;
     margin: 0 auto 0 auto;
 }
-
-.item-wrapper {
-    background: whitesmoke;
-    padding: 25px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.2);
-    text-align: left;
-}
-
 
 
 // MAIN MENU
