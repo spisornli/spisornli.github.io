@@ -200,27 +200,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
-.fag {
-    position: absolute;
-    top:100px;
-    text-transform: uppercase;
-    padding: 20px;
-    letter-spacing: 0.03em;
-    font-size: 23px;
-    text-align: left;
-    line-height: 1;
-    font-weight: 500;
-}
-
-.fag span {
-    font-weight: 300;
-    color: rgba(0,0,0,0.2);
-}
-
 .image-wrapper {
-    height: 240px;
+    height: 180px;
     background: rgba(30,67,68,1);
-    margin: -30px -20px 40px -20px;
+    margin: -15px -15px 20px -15px;
     border-radius: 2px;
     padding: 10px;
     text-align: center;
@@ -234,12 +217,13 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .item-wrapper {
     background: whitesmoke;
-    padding: 50px 40px;
+    padding: 25px;
     border-radius: 4px;
     box-shadow: 0 0 2px rgba(0,0,0,0.2);
     text-align: left;
-
 }
+
+
 
 // MAIN MENU
 
@@ -249,6 +233,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     top:0;
     left:0;
     right: 0;
+    background: darken($body-bg, 1%);
     font-size: 14px;
     margin: 0;
     z-index: 1;
@@ -258,29 +243,113 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     border-radius: 0;
 }
 
-.navbar-default .navbar-nav > .course > a,
-.navbar-default .navbar-nav > .active.course > a {
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-
-.navbar-default .navbar-nav > .course1 > a {
-    background: indianred !important;
-    color: whitesmoke !important;
+.navbar .navbar-nav {
     
-    &:hover {
-        background: #b85353 !important;
+    li > a {
+        font-weight: 400;
+        color: $text-color;
+        background: darken($body-bg, 1%);
     }
+    
+    li.active > a, li > a:hover, li > a:focus { 
+        background: darken($body-bg, 5%);
+        outline: none;
+    }
+    
+    li.active {
+    
+    }
+    
+    .tema > a {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    li > a:after {
+        position: absolute;
+        z-index: -2;
+        left:50%;
+        bottom: 0px;
+        font-family: FontAwesome;
+        font-size: 3em;
+        content: "\f0d7";
+        text-shadow: 0 0px 2px rgba(0,0,0,0.1);
+
+        ms-transform: translate(-50%,0%); 
+   	    -webkit-transform: translate(-50%,0%); 
+        transform: translate(-50%,0%);
+        
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    
+    .active > a:after {
+        bottom: -15px;
+        
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    
+    
+    
+    
+    
+    /* NAV TEMA FARVER */
+    
+    .tema1 > a, .tema1 > a:focus, .tema1.active > a {
+        background: $brand-primary;
+        color: $text-color-invert;
+    }
+    
+    .tema1.active > a:after, .tema1 > a:after {
+        color: $brand-primary;
+    }
+    
+    .tema1 > a:hover {
+        background: $brand-primary-dark;
+    }
+    
+    /* NAV FAG FARVER */
+    
+    .madkundskab {
+        a:hover, a:focus { background: lighten($madkundskab, 25%); }
+        a:after { color: lighten($madkundskab, 25%); }
+    }
+    .madkundskab.active > a { background: lighten($madkundskab, 25%); }
+    
+    .natur-teknologi {
+        a:hover, a:focus { background: lighten($natur-teknologi, 20%); }
+        a:after { color: lighten($natur-teknologi, 20%); }
+    }
+    .natur-teknologi.active > a { background: lighten($natur-teknologi, 20%); }
+    
+    .dansk {
+        a:hover, a:focus { background: lighten($dansk, 25%); }
+        a:after { color: lighten($dansk, 25%); }
+    }
+    .dansk.active > a { background: lighten($dansk, 25%); }
+    
+    .matematik {
+        a:hover, a:focus { background: lighten($matematik, 25%); }
+        a:after { color: lighten($matematik, 25%); }
+    }
+    .matematik.active > a { background: lighten($matematik, 25%); }
+    
+    .historie {
+        a:hover, a:focus { background: lighten($historie, 25%); }
+        a:after { color: lighten($historie, 25%); }
+    }
+    .historie.active > a { background: lighten($historie, 25%); }  
 }
 
 
 
-.navbar-default .navbar-nav > li > a {
-    color: #555;
-}
 
 .navbar-brand {
     float: right;

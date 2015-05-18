@@ -15,11 +15,22 @@ $gray:                   rgba($gray-base, .6) !default; // #555
 $gray-light:             rgba($gray-base, .45) !default; // #777
 $gray-lighter:           rgba($gray-base, .3) !default; // #eee
 
-$brand-primary:         darken(#CD5C5C, 6.5%) !default; // #337ab7
+$brand-primary:         indianred !default; // #337ab7
+$brand-primary-dark:    darken($brand-primary, 5%) !default; // #337ab7
+
+
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
+
+$madkundskab:           #4BBFC3 !default;
+$natur-teknologi:       #7BAABE !default;
+$dansk:                 #4BBFC3 !default;
+$matematik:             #7BAABE !default;
+$historie:              #4BBFC3 !default;
+
+
 
 
 //== Scaffolding
@@ -27,9 +38,10 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #f2f2f2 !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
+$text-color-invert:     $body-bg !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;

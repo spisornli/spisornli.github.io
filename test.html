@@ -21,7 +21,7 @@
         function initialization(){
 			$('#fullpage').fullpage({
                 anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#f2f2f2', '#4BBFC3', '#7BAABE'],
+                sectionsColor: ['', '#4BBFC3', '#7BAABE', '#f2f2f2', '#4BBFC3', '#7BAABE'],
                 menu: '#myMenu',
 				verticalCentered: true,
                 slidesNavigation: true,
@@ -164,14 +164,14 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default top-menu" id="">
+<nav class="navbar top-menu" id="">
     <ul id="myMenu" class="nav navbar-nav">
-        <li data-menuanchor="firstPage" class="active course course1"><a href="#firstPage">Er jeres mad god for klimaet?</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Madkundskab</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Natur og teknologi</a></li>
-        <li data-menuanchor="4thPage"><a href="#4thPage">Dansk</a></li>
-        <li data-menuanchor="5thPage"><a href="#5thPage">Matematik</a></li>
-        <li data-menuanchor="6thPage"><a href="#6thPage">Historie</a></li>
+        <li data-menuanchor="firstPage" class="active tema tema1"><a href="#firstPage">Er jeres mad god for klimaet?</a></li>
+        <li data-menuanchor="secondPage" class="madkundskab"><a href="#secondPage">Madkundskab</a></li>
+        <li data-menuanchor="3rdPage" class="natur-teknologi"><a href="#3rdPage">Natur og teknologi</a></li>
+        <li data-menuanchor="4thPage" class="dansk"><a href="#4thPage">Dansk</a></li>
+        <li data-menuanchor="5thPage" class="matematik"><a href="#5thPage">Matematik</a></li>
+        <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
     </ul>
     <div class="container-fluid">
      
@@ -244,14 +244,13 @@ I dette forløb skal I undersøge, hvad klima-mad er og om jeres frokost er god 
     
     <div id="section1" class="section">
     <div class="slide">
-        <div class="fag"><span class="">opgaver:</span> Madkundskab</div>
         <div class="row">
                 
-                <div class="col-md-4 col-center">
+                <div class="col-md-6 col-center">
                     <div class="item-wrapper">
                                             <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
 
-        <h4 class=""><a href="#secondPage/1">Hvilken kost er god for klimaet?</a></h4>
+        <h5 class=""><a href="#secondPage/1">Hvilken kost er god for klimaet?</a></h5>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
                     </div>
