@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <title>SpisOrnli | Er din mad god for klimaet?</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/jquery.easyModal.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+            
+        function initialization(){
+			$('#fullpage').fullpage({
+                anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+                menu: '#myMenu',
+				verticalCentered: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+                controlArrows: true,
+                loopHorizontal: false,
+                paddingTop: '0em',
+                css3: true,
+					onLeave: function(index, nextIndex, direction){
+						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+					},
+	       			afterLoad: function(anchorLink, index){
+						console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+	       			},
+					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+						console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+					},
+	        		onSlideLeave: function(anchorLink, index, slideIndex, direction){
+						console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+	        		},
+	        		afterRender: function(){
+						console.log("afterRender");
+	        		},
+	        		afterResize: function(){
+						console.log("afterResize");
+	        		}
+			});
+		}
+        
+       
+        //fullPage.js initialization
+            initialization();
+
+
+			$('#moveSectionUp').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionUp();
+			});
+
+			$('#moveSectionDown').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
+
+			$('#moveTo').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveTo(3, 2);
+			});
+
+			$('#moveSlideRight').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideRight();
+			});
+
+			$('#moveSlideLeft').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideLeft();
+			});
+
+			$('#setAutoScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(false);
+			});
+
+			$('#setAutoScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(true);
+			});
+
+			$('#setAllowScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(false);
+			});
+
+			$('#setAllowScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(true);
+			});
+
+			$('#setKeyboardScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(false);
+			});
+
+			$('#setKeyboardScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(true);
+			});
+
+			$('#setScrollingSpeed1500').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(2500);
+			});
+
+			$('#setScrollingSpeed700').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(700);
+			});
+
+			$('#destroy').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.destroy('all');
+			});
+
+			$('#undestroy').click(function(e){
+				e.preventDefault();
+
+				//fullPage.js initialization
+				initialization();
+			});
+
+			$('#reBuild').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.reBuild();
+			});
+
+			$('#setFitToSectionTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(true);
+			});
+
+			$('#setFitToSectionFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(false);
+			});
+
+			$('#setRecordHistoryTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(true);
+			});
+
+			$('#setRecordHistoryFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(false);
+			});
+        });
+	</script>
+    
+    
+</head>
+<body>
+
+<nav class="navbar top-menu" id="">
+    <ul id="myMenu" class="nav navbar-nav">
+        <li data-menuanchor="firstPage" class="active tema tema1"><a href="#firstPage">Er jeres mad god for klimaet?</a></li>
+        <li data-menuanchor="secondPage" class="madkundskab"><a href="#secondPage">Madkundskab</a></li>
+        <li data-menuanchor="3rdPage" class="natur-teknologi"><a href="#3rdPage">Natur og teknologi</a></li>
+        <li data-menuanchor="4thPage" class="dansk"><a href="#4thPage">Dansk</a></li>
+        <li data-menuanchor="5thPage" class="matematik"><a href="#5thPage">Matematik</a></li>
+        <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
+    </ul>
+    <div class="container-fluid">
+     
+    <div class="navbar-header">
+         
+      <a class="navbar-brand" href="#firstPage/0">
+          <img alt="Brand" src="images/spisornli_logo.svg"/>
+      </a>
+        
+       
+        
+       
+            
+    </div>
+  </div>
+</nav>
+    
+  
+<div id="fullpage">
+    <div id="section-intro01" class="section inverted">
+
+        <div class="slide">
+            <div class="row">
+                
+                <div class="col-md-10 col-center"> 
+                    
+                    <div class="image-wrapper"><img src="images/Tema01_Matematik01.svg" /></div>
+                    <h1 class="page-title">Er jeres mad god for klimaet?</h1>
+
+                <p><big>Har I tænkt på, at det I spiser har betydning for klimaet? 
+Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</big></p>
+                </div>
+            <a type="button" class="btn btn-primary easy-modal-open btn-sm" href="#mad-god">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
+            <div class="hide easy-modal">
+                test
+            </div>
+           
+                
+            </div> <!-- row end -->
+            
+
+        </div> <!-- slide end -->
+     </div>  <!-- section end -->
+
+    
+    <div id="section-madkundskab" class="section">
+    <div class="slide">
+        <div class="row">
+                
+                <div class="col-md-6 col-center">
+                    <div class="item-wrapper">
+                        <div class="item-info"><span class="opg-num"># 01</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
+                        <div class="item-content inverted">
+                            <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
+
+        <h5 class=""><a href="#secondPage/1"><b>Hvilken kost er god for klimaet</b> ?</a></h5>
+        <p>Brug den klimavenlige madpyramiden til at finde ud af om jeres mad er god eller dårlig for klimaet.</p>
+                            
+                           
+                            </div>
+                        </div>
+                    </div>
+           
+                
+       
+            
+            
+            
+            
+            </div> <!-- row end -->
+    </div> <!-- slide end -->
+        
+    <div class="slide"> 
+        <div class="row">
+           
+            <div class="col-md-10 col-center">
+                
+            <ul>
+                <h6><i class="fa fa-briefcase"></i> I skal bruge:</h6>
+                <li>Adgang til internet</li>
+                
+                <h6><i class="fa fa-trophy"></i> Læringsmål:</h6>
+                <li>Sundhedsbevidsthed: I kan analysere jeres valg af mad jeres din hverdag.</li>
+                <li>Sundhedsbevidsthed: I kan begrunde jeres valg af mad ud fra hensyn til ernæring og miljø.</li>
+                <li>Sundhedsbevidsthed: Du kan omsætte analyser og vurderinger i nye måltidsforslag til eget brug.</li>
+
+                <h6><i class="fa fa-clock-o"></i> Tidsangivelse:</h6>
+                <li>45 minutter</li>
+            </ul>
+                
+            </div> <!-- col end -->
+            
+        </div> <!-- row end -->
+    </div> <!-- slide end -->
+        
+        
+        
+    <div class="slide"> 
+        <div class="row">
+           
+            <div class="col-md-6">
+                
+            
+                
+            </div> <!-- col end -->
+            
+            <div class="col-md-6">
+                
+            <p>Madpyramiden er et pyramideformet billede, der viser, hvad man bør spise.</p>
+            <p>Før i tiden var madpyramiden kun lavet ud fra, hvad der var sundt for os mennesker at spise. Den moderne madpyramide viser også, hvad der er bedst for klimaet at spise. Derfor bliver den også kaldt den klimavenlige madpyramide.</p>
+            <p>Ved at kigge på madpyramiden kan I finde ud af om jeres mad er god eller dårlig for klimaet. I skal spise mest af det fra bunden, lidt mindre af det fra midten og mindst af det fra toppen.</p>
+                            
+            </div> <!-- col end -->
+            
+            
+            
+            
+        </div> <!-- row end --> 
+        
+    </div>
+    
+        
+        
+    <div class="slide"> 
+        
+        <div class="col-md-6">
+            
+            <p>I dette forløb lærer du, at vælge mad og lave hele måltider, der er gode for klimaet.</p>
+            <p>Madvarer udleder CO2 eller andre drivhusgasser af flere årsager. Det kan være fordi de transporteres langt, de dyrkes i opvarmede drivhuse, der fældes skov for at kunne dyrke dem, jorden afgiver drivhusgasser, når den bearbejdes, køerne bøvser og prutter, der bruges energi i produktionen og til at producere gødning, sprøjtegifte og emballage osv.</p>
+                
+                
+        </div> <!-- col end -->
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>  <!-- section end -->
+        
+    <div id="section-natur-teknologi" class="section">
+    <div class="slide"> 
+        <div class="row">
+                
+                <div class="col-md-6 col-center">
+                    <div class="item-wrapper">
+                        <div class="item-info"><span class="opg-num"># 02</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
+                        <div class="item-content">
+                            <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
+
+                            <h5 class=""><a href="#secondPage/1"><b>Vi bor i et kæmpestort drivhus</b></a></h5>
+        <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den har at gøre med vores mad, og hvad den betyder for vores klima.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div> <!-- row end -->
+    </div>  <!-- slide end -->
+    
+    <div class="slide"> <h1>Slide 2</h1> </div>
+    <div class="slide"> <h1>Slide 3</h1> </div>
+    <div class="slide"> <h1>Slide 4</h1> </div>
+    </div>  <!-- section end -->
+    
+    <div id="section-dansk" class="section">
+    <div class="slide">
+        <div class="row">
+                
+                <div class="col-md-6 col-center">
+                    <div class="item-wrapper">
+                        <div class="item-info"><span class="opg-num"># 03</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
+                        <div class="item-content inverted">
+                            <div class="image-wrapper"><img src="images/Tema01_Dansk01.svg" /></div>
+
+                            <h5 class=""><a href="#secondPage/1"><b>Hvordan bliver jeres frokost til en prima-klima-frokost</b> ?</a></h5>
+        <p>Her lærer I, hvad en prima-klima-frokost er, og hvordan I kan formidle det til jeres familie og venner, så de også får lyst til at spise klima-mad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div> <!-- row end -->
+    </div>  <!-- slide end -->
+    
+    <div class="slide"> <h1>Slide 2</h1> </div>
+    <div class="slide"> <h1>Slide 3</h1> </div>
+    <div class="slide"> <h1>Slide 4</h1> </div>
+    </div>  <!-- section end -->
+    
+    <div id="section-matematik" class="section">
+    <div class="slide"> 
+        <div class="row">
+                
+                <div class="col-md-6 col-center">
+                    <div class="item-wrapper">
+                        <div class="item-info"><span class="opg-num"># 04</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
+                        <div class="item-content inverted">
+                            <div class="image-wrapper"><img src="images/Tema01_Matematik01.svg" /></div>
+
+        <h5 class=""><a href="#secondPage/1"><b>Er jeres frokost god for klimaet</b> ?</a></h5>
+        <p>En CO2-beregner er et digitalt værktøj, som kan regne ud, hvor meget CO2 forskellige madvarer udleder.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div> <!-- row end -->
+    </div>  <!-- slide end -->
+        
+    <div class="slide"> <h1>Slide 2</h1> </div>
+    <div class="slide"> <h1>Slide 3</h1> </div>
+    <div class="slide"> <h1>Slide 4</h1> </div>
+    </div>  <!-- section end -->
+    
+    <div id="section-historie" class="section">
+    <div class="slide"> 
+        <div class="row">
+                
+                <div class="col-md-6 col-center">
+                    <div class="item-wrapper">
+                        <div class="item-info"><span class="opg-num"># 05</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
+                        <div class="item-content inverted">
+                            <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
+
+        <h5 class=""><a href="#secondPage/1"><b>Er stenalderkost god for klimaet</b> ?</a></h5>
+        <p>Her lærer I, hvordan livsgrundlaget har ændret sig gennem tiden og om kosten i stenalderen var mere god for klimaet end det, I spiser i dag.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div> <!-- row end -->
+    </div>  <!-- slide end -->
+        
+    <div class="slide"> <h1>Slide 2</h1> </div>
+    <div class="slide"> <h1>Slide 3</h1> </div>
+    <div class="slide"> <h1>Slide 4</h1> </div>
+    </div>  <!-- section end -->
+    
+        
+        
+    </div> <!-- fullpage end -->
+ <script type="text/javascript">
+	$(function() {
+		$('.easy-modal').easyModal({
+			top: 200,
+			overlay: 0.2
+		});
+
+		$('.easy-modal-open').click(function(e) {
+			var target = $(this).attr('href');
+			$(target).trigger('openModal');
+			e.preventDefault();
+		});
+
+		$('.easy-modal-close').click(function(e) {
+			$('.easy-modal').trigger('closeModal');
+		});
+
+		$('.easy-modal-animated').easyModal({
+			top: 200,
+			overlay: 0.2,
+			transitionIn: 'animated bounceInLeft',
+			transitionOut: 'animated bounceOutRight',
+			closeButtonClass: '.animated-close'
+		});
+	});
+	</script>
+   
+    
+</body>
+</html>
