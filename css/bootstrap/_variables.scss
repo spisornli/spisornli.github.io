@@ -24,13 +24,22 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
-$madkundskab:           #4BBFC3 !default;
-$madkundskab-dark:      darken($madkundskab, 20%) !default;
-$natur-teknologi:       #7BAABE !default;
-$dansk:                 #4BBFC3 !default;
-$matematik:             #7BAABE !default;
-$historie:              #4BBFC3 !default;
 
+
+$madkundskab:           #4ECDC4 !default;
+$madkundskab-dark:      darken($madkundskab, 18%) !default;
+
+$natur-teknologi:       #FFCC00 !default;
+$natur-teknologi-dark:  darken($natur-teknologi, 15%) !default;
+    
+$dansk:                 #AB526B  !default;
+$dansk-dark:            darken($dansk, 8%) !default;
+
+$matematik:             #BBDBC6 !default;
+$matematik-dark:        darken($matematik, 33%) !default;
+
+$historie:              #FF5252 !default;
+$historie-dark:         darken($historie, 12%) !default;
 
 
 

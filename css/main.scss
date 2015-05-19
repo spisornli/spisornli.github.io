@@ -183,7 +183,6 @@ a.disabled  {
 
 
 
-/* STYLES */
 
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
     font-weight: inherit;
@@ -191,6 +190,19 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     color: rgba(0,0,0,0.4);
     font-size: 60%;
 }
+
+
+.image-wrapper {
+    height: 180px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+
 
 
 .item-info {
@@ -204,7 +216,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
     .opg-num {
         float: left;
-        color: rgba($madkundskab-dark, .5);
         margin-right: 10px;
         padding-right: 10px;
         border-right: 1px dotted rgba($madkundskab-dark, .8);
@@ -212,7 +223,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     }
     
     .item-menu {
-        color: rgba($madkundskab-dark, .7);        
         
         .fa {
             margin-right: 3px;
@@ -220,18 +230,15 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         }
         
         &:hover {
-            color: rgba($madkundskab-dark, 1);
             text-decoration: none;
         }
     }
     
     .opg-time {
         float: right;
-        color: $madkundskab-dark;
         
         .fa {
             margin-right: 3px;
-            color: rgba($madkundskab-dark, .5);
         }
     }
 }
@@ -245,37 +252,112 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 .item-content {
-    background: darken($madkundskab-dark, 15%);
     border-radius: 2px;
-    padding: 8% 10% 10% 10%;
+    padding: 8% 10% 10% 10%; 
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+}
+
+.item-content.inverted {
     
-    
-    
+    p,
     h1, h2, h3, h4, h5, h6,
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         color: $text-color-invert; 
     }
-    
-    p {
-        color: lighten($madkundskab, 30%);
+
+}
+
+
+#section-madkundskab {
+    background: $madkundskab;
         
+    .item-info {
+        color: rgba($madkundskab-dark, .8);
+        a { color: rgba($madkundskab-dark, 1) }
+        a:hover { color: darken($madkundskab-dark, 10%); }
+        .opg-num { 
+            color: rgba($madkundskab-dark, .5); 
+            border-right-color: rgba($madkundskab-dark, .5); 
+        }        
     }
+    .item-content {
+        background: darken($madkundskab-dark, 10%); 
+    }
+}
+
+
+
+
+#section-natur-teknologi {
+    background: $natur-teknologi;
     
-  
+    .item-info {
+        color: rgba($natur-teknologi-dark, .8);
+        a { color: rgba($natur-teknologi-dark, 1) }
+        a:hover { color: darken($natur-teknologi-dark, 10%); }
+        .opg-num { 
+            color: rgba($natur-teknologi-dark, .5); 
+            border-right-color: rgba($natur-teknologi-dark, .5); 
+        }        
+    }
+    .item-content {
+        background: rgba($natur-teknologi, .8); 
+    } 
+}
+
+#section-dansk {
+    background: $dansk;
+    
+    .item-info {
+        color: rgba($dansk-dark, .8);
+        a { color: rgba($dansk-dark, 1) }
+        a:hover { color: darken($dansk-dark, 10%); }
+        .opg-num { 
+            color: rgba($dansk-dark, .5); 
+            border-right-color: rgba($dansk-dark, .5); 
+        }        
+    }
+    .item-content {
+        background: desaturate($dansk-dark, 10%); 
+    } 
+}
+
+#section-matematik {
+    background: $matematik;
+    
+    .item-info {
+        color: rgba($matematik-dark, .8);
+        a { color: rgba($matematik-dark, 1) }
+        a:hover { color: darken($matematik-dark, 10%); }
+        .opg-num { 
+            color: rgba($matematik-dark, .5); 
+            border-right-color: rgba($matematik-dark, .5); 
+        }        
+    }
+    .item-content {
+        background: desaturate($matematik-dark, 10%);
+    } 
+}
+
+#section-historie {
+    background: $historie;
+    
+    .item-info {
+        color: rgba($historie-dark, .8);
+        a { color: rgba($historie-dark, 1) }
+        a:hover { color: darken($historie-dark, 10%); }
+        .opg-num { 
+            color: rgba($historie-dark, .5); 
+            border-right-color: rgba($historie-dark, .5); 
+        }        
+    }
+    .item-content {
+        background: desaturate($historie-dark, 40%);
+    } 
 }
 
 
 
-
-.image-wrapper {
-    height: 180px;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto 0 auto;
-}
 
 
 // MAIN MENU
@@ -361,7 +443,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     }
     
     .tema1.active > a:after, .tema1 > a:after {
-        color: $brand-primary;
+        color: lighten($brand-primary, 10%);
     }
     
     .tema1 > a:hover {
@@ -371,32 +453,32 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     /* NAV FAG FARVER */
     
     .madkundskab {
-        a:hover, a:focus { background: lighten($madkundskab, 25%); }
-        a:after { color: lighten($madkundskab, 25%); }
+        a:hover, a:focus { background: lighten($madkundskab, 15%); }
+        a:after { color: lighten($madkundskab, 15%); }
     }
     .madkundskab.active > a { background: lighten($madkundskab, 25%); }
     
     .natur-teknologi {
-        a:hover, a:focus { background: lighten($natur-teknologi, 20%); }
-        a:after { color: lighten($natur-teknologi, 20%); }
+        a:hover, a:focus { background: lighten($natur-teknologi, 15%); }
+        a:after { color: lighten($natur-teknologi, 15%); }
     }
-    .natur-teknologi.active > a { background: lighten($natur-teknologi, 20%); }
+    .natur-teknologi.active > a { background: lighten($natur-teknologi, 25%); }
     
     .dansk {
         a:hover, a:focus { background: lighten($dansk, 25%); }
         a:after { color: lighten($dansk, 25%); }
     }
-    .dansk.active > a { background: lighten($dansk, 25%); }
+    .dansk.active > a { background: lighten($dansk, 35%); }
     
     .matematik {
-        a:hover, a:focus { background: lighten($matematik, 25%); }
-        a:after { color: lighten($matematik, 25%); }
+        a:hover, a:focus { background: lighten($matematik, 5%); }
+        a:after { color: lighten($matematik, 5%); }
     }
-    .matematik.active > a { background: lighten($matematik, 25%); }
+    .matematik.active > a { background: lighten($matematik, 8%); }
     
     .historie {
-        a:hover, a:focus { background: lighten($historie, 25%); }
-        a:after { color: lighten($historie, 25%); }
+        a:hover, a:focus { background: lighten($historie, 15%); }
+        a:after { color: lighten($historie, 15%); }
     }
     .historie.active > a { background: lighten($historie, 25%); }  
 }
