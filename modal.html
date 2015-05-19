@@ -6,8 +6,8 @@
     
     <link rel="stylesheet" href="css/main.css">
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
     <script src="js/jquery.slimscroll.min.js"></script>
 	<script src="js/jquery.fullPage.min.js"></script>
@@ -160,6 +160,17 @@
         });
 	</script>
     
+    <style>
+        .easy-modal {
+            background-color: #fff;
+            width: 600px;
+            margin: 0 auto;
+        }
+        .slide {
+            position: relative;
+        }
+    
+    </style>
     
 </head>
 <body>
@@ -204,8 +215,8 @@
                 <p><big>Har I tænkt på, at det I spiser har betydning for klimaet? 
 Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</big></p>
                 </div>
-            <a type="button" class="btn btn-primary easy-modal-open btn-sm" href="#mad-god">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
-            <div class="hide easy-modal">
+            <a class="btn btn-primary easy-modal-open btn-sm" href="#mad-god">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
+            <div id="mad-god" class="easy-modal">
                 test
             </div>
            
@@ -260,6 +271,10 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
 
                 <h6><i class="fa fa-clock-o"></i> Tidsangivelse:</h6>
                 <li>45 minutter</li>
+                <a class="btn btn-primary easy-modal-open btn-sm" href="#test">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
+            <div id="test" class="easy-modal">
+                test
+            </div>
             </ul>
                 
             </div> <!-- col end -->
@@ -428,20 +443,13 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
 
 		$('.easy-modal-open').click(function(e) {
 			var target = $(this).attr('href');
+            console.log(target);
 			$(target).trigger('openModal');
 			e.preventDefault();
 		});
 
 		$('.easy-modal-close').click(function(e) {
 			$('.easy-modal').trigger('closeModal');
-		});
-
-		$('.easy-modal-animated').easyModal({
-			top: 200,
-			overlay: 0.2,
-			transitionIn: 'animated bounceInLeft',
-			transitionOut: 'animated bounceOutRight',
-			closeButtonClass: '.animated-close'
 		});
 	});
 	</script>
