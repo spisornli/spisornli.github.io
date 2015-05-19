@@ -2,6 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900,300italic,400italic);
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300,800);
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand|Sue+Ellen+Francisco|Neucha);
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand|Schoolbell);
+@import url(http://fonts.googleapis.com/css?family=Economica:400,700|Oswald:400,700);
+@import url(http://fonts.googleapis.com/css?family=Jolly+Lodger|Medula+One);
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
@@ -39,13 +43,6 @@ a.btn-info:visited {
    max-width: 150px;
     margin: 0 auto;
 }
-
-
-.page-title {
-   margin-bottom: .35em;
-}
-
-
 
 
 a.slide-pagination {
@@ -207,6 +204,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     .fa {
         margin-right: 6px;
         color: rgba(0,0,0,0.55);
+        
     }
  
 }
@@ -228,7 +226,12 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
-
+.item-title {
+    margin-bottom: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+}
 
 .item-info {
     font-size: 13px;
@@ -280,7 +283,35 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     border-radius: 2px;
     padding: 8% 10% 10% 10%; 
     box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
-    text-align: center;
+    text-align: left;
+    p {
+        font-size: $font-size-small;
+    }
+    
+    .start-button {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 16px;
+        color: $text-color;
+        padding: 5px 12px 6px 12px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.08);
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        
+        .fa {
+            margin-left: 3px;
+            color: rgba(0,0,0,0.6);
+        }
+        
+        &:hover {
+            text-decoration: none;
+            background: rgba(255,255,255,0.13);
+            border-color: rgba(255,255,255,0.4);
+        }
+    }
 }
 
 .inverted {
@@ -290,7 +321,18 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         color: $text-color-invert; 
     }
-
+    
+    .start-button {
+        color: $text-color-invert;
+        border: 1px solid rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.05);
+        .fa { color: rgba(255,255,255,0.5); }
+        
+        &:hover {
+            background: rgba(0,0,0,0.1);
+            border-color: rgba(0,0,0,0.3);
+        }
+    }
 }
 
 
