@@ -319,12 +319,22 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
     .image-wrapper {
         height: 230px;
-        margin-bottom: 60px;
+    
+    }
+    
+    .page-title {
+        margin-bottom: 25px;
+        margin-top: 30px;
     
     }
     
     p {
+        font-size: 120%;
         font-weight: 500;
+    }
+    
+    .start-button {
+        margin-top: 30px;
     }
     
 }
@@ -362,20 +372,20 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         margin: 15px 0 10px 0;
         font-size: 20px;
         font-weight: 300;
-        padding: 4px 14px 6px 13px;
+        padding: 4px 14px 5px 13px;
         border-radius: 4px;
         font-weight: 400;
         
-        background: rgba($text-color-invert, .7);
-        color: rgba($text-color, .8);
+        background: rgba($text-color, .03);
+        color: rgba($text-color, .65);
         
         
         .fa {margin-left: 7px;font-size: 18px;}
         
         &:hover {
             text-decoration: none;
-            background: rgba($text-color-invert, .9);
-            color: rgba($text-color, .9);
+            background: rgba($text-color, .05);
+            color: rgba($text-color, .8);
         }
     }
 
