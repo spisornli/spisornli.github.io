@@ -9475,6 +9475,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 /* line 795, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .gradient-overlay {
   position: fixed;
+  pointer-events: none;
   bottom: 0;
   left: 0;
   right: 0;
