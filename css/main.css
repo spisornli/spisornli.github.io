@@ -9469,7 +9469,13 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   .popup-brand img {
     max-width: 100%; }
 
-/* line 790, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 789, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.content-block {
+  border-bottom: 5px solid rgba(34, 34, 34, 0.02);
+  margin-bottom: 2.5em;
+  padding-bottom: 2em; }
+
+/* line 796, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .gradient-overlay {
   position: fixed;
   bottom: 0;

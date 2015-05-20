@@ -786,6 +786,12 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     }
 }
 
+.content-block {
+    border-bottom: 5px solid rgba($text-color, .02);
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    
+}
 
 .gradient-overlay {
     position: fixed;
