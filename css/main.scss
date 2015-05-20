@@ -614,9 +614,11 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 .modal {
-    max-width: 600px;
     background-color: #fff;
     padding: 2em;
-    height: auto;
     color: #222;
+    bottom: 15%;
+    top: 15%;
+    left: 15%;
+    right: 15%;
 }
