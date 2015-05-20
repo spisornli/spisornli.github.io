@@ -9393,7 +9393,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   line-height: 1;
-  margin: 40px 0 60px 0;
+  margin: 40px 0 55px 0;
   font-size: 4.5em; }
 
 /* line 706, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -9479,7 +9479,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   bottom: 0;
   left: 0;
   right: 0;
-  height: 140px;
+  height: 200px;
   z-index: 9;
   background: -moz-linear-gradient(top, rgba(242, 242, 242, 0) 0%, #f2f2f2 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(242, 242, 242, 0)), color-stop(100%, #f2f2f2));
