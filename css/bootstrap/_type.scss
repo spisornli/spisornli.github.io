@@ -34,8 +34,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 1.7);
+  margin-top: ($line-height-computed / 0.65);
+  margin-bottom: ($line-height-computed / 1.2);
   letter-spacing: 0em;
 
   small,
@@ -46,8 +46,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: ($line-height-computed / 0.8);
-  margin-bottom: ($line-height-computed / 1.5);
+  margin-top: ($line-height-computed / .8);
+  margin-bottom: ($line-height-computed / 1.35);
 
   small,
   .small {
