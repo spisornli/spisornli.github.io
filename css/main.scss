@@ -65,7 +65,7 @@ hr {
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: none;
     height: 0;
-    margin: 60px 0 40px 0;
+    margin: 40px 0 40px 0;
 }
 
 .slide {
@@ -220,11 +220,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
     li {
         display: inline-block;
-        font-size: $font-size-small;
-        padding: 4px 8px 5px 8px;
-        background: rgba($text-color, .05);
-        margin-top: 4px;
-        border-radius: 2px;
         word-break: keep-all;
     }
     
