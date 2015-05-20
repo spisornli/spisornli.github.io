@@ -636,31 +636,31 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     /* NAV FAG FARVER */
     
     .madkundskab {
-        a:hover, a:focus { background: lighten($madkundskab, 15%); }
+        a:hover, a:focus { background: lighten($madkundskab, 25%); }
         a:after { color: lighten($madkundskab, 15%); }
     }
     .madkundskab.active > a { background: lighten($madkundskab, 25%); }
     
     .natur-teknologi {
-        a:hover, a:focus { background: lighten($natur-teknologi, 15%); }
+        a:hover, a:focus { background: lighten($natur-teknologi, 25%); }
         a:after { color: lighten($natur-teknologi, 15%); }
     }
     .natur-teknologi.active > a { background: lighten($natur-teknologi, 25%); }
     
     .dansk {
-        a:hover, a:focus { background: lighten($dansk, 25%); }
+        a:hover, a:focus { background: lighten($dansk, 45%); }
         a:after { color: lighten($dansk, 25%); }
     }
-    .dansk.active > a { background: lighten($dansk, 35%); }
+    .dansk.active > a { background: lighten($dansk, 45%); }
     
     .matematik {
-        a:hover, a:focus { background: lighten($matematik, 5%); }
-        a:after { color: lighten($matematik, 5%); }
+        a:hover, a:focus { background: lighten($matematik, 35%); }
+        a:after { color: lighten($matematik, 15%); }
     }
-    .matematik.active > a { background: lighten($matematik, 8%); }
+    .matematik.active > a { background: lighten($matematik, 35%); }
     
     .historie {
-        a:hover, a:focus { background: lighten($historie, 15%); }
+        a:hover, a:focus { background: lighten($historie, 25%); }
         a:after { color: lighten($historie, 15%); }
     }
     .historie.active > a { background: lighten($historie, 25%); }  
