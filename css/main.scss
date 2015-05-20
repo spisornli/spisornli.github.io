@@ -55,7 +55,18 @@ a.btn-info:visited {
     color: $btn-info-color;
 }
 
+.row {
+    margin: 0 5%;
 
+}
+
+hr {
+    background: none;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: none;
+    height: 0;
+    margin: 60px 0 40px 0;
+}
 
 .slide {
     position: relative;
@@ -210,10 +221,11 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     li {
         display: inline-block;
         font-size: $font-size-small;
-        padding: 4px 8px 6px 8px;
-        background: darken($madkundskab, 5%);
+        padding: 4px 8px 5px 8px;
+        background: rgba($text-color, .05);
         margin-top: 4px;
         border-radius: 2px;
+        word-break: keep-all;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -251,10 +263,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .item-title {
     line-height: 1.3;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 22px;
     letter-spacing: -0.02em;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     text-transform: none;
 }
 
@@ -296,6 +308,11 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     }
 }
 
+
+
+
+
+
 .content-wrapper {
     max-width: 800px;
     margin: 0 auto 0 auto;
@@ -304,6 +321,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         height: 230px;
         margin-bottom: 60px;
     
+    }
+    
+    p {
+        font-weight: 500;
     }
     
 }
@@ -324,53 +345,71 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     padding: 8% 10% 10% 10%; 
     box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
     text-align: center;
+    
     p {
         font-size: $font-size-small;
-        color: rgba(255,255,255,0.9) !important;
-        font-weight: 300;
+        color: rgba($text-color, .7);
+        font-weight: 400;
+        line-height: 1.35;
     }
     
     
-}
-
-.inverted {
-    
-    p,
-    h1, h2, h3, h4, h5, h6,
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-        color: $text-color-invert; 
-    }
-    
-    .start-button {
-
-        .fa { }
-        
-        &:hover {
-
-        }
-    }
 }
 
 
 .start-button {
         display: inline-block;
-        color: rgba($text-color-invert, .8);
-        margin: 16px 0 12px 0;
+        margin: 15px 0 10px 0;
         font-size: 20px;
         font-weight: 300;
         padding: 4px 14px 6px 13px;
         border-radius: 4px;
-        background: rgba(0,0,0,0.05);
         font-weight: 400;
+        
+        background: rgba($text-color-invert, .7);
+        color: rgba($text-color, .8);
+        
         
         .fa {margin-left: 7px;font-size: 18px;}
         
         &:hover {
             text-decoration: none;
-            background: rgba(0,0,0,0.1);
-            color: rgba($text-color-invert, 1);
+            background: rgba($text-color-invert, .9);
+            color: rgba($text-color, .9);
         }
     }
+
+
+.inverted {
+    
+
+    h1, h2, h3, h4, h5, h6,
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        color: $text-color-invert; 
+    }
+    
+    p {
+        color: rgba($text-color-invert, .8);
+    }
+    
+    
+    .start-button {
+        background: rgba($text-color, .5);
+        color: rgba($text-color-invert, .8);
+        
+        
+        .fa { }
+        
+        &:hover {
+            background: rgba($text-color, .7);
+            color: rgba($text-color-invert, .9);
+
+        }
+    }
+}
+
+
+
 
 .btn .fa {
     margin-left: 7px;
@@ -630,13 +669,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
-.madkundskab-popup .image-wrapper {
-    background: darken($madkundskab-dark, 10%);
-}
-
-.tema01-popup .image-wrapper {
-    background: $brand-primary-dark;
-}
 
 
 
@@ -645,7 +677,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     font-family: $headingsAmaticBold-font-family;
     text-transform: uppercase;
     line-height: 1;
-    margin: 40px 0 40px 0;
+    margin: 50px 0 40px 0;
 }
 
 
@@ -656,10 +688,19 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 .popup .image-wrapper {
-    height: 300px;
+    height: 350px;
     background: rgba(0,0,0,0.03);
     padding: 50px 0 65px 0;
     margin: 0;
+}
+
+
+.madkundskab-popup .image-wrapper {
+    background: darken($madkundskab-dark, 10%);
+}
+
+.tema01-popup .image-wrapper {
+    background: $brand-primary-dark;
 }
 
 
@@ -680,7 +721,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     top:0%;
     left:50%;
     max-width: 680px;
-    border-top: 10px solid rgba(0,0,0,0.7);
     
     
     ms-transform: translate(-50%,0%); 
@@ -689,7 +729,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 .popup-content-inner {
-    margin: 0px 0 200px 0;
+    margin: 25px 0 200px 0;
 
 }
 
@@ -705,8 +745,9 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .popup-brand {
     display: block;
-    width: 100px;
-    margin: 12px 0 18px 0;
+    width: 120px;
+    margin: 20px 0 20px -5px;
+    opacity: .2;
     
     img {
     max-width: 100%;

@@ -28,6 +28,12 @@
     position: relative;
     top: -1px;
   }
+    .label & {
+    position: relative;
+    top: -1px;
+    padding: 3px 7px 5px 7px;
+        margin-left: 5px;
+  }
 
   .btn-xs &,
   .btn-group-xs > .btn & {
