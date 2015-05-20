@@ -613,12 +613,50 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     float: right;
 }
 
-.modal {
-    background-color: #fff;
+.popup {
+    position: relative;
+    background-color: $body-bg;
     padding: 2em;
     color: #222;
-    bottom: 15%;
-    top: 15%;
-    left: 15%;
-    right: 15%;
+    bottom: 0;
+    right: auto;
+    width: 100%;
+    overflow-y: scroll;
+    top:130px;
+
+}
+
+.popup-content {
+    position: absolute;
+    top:0%;
+    left:50%;
+    max-width: 800px;
+    
+    
+    ms-transform: translate(-50%,0%); 
+   	-webkit-transform: translate(-50%,0%); 
+    transform: translate(-50%,0%);
+}
+
+.popup-content-inner {
+    margin: 15% 0;
+
+}
+
+
+.popup-close {
+    float: right;
+    background: $body-bg;
+    border: none;
+    font-size: 50px;
+    color: rgba(0,0,0,0.3);
+}
+
+.popup-brand {
+    width: 100px;
+    
+    img {
+    max-width: 100%;
+    
+    }
 }

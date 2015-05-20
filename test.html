@@ -204,7 +204,7 @@
                 <p><big>Har I tænkt på, at det I spiser har betydning for klimaet? 
 Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</big></p>
                 </div>
-            <a type="button" class="btn btn-primary btn-sm modal-open" href="#beskrivelse">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
+            <a type="button" class="btn btn-primary btn-sm popup-open" href="#beskrivelse">Se forløbs beskrivelse <i class="fa fa-expand"></i></a>
             
            
                 
@@ -406,29 +406,45 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
         
     </div> <!-- fullpage end -->
  
-    <div id="beskrivelse" class="modal">
-               <button class="modal-close">Luk</button>
+    <div id="beskrivelse" class="popup">
+        <button class="popup-close"><i class="fa fa-times"></i></button>
+        <div class="popup-content">
+               <div class="popup-content-inner">
+                   <a class="popup-brand" href="#firstPage/0">
+          <img alt="Brand" src="images/spisornli_logo.svg"/>
+      </a>
+                   <h1 class="">Er jeres mad god for klimaet?</h1>
+                   
+                   
                 <p>Madpyramiden er et pyramideformet billede, der viser, hvad man bør spise.</p>
             <p>Før i tiden var madpyramiden kun lavet ud fra, hvad der var sundt for os mennesker at spise. Den moderne madpyramide viser også, hvad der er bedst for klimaet at spise. Derfor bliver den også kaldt den klimavenlige madpyramide.</p>
             <p>Ved at kigge på madpyramiden kan I finde ud af om jeres mad er god eller dårlig for klimaet. I skal spise mest af det fra bunden, lidt mindre af det fra midten og mindst af det fra toppen.</p>
+            
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                    </div>   
+                </div>
             </div>
     
      <script type="text/javascript">
 	$(function() {
-		$('.modal').easyModal({
+		$('.popup').easyModal({
+            top:0,
 			overlay: 0.2,
             hasVariableWidth: true,
             zIndex:function(){return 10000;}
 		});
 
-		$('.modal-open').click(function(e) {
+		$('.popup-open').click(function(e) {
 			var target = $(this).attr('href');
 			$(target).trigger('openModal');
 			e.preventDefault();
 		});
 
-		$('.modal-close').click(function(e) {
-			$('.modal').trigger('closeModal');
+		$('.popup-close').click(function(e) {
+			$('.popup').trigger('closeModal');
 		});
 	});
 	</script>
