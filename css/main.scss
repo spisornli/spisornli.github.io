@@ -220,7 +220,12 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
     li {
         display: inline-block;
-        word-break: keep-all;
+        font-size: 85%;
+        list-style-type: none;
+        padding: .3em .7em .4em .7em;
+        background: rgba(0,0,0,0.05);
+        border-radius: 4px;
+        margin-bottom: 4px;
     }
     
     h1, h2, h3, h4, h5, h6 {
@@ -434,6 +439,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     background: $brand-primary-dark;
     text-align: center;
 }
+
+
+
+
 
 #section-madkundskab {
     background: $madkundskab;
@@ -708,13 +717,21 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     margin: 0;
 }
 
-
-.madkundskab-popup .image-wrapper {
-    background: darken($madkundskab-dark, 10%);
-}
-
 .tema01-popup .image-wrapper {
     background: $brand-primary-dark;
+}
+
+
+.madkundskab-popup {
+
+    .prefix {
+        color: $madkundskab-dark;
+    }
+    
+    .image-wrapper {
+        background: darken($madkundskab-dark, 10%);
+    }
+
 }
 
 
