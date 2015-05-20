@@ -412,7 +412,8 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
 	$(function() {
 		$('.modal').easyModal({
 			top: 200,
-			overlay: 0.2
+			overlay: 0.2,
+            zIndex:function(){return 1000;}
 		});
 
 		$('.modal-open').click(function(e) {
