@@ -9552,44 +9552,51 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 /* line 894, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-close {
   position: fixed;
-  top: 40px;
+  top: 60px;
   right: 60px;
   background: transparent;
   border: none;
-  font-size: 60px;
-  color: rgba(0, 0, 0, 0.2);
-  height: 80px;
-  width: 80px;
-  border-radius: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  padding: 0; }
-  /* line 909, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.1); }
+  /* line 906, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-close:after {
-    content: "\f017";
+    content: "\f057";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
+    line-height: 0px;
+    font-size: 100px;
     position: absolute;
-    top: 0; }
+    top: 50%;
+    left: 50%;
+    ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%); }
+  /* line 923, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .popup-close:hover {
+    color: rgba(0, 0, 0, 0.2); }
 
-/* line 922, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 932, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-brand {
   display: block;
   width: 180px;
   margin: 20px 0 22px -5px;
   opacity: .8; }
-  /* line 928, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 938, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-brand img {
     max-width: 100%; }
 
-/* line 933, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 943, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .content-block {
   border-bottom: 5px solid rgba(34, 34, 34, 0.02);
   margin: 1em 0;
   padding-bottom: 2em; }
 
-/* line 940, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 950, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .gradient-overlay {
   position: fixed;
   pointer-events: none;
