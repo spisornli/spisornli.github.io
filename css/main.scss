@@ -62,10 +62,10 @@ a.btn-info:visited {
 
 hr {
     background: none;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
     border-top: none;
     height: 0;
-    margin: 40px 0 40px 0;
+    margin: 30px 0;
 }
 
 .slide {
@@ -669,90 +669,167 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     font-family: $headingsAmaticBold-font-family;
     text-transform: uppercase;
     line-height: 1;
-    margin: 40px 0 55px 0;
+    margin: 40px 0 35px 0;
     font-size: 4.5em;
 }
 
 
 .popup .task-list-wrapper {
-    padding: 10px 14px 10px 14px;
-    background: rgba(0,0,0,0.03);
     border-radius: 4px;
     font-size: 75%;
-    margin-bottom: 5px;
+    font-weight: 400;
+    overflow: hidden;
+    margin: 15px 0 35px 0;
+    padding: 15px 20px;
+    background: rgba($madkundskab-dark, .08);
+    
+
+    .task-list-box {
+        
+        margin-bottom: 15px;
+    }
+    
+    .task-list-box:nth-child(3) {
+        border-bottom: none;
+    }
     
     .task-label {
-        padding-right: 10px;
-        font-weight: 500;
-        float: left;
-        display: inline-block;
-        width: 80px;
+        display: block;
+        text-transform: uppercase;
+        margin: 6px 0 6px 0;
+        letter-spacing: 0.0em;
+        font-weight: 600;
+        font-size: 15px;
+        
+        .fa {
+            margin-right: 4px;
+            font-size: 18px;
+            color: rgba($madkundskab-dark, 1);
+        }
     }
+    
 
     ul.content-list {
         list-style-type: none;
         padding: 0;
-        display: inline-block; 
         margin: 0;
-        overflow: hidden;
-        width: 570px;
     
         li {
             display: inline-block;
             list-style-type: none;
-            padding: .0em;
-            margin-right: 4px;
+            padding: .13em .6em;
+            margin: 0px 0px 3px 0px;
+            background: rgba($madkundskab,1);
+            border-radius: 2px;
+            font-weight: 400;
+            color: white;
         }
         
         li:after {
-            content: ',';
+            content: '';
         }
         
         li:last-child:after {
-            content: '.';
+            content: '';
         }
+    }
+
+
 }
 
 
 .popup .task-nav {
-    margin-bottom: 7px;
-    font-size: 75%;
-    padding: 10px 14px 10px 14px;
-    background: rgba(0,0,0,0.03);
+    margin-bottom: 10px;
+    background-color: $madkundskab-dark;
+    color: #fff;
     border-radius: 4px;
+    border: none;
+    line-height: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    font-size: 75%;
+    font-weight: 400;
     
     .task-nav-title {
         float: left;
         display: inline-block;
+        font-weight: 600;
+        background: $madkundskab;
+        padding: 0 13px 0 16px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
     
-    ul.navbar-nav {
-    
-    
+    .badge {
+        font-size: inherit;
+        padding: 3px 6px 4px 7px;
+        background-color: rgba($madkundskab-dark, 0.7);
+        border: 1px solid rgba($madkundskab-dark, 0.5);
+        text-align: center;
+        border-radius: 50px;
+        margin: 0 0px 0 6px;
+        min-width: auto;
     }
+    
+    .nav > li > a {
+        display: block;
+        padding: 0px 15px;
+        line-height: 40px;
+        height: 40px;
+        background-color: $madkundskab-dark;
+        border-left: 1px solid rgba(0,0,0,0.08);
+        color: #fff;
+    }
+    
+    .nav > li > a:hover {
+        background-color:  darken($madkundskab-dark, 5%);
+    }
+    
         
     
         .fa {
             margin-right: 6px;
-            color: rgba(0,0,0,0.55);
-        
+            color: rgba(255,255,255,1);
         }
- 
-    }
-
-}
-
-
-.popup .task-nav {
-    background-color: #4ECDC4;
-    color: #fff;
-    font-size: 80%;
-    margin-bottom: 10px;
     
-    a {
-        color: #fff;
+    .task-nav-time {
+        float: right;
+        padding: 0 16px 0 38px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        background: rgba(0,0,0,0.08);
+        position: relative;
+        
+        
+        &:before {
+            content: "\f017";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            font-size: 20px;
+            position: absolute;
+            left:13px;
+            top:0px;
+            color: $madkundskab;
+            
+        }
     }
+ 
 }
+
+
+
+.content-divider {
+    background-color: $madkundskab;
+    height: 5px;
+    border-radius: 2px;
+    margin: 22px 0px;
+}
+
 
 
 
@@ -816,13 +893,27 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .popup-close {
     position: fixed;
-    top:30px;
-    right:50px;
-    background: $body-bg;
+    top:40px;
+    right:60px;
+    background: transparent ;
     border: none;
-    font-size: 80px;
-    color: rgba(0,0,0,0.3);
-    margin-right: 15px;
+    font-size: 60px;
+    color: rgba(0,0,0,0.2);
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: 2px solid rgba(0,0,0,0.2);
+    line-height: 0;
+    
+    .fa {
+        position: absolute;
+        top:50%;
+        left:50%;
+        ms-transform: translate(-50%,-50%); 
+   	    -webkit-transform: translate(-50%,-50%); 
+        transform: translate(-50%,-50%);
+    
+    }
 }
 
 .popup-brand {
@@ -838,7 +929,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .content-block {
     border-bottom: 5px solid rgba($text-color, .02);
-    margin-bottom: 2.5em;
+    margin: 1em 0;
     padding-bottom: 2em;
     
 }
@@ -849,7 +940,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 100px;
     z-index: 9;
     
     background: -moz-linear-gradient(top,  rgba(242,242,242,0) 0%, rgba(242,242,242,1) 100%);
