@@ -9384,7 +9384,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   font-size: 75%;
   font-weight: 400;
   overflow: hidden;
-  margin: 15px 0 35px 0;
+  margin: 15px 0 15px 0;
   padding: 15px 20px;
   background: rgba(42, 149, 142, 0.08); }
   /* line 687, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -9562,33 +9562,34 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   width: 80px;
   border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  line-height: 0; }
-  /* line 908, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  .popup-close .fa {
+  padding: 0; }
+  /* line 909, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .popup-close:after {
+    content: "\f017";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    top: 0; }
 
-/* line 919, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 922, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-brand {
   display: block;
   width: 180px;
   margin: 20px 0 22px -5px;
   opacity: .8; }
-  /* line 925, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 928, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-brand img {
     max-width: 100%; }
 
-/* line 930, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 933, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .content-block {
   border-bottom: 5px solid rgba(34, 34, 34, 0.02);
   margin: 1em 0;
   padding-bottom: 2em; }
 
-/* line 937, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 940, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .gradient-overlay {
   position: fixed;
   pointer-events: none;

@@ -679,7 +679,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     font-size: 75%;
     font-weight: 400;
     overflow: hidden;
-    margin: 15px 0 35px 0;
+    margin: 15px 0 15px 0;
     padding: 15px 20px;
     background: rgba($madkundskab-dark, .08);
     
@@ -903,17 +903,20 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     width: 80px;
     border-radius: 50px;
     border: 2px solid rgba(0,0,0,0.2);
-    line-height: 0;
+    padding: 0;
     
-    .fa {
+    
+    &:after {
+        content: "\f017";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
         position: absolute;
-        top:50%;
-        left:50%;
-        ms-transform: translate(-50%,-50%); 
-   	    -webkit-transform: translate(-50%,-50%); 
-        transform: translate(-50%,-50%);
-    
+        top:0;
     }
+    
+    
 }
 
 .popup-brand {
