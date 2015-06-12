@@ -719,10 +719,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             list-style-type: none;
             padding: .13em .6em;
             margin: 0px 0px 3px 0px;
-            background: rgba($madkundskab,1);
+            background: rgba($madkundskab-dark, .1);
             border-radius: 2px;
-            font-weight: 400;
-            color: white;
+            font-weight: 300;
+            color: darken($madkundskab-dark, 20%);
         }
         
         li:after {

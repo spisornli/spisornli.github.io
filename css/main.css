@@ -9417,10 +9417,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
       list-style-type: none;
       padding: .13em .6em;
       margin: 0px 0px 3px 0px;
-      background: #4ecdc4;
+      background: rgba(42, 149, 142, 0.1);
       border-radius: 2px;
-      font-weight: 400;
-      color: white; }
+      font-weight: 300;
+      color: #144642; }
     /* line 728, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .popup .task-list-wrapper ul.content-list li:after {
       content: ''; }
