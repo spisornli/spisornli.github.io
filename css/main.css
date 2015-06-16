@@ -9454,7 +9454,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     margin: 0; }
   /* line 764, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .task-nav-time {
-    float: left;
+    float: right;
     padding: 0 16px 0 38px;
     background: rgba(0, 0, 0, 0.08);
     position: relative; }
