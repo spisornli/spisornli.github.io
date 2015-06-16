@@ -244,55 +244,105 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
-.item-content .image-wrapper {
-    display: inline-block;
-    height: 220px;
-    width: 350px;
-    float: left;
+.item-wrapper {
+    display: block;
     overflow: hidden;
+    padding: 0px;
+    max-width: 940px;
+    height: 400px;
+    margin: 0px auto 0 auto;
     position: relative;
-    top: 48%;
-    padding: 0px 50px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.item-content .text-wrapper {
-    display: inline-block;
-    width: 550px;
-    padding: 0px 70px 0px 0px;
-    position: relative;
-    top: 49%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    
-    .btn {
-        background: rgba(0,0,0,0.7);
-        border-color: rgba(0,0,0,0.8);
-        color: $text-color-invert;
-        font-size: 12px;
-        margin-top: 20px;
-        border-radius: 2px;
-    }
-    
-    .task-header { 
-        display: block;
-        margin-bottom: 20px;
-        font-size: 18px;
-        font-weight: 400;
-    }
-    
-    .task-time {
-        background: transparent;
-        border-color: transparent;
-        color: $text-color;
         
-        .fa {
-            margin-right: 4px;
+        .image-wrapper {
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            float: left;
+    
+            .illu-circle {
+                width: 250px;
+                height: 250px;
+                margin: 0px;
+                position: relative;
+                top:50%;
+                left:50%;
+                -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
         }
-    }
+
+
+        .text-wrapper {
+            display: inline-block;
+            left: 0px;
+            width: 540px;
+            position: relative;
+            top:48%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            overflow: hidden;
+                
+            .btn {
+                background: rgba(0,0,0,0.7);
+                border-color: rgba(0,0,0,0.8);
+                color: $text-color-invert;
+                font-size: 12px;
+                margin-top: 20px;
+                border-radius: 2px;
+            }
+    
+            .task-header { 
+                display: block;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-weight: 300;
+                color: rgba($text-color,0.7);
+                letter-spacing: 0.05em;
+            }
+    
+            .task-num {
+                padding-right: 8px;
+                text-transform: uppercase;
+                &:after {
+                    content: ' |';
+                    margin-left: 6px;
+                    color: rgba(0,0,0,0.2);
+                }
+            }
+    
+            .task-time {
+                background: transparent;
+                border-color: transparent;
+            
+                .fa {
+                    margin-right: 4px;
+                }
+            }
+            
+            .item-title {
+                font-family: $headingsAmaticBold-font-family;
+                text-transform: uppercase;
+                line-height: 1;
+                font-weight: normal;
+                font-size: 60px;
+                margin-bottom: 25px;
+                margin-top: 10px;
+                letter-spacing: 0.04em;
+            }  
+        
+            p {
+                color: rgba($text-color, .7);
+                font-weight: 300;
+                line-height: 1.35;
+                font-size: 125%;
+                padding-right: 60px;
+            }
+        }   
     
 }
 
@@ -303,55 +353,9 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
-.item-title {
-    font-family: $headingsAmaticBold-font-family;
-    text-transform: uppercase;
-    line-height: 1;
-    font-weight: normal;
-    font-size: 55px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    letter-spacing: 0.04em;
-}
 
 
-.item-wrapper {
-    display: block;
-    background: $body-bg;
-    border-radius: 4px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.2);
-    overflow: hidden;
-    padding: 20px;
-    max-width: 940px;
-    margin: 30px auto 0 auto;
-}
 
-.item-content {
-    border-radius: 2px;
-    padding: 0px 0px 0px 0px; 
-    box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    
-
-    p {
-        color: rgba($text-color, .7);
-        font-weight: 400;
-        line-height: 1.35;
-    }
-    
-    .item-nav {
-        position: absolute;
-        top:0;
-        width: 100%;
-        margin: 0;
-        border-radius: 0;
-        background: rgba(0,0,0,0.2);
-    }
-    
-    
-}
 
 
 
@@ -359,6 +363,15 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 .content-wrapper {
     max-width: 800px;
     margin: 0 auto 0 auto;
+    
+    .btn {
+        background: rgba(0,0,0,0.7);
+        border-color: rgba(0,0,0,0.8);
+        color: $text-color-invert;
+        font-size: 12px;
+        margin-top: 20px;
+        border-radius: 2px;
+    }
     
     .image-wrapper {
         height: 230px;
@@ -384,31 +397,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
-
-
-.start-button {
-        display: inline-block;
-        margin: 15px 0 10px 0;
-        font-size: 20px;
-        font-weight: 300;
-        padding: 4px 14px 5px 13px;
-        border-radius: 4px;
-        font-weight: 400;
-    
-        background: rgba($text-color, .03);
-        color: rgba($text-color, .65);
-        
-        
-        .fa {margin-left: 7px;font-size: 18px;}
-        
-        &:hover {
-            text-decoration: none;
-            background: rgba($text-color, .05);
-            color: rgba($text-color, .8);
-        }
-    }
-
-
 .inverted {
     
 
@@ -417,7 +405,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         color: $text-color-invert; 
     }
     
-    p {
+    .text-wrapper p {
         color: rgba($text-color-invert, .9);
     }
     
@@ -444,13 +432,21 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         color: $text-color;
     }
     
-    .task-time {
-        background: transparent;
-        border-color: transparent;
-        color: $text-color-invert;
+    .task-header {
+        color: rgba($text-color-invert, .8);
+        
+        .task-num:after {
+            color: rgba($body-bg, .3);
+        }
+        
+        .task-time {
+            background: transparent;
+            border-color: transparent;
+            
+        }
         
         .fa {
-            margin-right: 4px;
+                margin-right: 4px;
         }
     }
 }
@@ -492,9 +488,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             border-right-color: rgba($madkundskab-dark, .5); 
         }        
     }
-    .item-content {
-        background: darken($madkundskab-dark, 10%); 
-    }
+  
 }
 
 
@@ -513,9 +507,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             border-right-color: rgba($natur-teknologi-dark, .5); 
         }        
     }
-    .item-content {
-        background: rgba($natur-teknologi, .8); 
-    } 
+
     
     .start-button {
         background: lighten($natur-teknologi, 20%);
@@ -540,9 +532,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             border-right-color: rgba($dansk-dark, .5); 
         }        
     }
-    .item-content {
-        background: desaturate($dansk-dark, 15%); 
-    } 
+
 }
 
 #section-matematik {
@@ -557,9 +547,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             border-right-color: rgba($matematik-dark, .5); 
         }        
     }
-    .item-content {
-        background: desaturate($matematik-dark, 20%);
-    } 
+   
 }
 
 #section-historie {
@@ -574,9 +562,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             border-right-color: rgba($historie-dark, .5); 
         }        
     }
-    .item-content {
-        background: desaturate($historie-dark, 40%);
-    } 
+  
 }
 
 
