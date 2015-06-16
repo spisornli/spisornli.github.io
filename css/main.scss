@@ -729,6 +729,9 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         line-height: inherit;
         height: 40px;
         background-color: rgba(0,0,0,0.04);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
     
     .brand-title {
@@ -745,7 +748,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         border: 1px solid rgba(0,0,0,0.04);
         text-align: center;
         border-radius: 50px;
-        margin: 0 0px 0 6px;
+        margin: 0 -2px 0 6px;
         min-width: auto;
     }
     
@@ -814,7 +817,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     background-color: #f9f9f9;
     border-radius: 4px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
         
     }
     
@@ -832,7 +835,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     }
     
     ul li + li::before {
-    padding: 0px 5px;
+    padding: 0px 8px;
     color: #CCC;
     content: "| ";
     }
