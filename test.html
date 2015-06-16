@@ -21,7 +21,7 @@
             
         function initialization(){
 			$('#fullpage').fullpage({
-                anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage' , '7thPage'],
+                anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
                 menu: '#myMenu',
 				verticalCentered: true,
                 slidesNavigation: false,
@@ -173,7 +173,6 @@
         <li data-menuanchor="4thPage" class="dansk"><a href="#4thPage">Dansk</a></li>
         <li data-menuanchor="5thPage" class="matematik"><a href="#5thPage">Matematik</a></li>
         <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
-        <li data-menuanchor="7thPage" class="example"><a href="#7thPage">Example</a></li>
     </ul>
     <div class="container-fluid">
      
@@ -215,21 +214,26 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
      </div>  <!-- section end -->
 
     
-    <div id="section-madkundskab" class="section">
-    <div class="slide">
+<div id="section-madkundskab" class="section">
+<div class="slide">
                 
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 01</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90 min </span></div>
-                        <div class="item-content inverted">
-                            <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
-
-        <h4 class="item-title"><a href="#secondPage/1">Oksekød eller æbler </a></h4>
-                            <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>
-        <a type="button" href="#madkundskab01" class="start-button popup-open" >Start <i class="fa fa-arrows-alt"></i></a>
-                            
-                           
-                            </div>
-                        </div>
+    <div class="item-wrapper">
+        <div class="item-content inverted">
+            <nav class="navbar item-nav">
+                <span class="navbar-brand"># 01</span>
+                <ul class="nav navbar-nav">
+                    <li><a class="item-menu popup-open" type="button" href="#madkundskab01"><i class="fa fa-arrows-alt"></i> Start</a></li>
+                    <li><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a></li>
+                </ul>
+                <span class="task-nav-time">90 min </span>
+            </nav>
+            
+            <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
+            <div class="text-wrapper">
+                <h4 class="item-title"><a href="#secondPage/1">Oksekød eller æbler </a></h4>
+                <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>                          </div>
+        </div>                        
+    </div>
 
     </div> <!-- slide end -->
     </div>  <!-- section end -->
@@ -237,16 +241,24 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
     <div id="section-natur-teknologi" class="section">
     <div class="slide"> 
                 
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 02</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
-                        <div class="item-content">
-                            <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
-
-                            <h3 class="item-title"><a href="#secondPage/1">Jorden: Et kæmpestort drivhus</a></h3>
-                            <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den betyder for vores klima, og hvad den har at gøre med vores mad.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
+    <div class="item-wrapper">
+        <div class="item-content">
+            <nav class="navbar item-nav">
+                <span class="navbar-brand"># 02</span>
+                <ul class="nav navbar-nav">
+                    <li><a class="item-menu popup-open" type="button" href="#"><i class="fa fa-arrows-alt"></i> Start</a></li>
+                    <li><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a></li>
+                </ul>
+                <span class="task-nav-time">90 min </span>
+            </nav>
+            
+            <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
+            <div class="text-wrapper">    
+                <h3 class="item-title"><a href="#secondPage/1">Jorden: Et kæmpestort drivhus</a></h3>
+                <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den betyder for vores klima, og hvad den har at gøre med vores mad.</p>
+            </div>
+        </div>
+    </div>
 
     </div>  <!-- slide end -->
     </div>  <!-- section end -->
@@ -254,16 +266,24 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
     <div id="section-dansk" class="section">
     <div class="slide">
                 
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 03</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90 - 115m </span></div>
-                        <div class="item-content inverted">
-                            <div class="image-wrapper"><img src="images/Tema01_Dansk01.svg" /></div>
-
-                            <h3 class="item-title"><a href="#secondPage/1">Klimamad på plakaten</a></h3>
-                            <p>Her lærer I, hvordan I kan fortælle om klimavenlig mad til jeres familie og venner, så de får lyst til at spise klimavenlig mad.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
+    <div class="item-wrapper">
+        <div class="item-content inverted">
+            <nav class="navbar item-nav">
+                <span class="navbar-brand"># 03</span>
+                <ul class="nav navbar-nav">
+                    <li><a class="item-menu popup-open" type="button" href="#"><i class="fa fa-arrows-alt"></i> Start</a></li>
+                    <li><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a></li>
+                </ul>
+                <span class="task-nav-time">90 min </span>
+            </nav>
+            
+            <div class="image-wrapper"><img src="images/Tema01_Dansk01.svg" /></div>
+            <div class="text-wrapper"> 
+                <h3 class="item-title"><a href="#secondPage/1">Klimamad på plakaten</a></h3>
+                <p>Her lærer I, hvordan I kan fortælle om klimavenlig mad til jeres familie og venner, så de får lyst til at spise klimavenlig mad.</p>
+            </div>
+        </div>
+    </div>
 
     </div>  <!-- slide end -->
     </div>  <!-- section end -->
@@ -271,16 +291,24 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
     <div id="section-matematik" class="section">
     <div class="slide"> 
                 
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 04</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90m </span></div>
-                        <div class="item-content inverted">
-                            <div class="image-wrapper"><img src="images/Tema01_Matematik01.svg" /></div>
-
-        <h3 class="item-title"><a href="#secondPage/1">Madpakke med CO2</a></h3>
-                            <p>Her kan I regne ud, om jeres mad er god eller dårlig for klimaet?</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
+    <div class="item-wrapper">
+        <div class="item-content inverted">
+            <nav class="navbar item-nav">
+                <span class="navbar-brand"># 04</span>
+                <ul class="nav navbar-nav">
+                    <li><a class="item-menu popup-open" type="button" href="#"><i class="fa fa-arrows-alt"></i> Start</a></li>
+                    <li><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a></li>
+                </ul>
+                <span class="task-nav-time">90 min </span>
+            </nav>
+            
+            <div class="image-wrapper"><img src="images/Tema01_Matematik01.svg" /></div>
+            <div class="text-wrapper"> 
+                <h3 class="item-title"><a href="#secondPage/1">Madpakke med CO2</a></h3>
+                    <p>Her kan I regne ud, om jeres mad er god eller dårlig for klimaet?</p>
+            </div>
+        </div>
+    </div>
 
     </div>  <!-- slide end -->
     </div>  <!-- section end -->
@@ -288,87 +316,27 @@ Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører ti
     <div id="section-historie" class="section">
     <div class="slide"> 
                 
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 05</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90m </span></div>
-                        <div class="item-content inverted">
-                            <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
-
-        <h3 class="item-title"><a href="#secondPage/1">Stenaldermad og klima</a></h3>
-                            <p>Her lærer I om stenalderen, og om hvordan livsgrundlaget har ændret sig gennem tiden. I lærer også om kosten i stenalderen var bedre for klimaet end det, vi spiser i dag.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
+        <div class="item-wrapper">                        
+            <div class="item-content inverted">
+                <nav class="navbar item-nav">
+                    <span class="navbar-brand"># 04</span>
+                    <ul class="nav navbar-nav">
+                        <li><a class="item-menu popup-open" type="button" href="#"><i class="fa fa-arrows-alt"></i> Start</a></li>
+                        <li><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a></li>
+                    </ul>
+                    <span class="task-nav-time">90 min </span>
+                </nav>
+                
+                <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
+                <div class="text-wrapper"> 
+                    <h3 class="item-title"><a href="#secondPage/1">Stenaldermad og klima</a></h3>
+                    <p>Her lærer I om stenalderen, og om hvordan livsgrundlaget har ændret sig gennem tiden. I lærer også om kosten i stenalderen var bedre for klimaet end det, vi spiser i dag.</p>
+                </div>
+            </div>
+        </div>
 
     </div>  <!-- slide end -->
     </div>  <!-- section end -->
-    
-    <div id="section-natur-teknologi" class="section">
-    <div class="slide"> 
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-3">
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 04</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90m </span></div>
-                        <div class="item-content">
-                            <div class="image-wrapper"><img src="images/Tema01_Matematik01.svg" /></div>
-
-        <h3 class="item-title"><a href="#secondPage/1">Er jeres frokost god for klimaet?</a></h3>
-                            <p>Har I tænkt på, at I kan regne ud, om jeres mad er god eller dårlig for klimaet? Det kan I bruge en CO2-beregner til.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
-                    </div> <!-- col end -->
-                    
-                    <div class="col-sm-3">
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 03</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 90 - 115m </span></div>
-                        <div class="item-content">
-                            <div class="image-wrapper"><img src="images/Tema01_Dansk01.svg" /></div>
-
-                            <h3 class="item-title"><a href="#secondPage/1">Hvordan bliver jeres frokost klimavenlig?</a></h3>
-                            <p>Her lærer I, hvad en prima-klima-frokost er, og hvordan I kan formidle det til jeres familie og venner, så de også får lyst til at spise klima-mad.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
-                    </div> <!-- col end -->
-                    
-                    <div class="col-sm-3">
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 02</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
-                        <div class="item-content">
-                            <div class="image-wrapper"><img src="images/Tema01_NaturTeknologi01.svg" /></div>
-
-                            <h3 class="item-title"><a href="#secondPage/1">Vi bor i et kæmpestort drivhus</a></h3>
-                            <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den har at gøre med vores mad, og hvad den betyder for vores klima.</p>
-                             <a href="#" class="start-button">Start <i class="fa fa-arrows-alt"></i></a>
-                            </div>
-                        </div>
-                    </div> <!-- col end -->
-                    
-                    <div class="col-sm-3">
-                    <div class="item-wrapper">
-                        <div class="item-info"><span class="opg-num"># 01</span><a class="item-menu" href="#"><i class="fa fa-download"></i> Download pdf</a><span class="opg-time"><i class="fa fa-clock-o"></i> 45m </span></div>
-                        <div class="item-content">
-                            <div class="image-wrapper"><img src="images/Tema01_Madkundskab01.svg" /></div>
-
-        <h4 class="item-title"><a href="#secondPage/1">Hvilken kost er god for klimaet?</a></h4>
-                            <p>I dette forløb lærer du, at vælge mad og lave hele måltider, der er gode for klimaet.</p>
-        <a type="button" href="#madkundskab01" class="start-button popup-open" >Start <i class="fa fa-arrows-alt"></i></a>
-                            
-                           
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    
-        </div> <!-- row end -->
-    </div> <!-- container end -->
-        
-    </div>  <!-- slide end -->
-    </div>  <!-- section end -->
-        
     
     
     
