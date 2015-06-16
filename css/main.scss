@@ -701,70 +701,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
-.popup .task-list-wrapper {
-    border-radius: 4px;
-    font-size: 75%;
-    font-weight: 400;
-    overflow: hidden;
-    margin: 15px 0 15px 0;
-    padding: 15px 20px;
-    background: #e9e9e9;
-    
-
-    .task-list-box {
-        
-        margin: 10px 0px 15px 0px;
-    }
-    
-    .task-list-box:nth-child(3) {
-        border-bottom: none;
-    }
-    
-    .task-label {
-        display: block;
-        text-transform: uppercase;
-        margin: 6px 0 10px 1px;
-        letter-spacing: 0.0em;
-        font-weight: 700;
-        font-size: 15px;
-        
-        
-        .fa {
-            margin-right: 5px;
-            font-size: 14px;
-            border-right: 1px dotted #aaa;
-            padding-right: 7px;
-
-        }
-    }
-    
-
-    ul.content-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    
-        li {
-            display: inline-block;
-            list-style-type: none;
-            padding: .13em .6em .14em .6em;
-            margin: 0px 0px 3px 0px;
-            background: #e2e2e2;
-            border-radius: 2px;
-            font-weight: 400;
-        }
-        
-        li:after {
-            content: '';
-        }
-        
-        li:last-child:after {
-            content: '';
-        }
-    }
-
-
-}
 
 
 
@@ -828,7 +764,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         }
     
     .task-nav-time {
-        float: right;
+        float: left;
         padding: 0 16px 0 38px;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
@@ -854,6 +790,31 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
+
+.task-nav-dropdown {
+    padding: 12px 15px;
+    margin-bottom: 27px;
+    list-style: outside none none;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    
+    li {
+        display: inline-block;
+        padding-left: 1px;
+    }
+    
+    li + li::before {
+    padding: 0px 5px;
+    color: #CCC;
+    content: "| ";
+    }
+}
+
+.num-list {
+    list-style: decimal outside initial !important;
+}
 
 
 .label {
