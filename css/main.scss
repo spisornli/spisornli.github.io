@@ -247,7 +247,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 .item-wrapper {
     display: block;
     overflow: hidden;
-    padding: 0px;
+    padding: 0;
     max-width: 940px;
     height: 400px;
     margin: 0px auto 0 auto;
@@ -261,6 +261,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             margin: 0;
             padding: 0;
             float: left;
+            margin-left: -30px;
     
             .illu-circle {
                 width: 250px;
