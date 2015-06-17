@@ -246,46 +246,43 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .item-wrapper {
     display: block;
-    overflow: hidden;
     padding: 0;
     max-width: 940px;
-    height: 400px;
     margin: 0px auto 0 auto;
     position: relative;
         
-        .image-wrapper {
+    .image-wrapper {
             display: inline-block;
-            width: 400px;
-            height: 400px;
             overflow: hidden;
             padding: 0;
             float: left;
-            margin-left: -50px;
-            margin-top: -20px;
-    
+            margin-left: -60px;
+            margin-top: -30px;
+            
+            
+            
             .illu-circle {
-                width: 280px;
-                height: 280px;
-                margin: 0px 0 0 0;
+                width: 330px;
+                height: 330px;
+                margin: 0px;
                 position: relative;
-                top:50%;
+                padding: 0px;
+                top:0%;
                 left:50%;
-                -webkit-transform: translate(-50%,-50%);
-                -ms-transform: translate(-50%,-50%);
-                transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,0%);
+                -ms-transform: translate(-50%,0%);
+                transform: translate(-50%, 0%);
+                
             }
         }
 
 
         .text-wrapper {
             display: inline-block;
-            left: 20px;
-            width: 540px;
+            left: 60px;
+            width: 660px;
             position: relative;
-            top:48%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            top:0;
             overflow: hidden;
             
                 
@@ -310,7 +307,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             .task-num {
                 padding-right: 6px;
                 text-transform: uppercase;
-                font-weight: 300;
+                font-weight: 400;
                 letter-spacing: 0.07em;
                 
                 &:after {
@@ -343,7 +340,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 text-transform: uppercase;
                 line-height: 1;
                 font-weight: normal;
-                font-size: 60px;
+                font-size: 75px;
                 margin-bottom: 25px;
                 margin-top: 10px;
                 letter-spacing: 0.04em;
@@ -353,7 +350,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 color: rgba($text-color, .7);
                 font-weight: 300;
                 line-height: 1.35;
-                font-size: 125%;
+                font-size: 150%;
             }
             
             
