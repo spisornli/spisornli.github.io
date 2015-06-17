@@ -258,15 +258,15 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             width: 400px;
             height: 400px;
             overflow: hidden;
-            margin: 0;
             padding: 0;
             float: left;
-            margin-left: -30px;
+            margin-left: -50px;
+            margin-top: -20px;
     
             .illu-circle {
-                width: 250px;
-                height: 250px;
-                margin: 0px;
+                width: 280px;
+                height: 280px;
+                margin: 0px 0 0 0;
                 position: relative;
                 top:50%;
                 left:50%;
@@ -279,7 +279,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
         .text-wrapper {
             display: inline-block;
-            left: 0px;
+            left: 20px;
             width: 540px;
             position: relative;
             top:48%;
@@ -287,6 +287,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             overflow: hidden;
+            
                 
             .btn {
                 background: rgba(0,0,0,0.7);
@@ -301,27 +302,39 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 display: block;
                 margin-bottom: 30px;
                 font-size: 18px;
-                font-weight: 300;
+                
                 color: rgba($text-color,0.7);
-                letter-spacing: 0.05em;
+                
             }
     
             .task-num {
-                padding-right: 8px;
+                padding-right: 6px;
                 text-transform: uppercase;
+                font-weight: 300;
+                letter-spacing: 0.07em;
+                
                 &:after {
-                    content: ' |';
-                    margin-left: 6px;
+                    content: '\f105';
+                    margin-left: 10px;
                     color: rgba(0,0,0,0.2);
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-decoration: inherit;
                 }
             }
     
             .task-time {
                 background: transparent;
                 border-color: transparent;
+                font-weight: 600;
+                letter-spacing: 0.0em;
+                
             
                 .fa {
                     margin-right: 4px;
+                    position: relative;
+                    font-size: 17px;
                 }
             }
             
@@ -341,8 +354,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 font-weight: 300;
                 line-height: 1.35;
                 font-size: 125%;
-                padding-right: 60px;
             }
+            
+            
+            
         }   
     
 }
