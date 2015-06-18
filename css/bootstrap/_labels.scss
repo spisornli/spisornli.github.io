@@ -70,3 +70,12 @@ a.label {
 .label-madkundskab {
   @include label-variant($label-madkundskab-bg);
 }
+
+.label-light {
+  @include label-variant($label-light-bg);
+    color: $label-link-hover-color;
+}
+
+.label-dark {
+  @include label-variant($label-dark-bg);
+}
