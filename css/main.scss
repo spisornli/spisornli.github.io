@@ -74,10 +74,6 @@
 }
 
 
-.btn {
-    margin-top: 20px;
-}
-
 a.btn-info:visited {
     color: $btn-info-color;
 }
@@ -256,7 +252,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             overflow: hidden;
             padding: 0;
             float: left;
-            margin-left: -60px;
+            margin-left: -50px;
             margin-top: -30px;
             
             
@@ -287,61 +283,26 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             
                 
             .btn {
-                background: rgba(0,0,0,0.7);
-                border-color: rgba(0,0,0,0.8);
-                color: $text-color-invert;
-                font-size: 13px;
-                margin-top: 20px;
-                border-radius: 2px;
-                text-transform: uppercase;
-                font-weight: 600;
-            }
-    
-            .task-header { 
-                margin-bottom: 20px;
-                               
-            }
-            
-            .item-label {
                 background: rgba($body-bg,0.9);
-                color: rgba($text-color,0.7);
-                font-size: 70%;
-            
-            }
-    
-            .task-num {
-                padding-right: 6px;
+                border-color: rgba($body-bg,0.9);
+                color: $text-color;
+                font-size: 15px;
+                border-radius: 2px;
                 text-transform: uppercase;
                 font-weight: 400;
-                letter-spacing: 0.07em;
-                background: rgba(244,244,244,1);
-                border-radius: 2px;
-                padding: 5px 15px;
-                
-                &:after {
-                    content: '\f105';
-                    margin-left: 10px;
-                    color: rgba(0,0,0,0.2);
-                    font-family: FontAwesome;
-                    font-style: normal;
-                    font-weight: normal;
-                    text-decoration: inherit;
-                }
+                letter-spacing: 0.05em;
             }
     
-            .task-time {
-                background: transparent;
-                border-color: transparent;
-                font-weight: 600;
-                letter-spacing: 0.0em;
-                
+            .task-header {}
             
-                .fa {
-                    margin-right: 4px;
-                    position: relative;
-                    font-size: 17px;
-                }
+            .item-label {
+                font-size: 70%;
+                background: rgba($body-bg,0.9);
+                color: $text-color;
+                border-radius: 2px;
             }
+    
+            
             
             .item-title {
                 font-family: $headingsAmaticBold-font-family;
@@ -349,13 +310,18 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 line-height: 1;
                 font-weight: normal;
                 font-size: 65px;
-                margin-bottom: 25px;
-                margin-top: 0px;
+                margin-bottom: 20px;
+                margin-top: 20px;
                 letter-spacing: 0.04em;
-                background: rgba($body-bg,0.9);
                 padding: 8px 15px 10px 15px;
                 display: inline-block;
                 border-radius: 2px;
+                background: rgba($text-color,0.9);
+                
+                a {
+                    color: $body-bg;
+                }
+                
             }  
         
             p {
@@ -363,6 +329,10 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 font-weight: 300;
                 line-height: 1.35;
                 font-size: 150%;
+                background: rgba($body-bg,0.9);
+                padding: 8px 15px 10px 15px;
+                display:inline-block;
+                margin-bottom: 20px;
             }
             
             
@@ -381,103 +351,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
-
-
-
-
-.content-wrapper {
-    max-width: 800px;
-    margin: 0 auto 0 auto;
-    
-    .btn {
-        background: rgba(0,0,0,0.7);
-        border-color: rgba(0,0,0,0.8);
-        color: $text-color-invert;
-        font-size: 12px;
-        margin-top: 20px;
-        border-radius: 2px;
-    }
-    
-    .image-wrapper {
-        height: 230px;
-    
-    }
-    
-    .page-title {
-        margin-bottom: 25px;
-        margin-top: 30px;
-    
-    }
-    
-    p {
-        font-size: 120%;
-        font-weight: 500;
-    }
-    
-    .start-button {
-        margin-top: 30px;
-    }
-    
-}
-
-
-
-.inverted {
-    
-
-    h1, h2, h3, h4, h5, h6,
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-        color: $text-color-invert; 
-    }
-    
-    .text-wrapper p {
-        color: rgba($text-color-invert, .9);
-    }
-    
-    
-    .start-button {
-        background: rgba($text-color, .2);
-        color: rgba($text-color-invert, .8);
-        
-        
-        .fa { }
-        
-        &:hover {
-            background: rgba($text-color, .4);
-            color: rgba($text-color-invert, .9);
-
-        }
-    }
-    
-    .text-wrapper {
-    
-        .btn {
-            background: rgba($body-bg, 1);
-            border-color: rgba($body-bg, 1);
-            color: $text-color;
-        }
-        
-        .item-label {
-                background: rgba($text-color,0.9);
-                color: $body-bg;
-            
-        }
-        
-        .item-title {
-                background: rgba($text-color,0.9);
-      
-            } 
-    }
-}
-
-
-
-
-
-
-
-.btn .fa {
-    margin-right: 4px;
+.btn .fa, .label .fa {
+    margin-right: 3px;
 }
 
 .btn-primary {
