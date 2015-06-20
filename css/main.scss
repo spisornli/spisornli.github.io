@@ -711,7 +711,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         line-height: inherit;
         height: 40px;
         background-color: rgba(0,0,0,0.04);
-        font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
@@ -880,7 +879,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 .label {
-    font-weight: 600;
+    font-weight: 400;
     padding: 0px 15px;
     height: 36px;
     line-height: 36px;
@@ -889,6 +888,13 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     margin: 2px 0;
 
     
+    .label-icon-left {
+        position: relative;
+        margin-right: 3px;
+        margin-left: -2px;
+        top:1px;
+        font-size: 18px;
+    }
 
     .badge {
         font-size: inherit;
