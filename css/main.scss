@@ -674,7 +674,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     height: 40px;
     min-height: 40px;
     padding: 0;
-    font-size: 13px;
+    font-size: 12px;
+    text-transform: uppercase;
     font-weight: 400;
     overflow: hidden;
     
@@ -721,6 +722,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         background-color: rgba(0,0,0,0.0);
         border-right: 1px solid rgba(0,0,0,0.08);
         color: #fff;
+        font-weight: 600;
     }
     
     .nav > li:last-child > a {
