@@ -52,7 +52,7 @@
     }
 }
 
-.content-block ol {
+ol {
     counter-reset: item;
     
     li {
@@ -337,7 +337,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
 }
 
-.image-wrapper img {
+img {
     width: 100%;
     height: auto;
 }
@@ -803,42 +803,46 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 .task-nav-list {
-    
     border-top: 1px solid #e5e5e5;
     padding-top: 14px;
     margin-top: 15px;
+    margin-bottom: 17px;
     
     ul, ol {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 400;
-    
-    
-        
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
     }
     
     ol {
-        display: block;
-        padding: 12px 15px 12px 30px;
-        background-color: #f9f9f9;
-        border-radius: 2px;
-        line-height: 1.6;
-        margin:2px 0;
+        padding: 0;
         
+        
+        li {
+            padding: 12px 15px 12px 35px;
+            background-color: #f9f9f9;
+            display: block;
+            border-radius: 2px;
+            margin:2px 0;
+            
+            &:before {
+                padding-right: 8px;
+            }
+        }
     }
     
     ul {
         list-style: outside none none;
         padding: 0;
         line-height: 1;
-    }
-    
-    ul li {
+        
+        li {
         display: inline-block;
         margin: 2px 0;
         padding: 12px 15px;
         background-color: #f9f9f9;
         
+        }
     }
     
     ul.docs-nav li {
@@ -853,16 +857,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         
         }
     }
-    
-    ul.anchor-nav {
-    
-    }
-    
-    ul li a, ul li {
-        
-    }
-    
-    ul li + li::before {}
     
     .fa {
         margin-right: 6px;    
@@ -1042,8 +1036,11 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 .popup .content-block {
-    margin: 35px 0px;
+    margin: 15px 0px 35px 0px;
     display: block;
+    
+    border-top: 1px solid #E5E5E5;
+    padding-top: 14px;
 }
 
 .popup .opgave-block {
@@ -1104,7 +1101,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     .item-wrapper {
         width: 940px;
         z-index: 1;
-        overflow: hidden;
+        overflow: visible;
+    }
+    
+    .image-wrapper {
+        position: absolute;
+        margin: 0;
+        top:50%;
+        left:-60px;
+        
+        ms-transform: translateY(-50%); 
+   	    -webkit-transform: translateY(-50%); 
+        transform: translateY(-50%);
+        
+        .illu-circle {
+            width: 500px;
+            height: auto; 
+        }
+    
+    }
+    
+    .text-wrapper {
+       left: 470px;
+        width: 650px;
     }
 
 }
@@ -1115,40 +1134,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     margin: 0 auto 0 auto;
     padding: 0;
     display: block;
-    width: 650px;
     text-align: left;
     
     
     li {
-        font-family: $headingsAmaticBold-font-family;
-        text-transform: uppercase;
-        line-height: 1;
-        font-weight: normal;
-        font-size: 55px;
-        margin-bottom: 6px;
-        letter-spacing: 0.04em;
-        padding: 8px 15px 10px 15px;
-        display: inline-block;
-        border-radius: 2px;
-        background: rgba($text-color,0.9);
+        font-family: inherit;
+        margin-bottom: 10px;
+        display:block;
+        position: relative;
+        
+        
         
                 
         a {
-            color: $body-bg;
+            font-family: $headingsAmaticBold-font-family;
+            color: rgba($body-bg,1);
+            display:inline-block;
+            padding: 12px 15px 12px 15px;
+            background: rgba(37,58,68,1);
+            border-radius: 2px;
+            font-size: 30px;
+            text-transform: uppercase;
+            line-height: 1;
+            font-weight: normal;
+            letter-spacing: 0.06em;
+            
+            
+            
+            &:hover {
+                text-decoration: none;
+            }
         }
     
+    }
+    
+    p {
+        font-size: 80% !important;
+        margin: 0 !important;
     }
 
 }
 
-.front-illu {
+
+.front-label {
     position: absolute;
-    top:40%;
-    left: 50%;
-    width: 1180px;    
-    ms-transform: translate(-50%,-50%); 
-   	-webkit-transform: translate(-50%,-50%); 
-    transform: translate(-50%,-50%);
-    z-index: 0;
+    top:-30px;
+    display: none;
 }
+.front-illu {
+    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto .1em auto
+}
+
+
+
+.front-footer {
+    text-align: center;
+    margin-top: 1em;
+    
+    .noah-logo {
+        width: 120px;
+        margin: 0px auto 0 auto;
+        
+
+    }
+
+}
+
+
+
 
