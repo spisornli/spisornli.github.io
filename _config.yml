@@ -13,6 +13,8 @@ sass_dir: css
 
 # Build settings
 markdown: kramdown
+collections:
+- blocks
 
 prose:
   rooturl: "_posts"
