@@ -9731,7 +9731,7 @@ img {
   #section-front .image-wrapper {
     position: absolute;
     margin: 0;
-    top: 50%;
+    top: 45%;
     left: -180px;
     ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -9742,7 +9742,7 @@ img {
       height: auto; }
   /* line 1124, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
-    left: 420px;
+    left: 480px;
     width: 650px; }
 
 /* line 1132, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
