@@ -1136,6 +1136,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     display: block;
     text-align: left;
     
+    ul {
+        margin: 0;
+        padding: 0 !important;
+    }
     
     li {
         font-family: inherit;
