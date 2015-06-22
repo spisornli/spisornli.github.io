@@ -61,8 +61,32 @@ title: Er din mad god for klimaet?
      </div>  <!-- section end -->
 
     
-{% for blocks in site.blocks %}
-  {{ blocks.content }}
+{% for block in site.blocks %}
+ {% if block.theme == "1" and block.lesson == "A" %}
+ <div id="section-madkundskab" class="section">
+<div class="slide">
+                
+    <div class="item-wrapper">
+            
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Madkundskab02.svg" /></div></div>
+            <div class="text-wrapper">
+                <div class="task-header">
+                    <span class="label item-label">Lektion {{ block.theme }} {{ block.lession }}</span>                    
+                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
+                </div>
+                
+                <h4 class="item-title"><a href="#secondPage/1">{{ block.title }}</a></h4>
+                <p>{{ block.intro }}</p>
+                
+                <a class="btn popup-open" type="button" href="#madkundskab01">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+            
+            </div>
+    </div>
+
+    </div> <!-- slide end -->
+    </div>  <!-- section end -->
+    
+  {% endif %}
 {% endfor %}
         
     <div id="section-natur-teknologi" class="section">
