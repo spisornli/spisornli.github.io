@@ -88,8 +88,8 @@ title: Er din mad god for klimaet?
 
                 <ul class="nav navbar-nav navbar-right">
                     {% if block.means %}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle task-nav-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I skal bruge <span class="caret"></span></a>
+                    <li>
+                        <a href="#collapseExample" class="task-nav-item" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I skal bruge <span class="caret"></span></a>
                         <ul class="task-nav-list dropdown-menu">
                             {% for mean in block.means %}
                             <li><i class="fa fa-check"></i> {{ mean }}</li>
@@ -98,8 +98,8 @@ title: Er din mad god for klimaet?
                     </li>
                     {% endif %}
                     {% if block.goals %}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Læringsmål <span class="caret"></span></a>
+                    <li>
+                        <a href="#" class="dropdown-toggle"  role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Læringsmål <span class="caret"></span></a>
                         <ul class="task-nav-list dropdown-menu">
                             {% for goal in block.goals %}
                             <li>{{ goal }}</li>
@@ -112,6 +112,14 @@ title: Er din mad god for klimaet?
                     {% endif %}
                 </ul>
             </nav>
+            
+            <div class="collapse" id="collapseExample">
+  <div class="well">
+    ...
+  </div>
+</div>
+            
+            
             <div class="content-block">
                 {% if block.subject %}
                 <span class="label label-lg label-madkundskab">{{ block.subject }}</span>
