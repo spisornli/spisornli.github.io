@@ -168,5 +168,27 @@
 
 {{ content }}
 
+<script type="text/javascript">
+    $(function() {
+        $('.popup').easyModal({
+            top:0,
+            overlay: 0.2,
+            hasVariableWidth: true,
+            zIndex:function(){return 10000;}
+        });
+
+        $('.popup-open').click(function(e) {
+            var target = $(this).attr('href');
+            $(target).trigger('openModal');
+            e.preventDefault();
+        });
+
+        $('.popup-close').click(function(e) {
+            $('.popup').trigger('closeModal');
+        });
+    });
+</script>
+
+
 </body>
 </html>
