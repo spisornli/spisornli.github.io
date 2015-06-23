@@ -12,17 +12,10 @@ title: Er din mad god for klimaet?
         <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
     </ul>
     <div class="container-fluid">
-
         <div class="navbar-header">
-
             <a class="navbar-brand" href="#firstPage/0">
                 <img alt="Brand" src="images/spisornli_logo.svg"/>
             </a>
-
-
-
-
-
         </div>
     </div>
 </nav>
@@ -55,12 +48,12 @@ title: Er din mad god for klimaet?
                     <p>{{ block.intro }}</p>
 
                     <a class="btn popup-open" type="button" href="#{{ block.id }}">
-                       {% if block.lession %}
-                            Start
-                            {% else %}
-                            Introduktion
-                            {% endif %}
-                        
+                        {% if block.lession %}
+                        Start
+                        {% else %}
+                        Introduktion
+                        {% endif %}
+
                         <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
 
                 </div>
@@ -118,15 +111,26 @@ title: Er din mad god for klimaet?
                     <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
                     {% endif %}
                 </ul>
-
-
-
             </nav>
+            <div class="content-block">
+                {% if block.subject %}
+                <span class="label label-lg label-madkundskab">{{ block.subject }}</span>
+                {% endif %}
+                {% if block.time %}
+                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
+                {% endif %}
+                <div class="task-nav-list">
 
+                    {% for i in (1..block.assignments) %}
+                    <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+                    {% endfor %}
+
+                </div>
+
+                <h1 class="page-title">{{ block.title }}</h1>
+            </div>
             {{ block.content }}
-
-
-        </div>   
+        </div>
     </div>
 </div>
 {% endif %}
