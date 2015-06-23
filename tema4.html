@@ -1,6 +1,6 @@
 ---
 layout: tema
-title: Er din mad god for klimaet?
+title: Hvor i alverden kommer maden fra?
 ---
 <nav class="navbar top-menu" id="">
     <ul id="myMenu" class="nav navbar-nav">
@@ -21,16 +21,21 @@ title: Er din mad god for klimaet?
 </nav>
 
 
-
-
 <div id="fullpage">
     {% for block in site.blocks %}
-    {% if block.theme == "1" %}
+    {% if block.theme == "4" %}
     <div id="section-{{ block.id }}" class="section">
         <div class="slide">
 
             <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="{{ block.image }}" /></div></div>
+
+                <div class="image-wrapper"><div class="illu-circle">
+                {% if block.image %}
+                <img src="{{ block.image }}">
+                {% else %}
+                <img src="images/placeholder.svg">
+                {% endif %}
+                </div></div>
                 <div class="text-wrapper">
                     <div class="task-header">
                         <span class="label item-label">
@@ -68,7 +73,7 @@ title: Er din mad god for klimaet?
 
 </div> <!-- fullpage end -->
 {% for block in site.blocks %}
-{% if block.theme == "1" %}
+{% if block.theme == "4" %}
 <div id="{{ block.id }}" class="popup madkundskab-popup">
     <div class="gradient-overlay"></div>
     <button class="popup-close"></button>
@@ -76,6 +81,7 @@ title: Er din mad god for klimaet?
     <div class="popup-content">
 
         <div class="popup-content-inner">
+
             <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
             <nav id="" class="navbar task-nav">
                 <span class="navbar-brand">
@@ -88,71 +94,31 @@ title: Er din mad god for klimaet?
 
                 <ul class="nav navbar-nav navbar-right">
                     {% if block.means %}
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I skal bruge <span class="caret"></span></a>
                         <ul class="task-nav-list dropdown-menu">
                             {% for mean in block.means %}
                             <li><i class="fa fa-check"></i> {{ mean }}</li>
                             {% endfor %}
                         </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#{{ block.id }}-means-collapse" aria-expanded="false" aria-controls="{{ block.id }}-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
                     </li>
                     {% endif %}
                     {% if block.goals %}
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#{{ block.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Læringsmål <span class="caret"></span></a>
+                        <ul class="task-nav-list dropdown-menu">
+                            {% for goal in block.goals %}
+                            <li>{{ goal }}</li>
+                            {% endfor %}
+                        </ul>
                     </li>
                     {% endif %}
                     {% if block.pdf %}
                     <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
                     {% endif %}
-                    
-                    
                 </ul>
             </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
             <div class="content-block">
-
-                {% if block.means %}
-                <div class="collapse" id="{{ block.id }}-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            {% for mean in block.means %}
-                            <li><i class="fa fa-check"></i> {{ mean }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>   
-                {% endif %}
-                
-                {% if block.goals %}
-                <div class="collapse" id="{{ block.id }}-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            {% for goal in block.goals %}
-                            <li>{{ goal }}</li>
-                            {% endfor %}
-                        </ol>
-                    </div>
-                </div>   
-                {% endif %}
-
                 {% if block.subject %}
                 <span class="label label-lg label-madkundskab">{{ block.subject }}</span>
                 {% endif %}
@@ -169,8 +135,6 @@ JKHFKJDHSFKJHSDFKJHSDF
 
                 <h1 class="page-title">{{ block.title }}</h1>
             </div>
-
-
             {{ block.content }}
         </div>
     </div>
