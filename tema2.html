@@ -1,0 +1,151 @@
+---
+layout: tema
+title: Kan I leve uden kød?
+---
+<nav class="navbar top-menu" id="">
+    <ul id="myMenu" class="nav navbar-nav">
+        <li data-menuanchor="firstPage" class="active tema tema1"><a href="#firstPage">Er jeres mad god for klimaet?</a></li>
+        <li data-menuanchor="secondPage" class="madkundskab"><a href="#secondPage">Madkundskab</a></li>
+        <li data-menuanchor="3rdPage" class="natur-teknologi"><a href="#3rdPage">Natur og teknologi</a></li>
+        <li data-menuanchor="4thPage" class="dansk"><a href="#4thPage">Dansk</a></li>
+        <li data-menuanchor="5thPage" class="matematik"><a href="#5thPage">Matematik</a></li>
+        <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
+    </ul>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#firstPage/0">
+                <img alt="Brand" src="images/spisornli_logo.svg"/>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<div id="fullpage">
+    {% for block in site.blocks %}
+    {% if block.theme == "2" %}
+    <div id="section-{{ block.id }}" class="section">
+        <div class="slide">
+
+            <div class="item-wrapper">
+
+                <div class="image-wrapper"><div class="illu-circle">
+                {% if block.image %}
+                <img src="{{ block.image }}">
+                {% else %}
+                <img src="images/placeholder.svg">
+                {% endif %}
+                </div></div>
+                <div class="text-wrapper">
+                    <div class="task-header">
+                        <span class="label item-label">
+                            {% if block.lession %}
+                            Lektion {{ block.theme }}{{ block.lession }}
+                            {% else %}
+                            Temaforløb {{ block.theme }}
+                            {% endif %}
+                        </span>                    
+                        {% if block.time %}
+                        <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
+                        {% endif %}
+                    </div>
+
+                    <h4 class="item-title"><a href="#secondPage/1">{{ block.title }}</a></h4>
+                    <p>{{ block.intro }}</p>
+
+                    <a class="btn popup-open" type="button" href="#{{ block.id }}">
+                        {% if block.lession %}
+                        Start
+                        {% else %}
+                        Introduktion
+                        {% endif %}
+
+                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+
+                </div>
+            </div>
+
+        </div> <!-- slide end -->
+    </div>  <!-- section end -->
+
+    {% endif %}
+    {% endfor %}
+
+</div> <!-- fullpage end -->
+{% for block in site.blocks %}
+{% if block.theme == "2" %}
+<div id="{{ block.id }}" class="popup madkundskab-popup">
+    <div class="gradient-overlay"></div>
+    <button class="popup-close"></button>
+
+    <div class="popup-content">
+
+        <div class="popup-content-inner">
+
+            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
+            <nav id="" class="navbar task-nav">
+                <span class="navbar-brand">
+                    {% if block.lession %}
+                    Lektion {{ block.theme }}{{ block.lession }}
+                    {% else %}
+                    Temaforløb {{ block.theme }}
+                    {% endif %}
+                </span>
+
+                <ul class="nav navbar-nav navbar-right">
+                    {% if block.means %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I skal bruge <span class="caret"></span></a>
+                        <ul class="task-nav-list dropdown-menu">
+                            {% for mean in block.means %}
+                            <li><i class="fa fa-check"></i> {{ mean }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endif %}
+                    {% if block.goals %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Læringsmål <span class="caret"></span></a>
+                        <ul class="task-nav-list dropdown-menu">
+                            {% for goal in block.goals %}
+                            <li>{{ goal }}</li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    {% endif %}
+                    {% if block.pdf %}
+                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+            <div class="content-block">
+                {% if block.subject %}
+                <span class="label label-lg label-madkundskab">{{ block.subject }}</span>
+                {% endif %}
+                {% if block.time %}
+                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
+                {% endif %}
+                <div class="task-nav-list">
+
+                    {% for i in (1..block.assignments) %}
+                    <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+                    {% endfor %}
+
+                </div>
+
+                <h1 class="page-title">{{ block.title }}</h1>
+            </div>
+            {{ block.content }}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+
+
+
+
+
+
+
