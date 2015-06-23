@@ -1,175 +1,171 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
+<head>
+    
+    <title>SpisOrnli | Er din mad god for klimaet?</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-        <title>SpisOrnli | Er din mad god for klimaet?</title>
+    <script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/jquery.easyModal.js"></script>
 
-        <link rel="stylesheet" href="css/main.css">
-
-        <meta charset="utf-8">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/jquery.slimscroll.min.js"></script>
-        <script src="js/jquery.fullPage.min.js"></script>
-        <script src="js/jquery.easings.min.js"></script>
-        <script src="js/jquery.easyModal.js"></script>
-        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-        
-        
+	<script type="text/javascript">
+		$(document).ready(function() {
             
+        function initialization(){
+			$('#fullpage').fullpage({
+                anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+                menu: '#myMenu',
+				verticalCentered: true,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+                controlArrows: true,
+                normalScrollElements: '.popup',
+                loopHorizontal: false,
+                paddingTop: '0em',
+                css3: true,
+					onLeave: function(index, nextIndex, direction){
+						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
+					},
+	       			afterLoad: function(anchorLink, index){
+						console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
+	       			},
+					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+						console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
+					},
+	        		onSlideLeave: function(anchorLink, index, slideIndex, direction){
+						console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
+	        		},
+	        		afterRender: function(){
+						console.log("afterRender");
+	        		},
+	        		afterResize: function(){
+						console.log("afterResize");
+	        		}
+			});
+		}
+        
+       
+        //fullPage.js initialization
+            initialization();
 
 
-        <script type="text/javascript">
-            $(document).ready(function() {
+			$('#moveSectionUp').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionUp();
+			});
 
-                function initialization(){
-                    $('#fullpage').fullpage({
-                        anchors:['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
-                        menu: '#myMenu',
-                        verticalCentered: true,
-                        slidesNavigation: false,
-                        slidesNavPosition: 'bottom',
-                        controlArrows: true,
-                        normalScrollElements: '.popup',
-                        loopHorizontal: false,
-                        paddingTop: '0em',
-                        css3: true,
-                        onLeave: function(index, nextIndex, direction){
-                            console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
-                        },
-                        afterLoad: function(anchorLink, index){
-                            console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
-                        },
-                        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-                            console.log("afterSlideLoad--" + "anchorLink: " + anchorLink + " index: " + index + " slideAnchor: " + slideAnchor + " slideIndex: " + slideIndex);
-                        },
-                        onSlideLeave: function(anchorLink, index, slideIndex, direction){
-                            console.log("onSlideLeave--" + "anchorLink: " + anchorLink + " index: " + index + " slideIndex: " + slideIndex + " direction: " + direction);
-                        },
-                        afterRender: function(){
-                            console.log("afterRender");
-                        },
-                        afterResize: function(){
-                            console.log("afterResize");
-                        }
-                    });
-                }
+			$('#moveSectionDown').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSectionDown();
+			});
 
+			$('#moveTo').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveTo(3, 2);
+			});
 
-                //fullPage.js initialization
-                initialization();
+			$('#moveSlideRight').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideRight();
+			});
 
+			$('#moveSlideLeft').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.moveSlideLeft();
+			});
 
-                $('#moveSectionUp').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionUp();
-                });
+			$('#setAutoScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(false);
+			});
 
-                $('#moveSectionDown').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSectionDown();
-                });
+			$('#setAutoScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAutoScrolling(true);
+			});
 
-                $('#moveTo').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveTo(3, 2);
-                });
+			$('#setAllowScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(false);
+			});
 
-                $('#moveSlideRight').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSlideRight();
-                });
+			$('#setAllowScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setAllowScrolling(true);
+			});
 
-                $('#moveSlideLeft').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.moveSlideLeft();
-                });
+			$('#setKeyboardScrollingFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(false);
+			});
 
-                $('#setAutoScrollingFalse').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setAutoScrolling(false);
-                });
+			$('#setKeyboardScrollingTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setKeyboardScrolling(true);
+			});
 
-                $('#setAutoScrollingTrue').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setAutoScrolling(true);
-                });
+			$('#setScrollingSpeed1500').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(2500);
+			});
 
-                $('#setAllowScrollingFalse').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setAllowScrolling(false);
-                });
+			$('#setScrollingSpeed700').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setScrollingSpeed(700);
+			});
 
-                $('#setAllowScrollingTrue').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setAllowScrolling(true);
-                });
+			$('#destroy').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.destroy('all');
+			});
 
-                $('#setKeyboardScrollingFalse').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setKeyboardScrolling(false);
-                });
+			$('#undestroy').click(function(e){
+				e.preventDefault();
 
-                $('#setKeyboardScrollingTrue').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setKeyboardScrolling(true);
-                });
+				//fullPage.js initialization
+				initialization();
+			});
 
-                $('#setScrollingSpeed1500').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setScrollingSpeed(2500);
-                });
+			$('#reBuild').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.reBuild();
+			});
 
-                $('#setScrollingSpeed700').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setScrollingSpeed(700);
-                });
+			$('#setFitToSectionTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(true);
+			});
 
-                $('#destroy').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.destroy('all');
-                });
+			$('#setFitToSectionFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setFitToSection(false);
+			});
 
-                $('#undestroy').click(function(e){
-                    e.preventDefault();
+			$('#setRecordHistoryTrue').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(true);
+			});
 
-                    //fullPage.js initialization
-                    initialization();
-                });
+			$('#setRecordHistoryFalse').click(function(e){
+				e.preventDefault();
+				$.fn.fullpage.setRecordHistory(false);
+			});
+        });
+	</script>
+    
+    
+</head>
+<body>
 
-                $('#reBuild').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.reBuild();
-                });
-
-                $('#setFitToSectionTrue').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setFitToSection(true);
-                });
-
-                $('#setFitToSectionFalse').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setFitToSection(false);
-                });
-
-                $('#setRecordHistoryTrue').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setRecordHistory(true);
-                });
-
-                $('#setRecordHistoryFalse').click(function(e){
-                    e.preventDefault();
-                    $.fn.fullpage.setRecordHistory(false);
-                });
-            });
-        </script>
-
-
-    </head>
-    <body>
-
-        <nav class="navbar top-menu" id="">
+<nav class="navbar top-menu" id="">
     <ul id="myMenu" class="nav navbar-nav">
         <li data-menuanchor="firstPage" class="active tema tema1"><a href="#firstPage">Er jeres mad god for klimaet?</a></li>
         <li data-menuanchor="secondPage" class="madkundskab"><a href="#secondPage">Madkundskab</a></li>
@@ -179,1298 +175,382 @@
         <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">Historie</a></li>
     </ul>
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#firstPage/0">
-                <img alt="Brand" src="images/spisornli_logo.svg"/>
-            </a>
-        </div>
+     
+    <div class="navbar-header">
+         
+      <a class="navbar-brand" href="#firstPage/0">
+          <img alt="Brand" src="images/spisornli_logo.svg"/>
+      </a>
+        
+       
+        
+       
+            
     </div>
+  </div>
 </nav>
-
-
-
-
+    
+  
 <div id="fullpage">
-    
-    
-    
-    
-    <div id="section-intro01" class="section">
+    <div id="section-intro01" class="section inverted">
+
         <div class="slide">
-
-            <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Intro03.svg" /></div></div>
-                <div class="text-wrapper">
-                    <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Temaforløb 1
-                            
-                        </span>                    
-                        
-                    </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">Er jeres mad god for klimaet?</a></h4>
-                    <p>Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</p>
-
-                    <a class="btn popup-open" type="button" href="#intro01">
-                        
-                        Introduktion
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+            
+            <div class="item-wrapper inverted">
+            
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Intro03.svg" /></div></div>
+            <div class="text-wrapper">
+                <div class="task-header">
+                    <span class="label item-label">Forløb 1</span>
                 </div>
+                
+                <h4 class="item-title"><a href="#">Er jeres mad god for klimaet?</a></h4>
+                <p>Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</p>
+                
+                <a type="button" class="btn popup-open" href="#beskrivelse">Forløbs beskrivelse<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+                
+                
+            
             </div>
+    </div>
+            
+            
+            
+            
+           
+            
 
         </div> <!-- slide end -->
-    </div>  <!-- section end -->
+     </div>  <!-- section end -->
 
     
-    
-    
-    <div id="section-madkundskab" class="section">
-        <div class="slide">
 
-            <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Madkundskab02.svg" /></div></div>
-                <div class="text-wrapper">
-                    <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Lektion 1A
-                            
-                        </span>                    
-                        
-                        <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 45 min</span>
-                        
-                    </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">Oksekød eller æbler</a></h4>
-                    <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>
-
-                    <a class="btn popup-open" type="button" href="#madkundskab">
-                        
-                        Start
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+ 
+ <div id="section-madkundskab" class="section">
+<div class="slide">
+                
+    <div class="item-wrapper">
+            
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Madkundskab02.svg" /></div></div>
+            <div class="text-wrapper">
+                <div class="task-header">
+                    <span class="label item-label">Lektion 1 A</span>                    
+                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 45 min</span>
                 </div>
+                
+                <h4 class="item-title"><a href="#secondPage/1">Oksekød eller æbler</a></h4>
+                <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>
+                
+                <a class="btn popup-open" type="button" href="#madkundskab01">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+            
             </div>
+    </div>
 
-        </div> <!-- slide end -->
+    </div> <!-- slide end -->
     </div>  <!-- section end -->
+    
+  
 
-    
-    
-    
+        
     <div id="section-natur-teknologi" class="section">
-        <div class="slide">
+    <div class="slide"> 
+                
+    <div class="item-wrapper">
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_NaturTeknologi03.svg" /></div></div>
+            <div class="text-wrapper">    
 
-            <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_NaturTeknologi03.svg" /></div></div>
-                <div class="text-wrapper">
-                    <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Lektion 1B
-                            
-                        </span>                    
-                        
-                        <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                        
-                    </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">natur-teknologi</a></h4>
-                    <p>Det kan være svært at forestille sig, at vores mad kan være dårlig for klimaet. Men produktionen af mad udleder en masse CO2 og andre drivhusgasser.</p>
-
-                    <a class="btn popup-open" type="button" href="#natur-teknologi">
-                        
-                        Start
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+                <div class="task-header">
+                    <span class="label item-label">lektion 1B</span>
+                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
                 </div>
+                <h3 class="item-title"><a href="#secondPage/1">Jorden: Et kæmpestort drivhus</a></h3>
+                <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den betyder for vores klima, og hvad den har at gøre med vores mad.</p>
+                
+                <a class="btn popup-open" href="#">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
             </div>
+    </div>
 
-        </div> <!-- slide end -->
+    </div>  <!-- slide end -->
     </div>  <!-- section end -->
-
-    
-    
     
     <div id="section-dansk" class="section">
-        <div class="slide">
-
-            <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Dansk03.svg" /></div></div>
-                <div class="text-wrapper">
-                    <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Lektion 1C
-                            
-                        </span>                    
-                        
-                        <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90-135 min</span>
-                        
-                    </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">Klimamad på plakaten</a></h4>
-                    <p>Mange børn i Danmark spiser kylling, leverpostej eller fiskefrikadeller til frokost. Men er det en frokost, der er god for klimaet? </p>
-
-                    <a class="btn popup-open" type="button" href="#dansk">
-                        
-                        Start
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+    <div class="slide">
+                
+    <div class="item-wrapper inverted">
+            
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Dansk03.svg" /></div></div>
+            <div class="text-wrapper"> 
+                <div class="task-header">
+                    <span class="label item-label">lektion 1C</span>
+                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
                 </div>
+                <h3 class="item-title"><a href="#secondPage/1">Klimamad på plakaten</a></h3>
+                <p>Her lærer I, hvordan I kan fortælle om klimavenlig mad til jeres familie og venner, så de får lyst til at spise klimavenlig mad.</p>
+                
+                <a class="btn popup-open" href="#">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+                
             </div>
+    </div>
 
-        </div> <!-- slide end -->
+    </div>  <!-- slide end -->
     </div>  <!-- section end -->
-
-    
-    
     
     <div id="section-matematik" class="section">
-        <div class="slide">
-
-            <div class="item-wrapper">
-                <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Matematik03.svg" /></div></div>
-                <div class="text-wrapper">
-                    <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Lektion 1D
-                            
-                        </span>                    
-                        
-                        <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                        
-                    </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">Madpakke med CO2 </a></h4>
-                    <p>Klimaet har stor betydning for, om vi kan leve på jorden. Og den mad vi spiser, har betydning for, hvordan klimaet bliver. </p>
-
-                    <a class="btn popup-open" type="button" href="#matematik">
-                        
-                        Start
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+    <div class="slide"> 
+                
+    <div class="item-wrapper inverted">
+            
+            <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Matematik03.svg" /></div></div>
+            <div class="text-wrapper">
+                <div class="task-header">
+                    <span class="label item-label">lektion 1D</span>
+                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
                 </div>
+                <h3 class="item-title"><a href="#secondPage/1">Madpakke med CO2</a></h3>
+                <p>Her kan I regne ud, om jeres mad er god eller dårlig for klimaet?</p>
+                <a class="btn popup-open" href="#">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
             </div>
+    </div>
 
-        </div> <!-- slide end -->
+    </div>  <!-- slide end -->
     </div>  <!-- section end -->
-
-    
-    
     
     <div id="section-historie" class="section">
-        <div class="slide">
-
-            <div class="item-wrapper">
+    <div class="slide"> 
+                
+        <div class="item-wrapper inverted">                        
                 <div class="image-wrapper"><div class="illu-circle"><img src="images/Tema01_Historie01.svg" /></div></div>
                 <div class="text-wrapper">
                     <div class="task-header">
-                        <span class="label item-label">
-                            
-                            Lektion 1E
-                            
-                        </span>                    
-                        
+                        <span class="label item-label">lektion 1E</span>
                         <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                        
                     </div>
-
-                    <h4 class="item-title"><a href="#secondPage/1">Stenaldermad og klima</a></h4>
-                    <p>Kostvanerne i Danmark har ændret sig gennem tiden. I stenalderen spiste man helt anderledes, end man gør i dag. Dengang spiste mennesker mange nødder, rødder, grøntsager og frugt. Nogle siger, at stenalderkost er meget sundt – men er det godt for klimaet?</p>
-
-                    <a class="btn popup-open" type="button" href="#historie">
-                        
-                        Start
-                        
-
-                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-
+                    <h3 class="item-title"><a href="#secondPage/1">Stenaldermad og klima</a></h3>
+                    <p>Her lærer I om stenalderen, og om hvordan livsgrundlaget har ændret sig gennem tiden. I lærer også om kosten i stenalderen var bedre for klimaet end det, vi spiser i dag.</p>
+                    <a class="btn popup-open" href="#">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
                 </div>
-            </div>
+        </div>
 
-        </div> <!-- slide end -->
+    </div>  <!-- slide end -->
     </div>  <!-- section end -->
-
     
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-</div> <!-- fullpage end -->
-
-
-
-
-<div id="intro01" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Temaforløb 1
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                
-                
-
-                
-                
-                <div class="task-nav-list">
-
-                    
-
-                </div>
-
-                <h1 class="page-title">Er jeres mad god for klimaet?</h1>
-            </div>
-
-
-            <div class="content-block">
-    <span class="label label-lg label-primary">Intro</span>
-    <h1 class="page-title">Er jeres mad god for klimaet?</h1>
-
-    <p>Har I tænkt på, at det I spiser har betydning for klimaet?</p>
-    <p>Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</p>
-    <p>I dette forløb skal I undersøge, hvad klima-mad er og om jeres frokost er god eller dårlig for klimaet. I skal undersøge drivhuseffekten og CO2-indholdet i jeres frokost, og undersøge om vores generelle kost er blevet mere eller mindre god for klimaet gennem tiden.</p>
-
-    <h5>Der er forskel på miljø og klima</h5>
-
-    <p>Miljø er alt det der omgiver os, som naturen har skabt: blomster, træer, vandløb, dyr osv. </p>
-    <p>Klimaet er en del af miljøet. Klima har at gøre med vejret. Ikke som en vejrudsigt, men som en generel beskrivelse af, hvordan vejret er et bestemt sted over en længere periode. En varm sommerdag siger ikke noget om vores klima. Men hvis alle somre bliver varmere og varmere over en længere periode, så kan det fortæller os noget om, at vores klima ændrer sig og generelt bliver varmere. </p>
-    <p>Så selvom maden er klimavenlig kan den stadig bidrage til andre miljøproblemer, f.eks. vandforurening eller luftforurening.</p>
-</div>  
-        </div>
-    </div>
-</div>
-
-
-
-<div id="madkundskab" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Lektion 1A
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
-                        <ul class="task-nav-list dropdown-menu">
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internet</li>
-                            
-                        </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#madkundskab-means-collapse" aria-expanded="false" aria-controls="madkundskab-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
-                    </li>
-                    
-                    
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#madkundskab-goals-collapse" aria-expanded="false" aria-controls="madkundskab-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    
-                    
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                <div class="collapse" id="madkundskab-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internet</li>
-                            
-                        </ul>
-                    </div>
-                </div>   
-                
-                
-                
-                <div class="collapse" id="madkundskab-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            
-                            <li>Sundhedsbevidsthed: I kan analysere jeres valg af mad jeres din hverdag</li>
-                            
-                            <li>Sundhedsbevidsthed: I kan begrunde jeres valg af mad ud fra hensyn til ernæring og miljø</li>
-                            
-                            <li>Sundhedsbevidsthed: Du kan omsætte analyser og vurderinger i nye måltidsforslag til eget brug</li>
-                            
-                        </ol>
-                    </div>
-                </div>   
-                
-
-                
-                <span class="label label-lg label-madkundskab">Madkundskab</span>
-                
-                
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                
-                <div class="task-nav-list">
-
-                    
-                    <button href="#opgave-block-1" class="btn task-btn opg-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-2" class="btn task-btn opg-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-3" class="btn task-btn opg-btn">Opgave 3 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-
-                </div>
-
-                <h1 class="page-title">Oksekød eller æbler</h1>
-            </div>
-
-
-            <div class="content-block">
-
-    <p>Madpyramiden er et pyramideformet billede, der viser, hvad man bør spise.</p>
-    <p>Før i tiden var madpyramiden kun lavet ud fra, hvad der var sundt for os mennesker at spise. Den moderne madpyramide viser også, hvad der er bedst for klimaet. Derfor bliver den også kaldt ’Den klimavenlige madpyramide’. </p> 
-
-    <div class="image-wrapper"><img src="images/Tema01_Klimavenlig-madpyramide.jpg" /></div>
-    <p>Ved at kigge på madpyramiden kan I finde ud af, om den mad, I plejer at spise, er god eller dårlig for klimaet. I skal spise mest af det fra bunden, lidt mindre af det fra midten og mindst af det fra toppen. </p>                   
-    <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>
-</div> <!-- end content-section -->
-
-
-<div class="content-divider"></div>
-
-<div id="opgave-block-1" class="content-block opgave-block">
-    <span class="label label-lg label-madkundskab">Opgave 1</span>
-    <h1>Forklar madvarernes placering i den klimavenlige madpyramide</h1>
-    <p>Når man siger, at noget mad er dårlig for klimaet, så er det fordi, at det udleder meget CO2. Madvarer udleder CO2 eller andre drivhusgasser af flere årsager.</p>
-
-    <ul>
-        <li>De bliver transporteret langt</li>
-        <li>De bliver dyrket i opvarmede drivhuse</li>
-        <li>Der bliver fældet skov for at kunne dyrke dem</li>
-        <li>Jorden, hvor de vokser, afgiver drivhusgasser, når den bearbejdes </li>
-        <li>Køerne, som laver mælk og oksekød, bøvser og prutter</li>
-        <li>Der bruges energi i produktionen og til at producere gødning, sprøjtegifte og emballage osv.</li>
-
-
-    </ul>
-    <p>På klassen skal I sammen vælge to madvarer fra hvert af de tre rum i madpyramiden.  
-        I ved at dem fra det øverste rum udleder meget CO2, at dem fra midten udleder lidt mindre og at dem, der står nederst udleder mindst. Diskuter på klassen, hvorfor I tror, at de seks madvarer i har valgt er placeret der i pyramiden, hvor de er.</p>
-
-    <h6>Husk at tænke på:</h6>
-    <ol>
-        <li>Hvor bliver madvaren dyrket eller fremstillet? (For eksempel i drivhuse, som kræver meget energi til opvarmning)</li>
-        <li>Skal madvaren transporteres langt med fly eller lastbil?</li>
-        <li>Er det et dyr, der skal bruge meget foder og vand, eller er det planter, der kun skal bruge lidt vand og gødning?</li>
-    </ol>
-</div> <!-- end content-section -->
-
-<div id="opgave-block-2" class="content-block opgave-block"> 
-    <span class="label label-lg label-madkundskab">Opgave 2</span>
-    <h1>Sammensæt to måltider</h1>
-    <p>I skal nu sammensætte to måltider. Ét, der er meget dårligt for klimaet og ét, der er bedre for klimaet.</p> <p>Husk, at man skal spise varieret. Og husk, at det skal smage lækkert. </p>
-</div> <!-- end content-section -->
-
-<div id="opgave-block-3" class="content-block opgave-block"> 
-    <span class="label label-lg label-madkundskab">Opgave 3</span>
-    <h1>Opsamling: præsentation og diskussion</h1>
-    <p>Præsenter jeres idéer til retter for resten af klassen. Forklar, hvorfor de er enten dårlige eller gode for klimaet eller måske midt i mellem. </p>
-    <p>Diskuter på klassen, hvad I kan gøre for at tage højde for klimaet, når I vælger madvarer. </p>
-</div> <!-- end content-section -->
-        </div>
-    </div>
-</div>
-
-
-
-<div id="natur-teknologi" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Lektion 1B
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
-                        <ul class="task-nav-list dropdown-menu">
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internettet</li>
-                            
-                            <li><i class="fa fa-check"></i> 1 stort syltetøjsglas med låg</li>
-                            
-                            <li><i class="fa fa-check"></i> 2 termometre</li>
-                            
-                            <li><i class="fa fa-check"></i> 1 saks</li>
-                            
-                            <li><i class="fa fa-check"></i> 2 stykker sort karton</li>
-                            
-                            <li><i class="fa fa-check"></i> Ur</li>
-                            
-                            <li><i class="fa fa-check"></i> Skriveredskaber</li>
-                            
-                        </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#natur-teknologi-means-collapse" aria-expanded="false" aria-controls="natur-teknologi-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
-                    </li>
-                    
-                    
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#natur-teknologi-goals-collapse" aria-expanded="false" aria-controls="natur-teknologi-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    
-                    
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                <div class="collapse" id="natur-teknologi-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internettet</li>
-                            
-                            <li><i class="fa fa-check"></i> 1 stort syltetøjsglas med låg</li>
-                            
-                            <li><i class="fa fa-check"></i> 2 termometre</li>
-                            
-                            <li><i class="fa fa-check"></i> 1 saks</li>
-                            
-                            <li><i class="fa fa-check"></i> 2 stykker sort karton</li>
-                            
-                            <li><i class="fa fa-check"></i> Ur</li>
-                            
-                            <li><i class="fa fa-check"></i> Skriveredskaber</li>
-                            
-                        </ul>
-                    </div>
-                </div>   
-                
-                
-                
-                <div class="collapse" id="natur-teknologi-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            
-                            <li>Naturfaglig modellering. I kan forklare drivhuseffekten</li>
-                            
-                            <li>Naturfaglig modellering. I kan udføre forsøg med drivhuseffekten.</li>
-                            
-                            <li>Naturfaglig modellering. I kan diskutere, om et forsøg viser det, det skal.</li>
-                            
-                        </ol>
-                    </div>
-                </div>   
-                
-
-                
-                <span class="label label-lg label-madkundskab">Natur og teknologi</span>
-                
-                
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                
-                <div class="task-nav-list">
-
-                    
-                    <button href="#opgave-block-1" class="btn task-btn opg-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-2" class="btn task-btn opg-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-
-                </div>
-
-                <h1 class="page-title">natur-teknologi</h1>
-            </div>
-
-
-            <div class="content-block">
-
-    <p>Det kan være svært at forestille sig, at vores mad kan være dårlig for klimaet. Men produktionen af mad udleder en masse CO2 og andre drivhusgasser.</p>
-    <p>Her skal I undersøge drivhuseffekten og finde ud af, hvordan den opstår, hvad den betyder for vores klima, og hvad den har at gøre med vores mad.</p> 
-</div> <!-- end content-section -->
-
-
-<div class="content-divider"></div>
-
-<div id="opgave-block-1" class="content-block opgave-block">
-    <span class="label label-lg label-madkundskab">Opgave 1</span>
-    <h1>Hvad er drivhuseffekten? </h1>
-    <p>Når I kigger på tegningen, kan I se, at mad udleder CO2 og andre drivhusgasser. Det kan der være forskellige grunde til:</p>
-<ul>
-    <li>maden transporteres langt</li>
-    <li>maden dyrkes i opvarmede drivhuse</li>
-    <li>der bliver fældet skov for at kunne dyrke jorden</li>
-    <li>køerne bøvser og prutter</li>
-    <li>der bruges energi i produktionen og til at producere gødning, sprøjtegifte og emballage.</li>
-</ul>
-
-<p>[#Monsun laver tegning#]</p>
-<p>Forklar tegningen to og to og gennemgå den efterfølgende på klassen.</p>
-<p>Læs teksten ”Hvad er drivhuseffekten?” [#Teksten ligger i ”Tekster o.a. til pdf.”#]</p>
-<p>Se filmen ”Sådan fungerer drivhuseffekten” [#Link ligger i ”Links, illustrationer o.a.”#]</p>
-
-<p>Forklar drivhuseffekten for hinanden to og to og svar på spørgsmålene:</p>
-<ol>
-    <li>Hvordan virker drivhuseffekten?</li>
-    <li>Hvorfor tror I, det hedder drivhuseffekten?</li>
-</ol>    
-</div> <!-- end content-section -->
-
-<div id="opgave-block-2" class="content-block opgave-block"> 
-    <span class="label label-lg label-madkundskab">Opgave 2</span>
-    <h1>Lav jeres egen drivhuseffekt </h1>
-<p>Drivhuseffekten foregår på hele jorden og er ikke let at få øje på. Men drivhuseffekten kan også opleves i et drivhus, hvor varmen ikke kan komme ud. I skal lave jeres eget forsøg, hvor I viser drivhuseffekten.</p>
-<p>Se filmen ”Forsøg med drivhuseffekten” [#Link ligger i ”Links, illustrationer o.a.”#]</p>
-<p>Svar på spørgsmålene:</p>
-<ol>
-    <li>Hvordan viser forsøget drivhuseffekten?</li>
-    <li>Synes I, det er et godt forsøg?</li>
-</ol></div> <!-- end content-section -->
-        </div>
-    </div>
-</div>
-
-
-
-<div id="dansk" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Lektion 1C
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
-                        <ul class="task-nav-list dropdown-menu">
-                            
-                            <li><i class="fa fa-check"></i> Et stort stykke papir</li>
-                            
-                            <li><i class="fa fa-check"></i> Tuscher eller farver</li>
-                            
-                            <li><i class="fa fa-check"></i> Evt. blade til at klippe i</li>
-                            
-                            <li><i class="fa fa-check"></i> Lim eller tape</li>
-                            
-                        </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#dansk-means-collapse" aria-expanded="false" aria-controls="dansk-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
-                    </li>
-                    
-                    
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#dansk-goals-collapse" aria-expanded="false" aria-controls="dansk-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    
-                    
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                <div class="collapse" id="dansk-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            
-                            <li><i class="fa fa-check"></i> Et stort stykke papir</li>
-                            
-                            <li><i class="fa fa-check"></i> Tuscher eller farver</li>
-                            
-                            <li><i class="fa fa-check"></i> Evt. blade til at klippe i</li>
-                            
-                            <li><i class="fa fa-check"></i> Lim eller tape</li>
-                            
-                        </ul>
-                    </div>
-                </div>   
-                
-                
-                
-                <div class="collapse" id="dansk-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            
-                            <li>Fremstilling. I kan lave en reklame med brug af ord og billeder fra temaet ’klimavenlig frokost’.</li>
-                            
-                            <li>Præsentation og evaluering. I kan tale højt og tydeligt og holde øjenkontakt, når I fremlægger for klassen.</li>
-                            
-                            <li>Præsentation og evaluering. I kan beskrive, om jeres egne og jeres kammeraters reklamer er gode og viser det, de skal.</li>
-                            
-                        </ol>
-                    </div>
-                </div>   
-                
-
-                
-                <span class="label label-lg label-madkundskab">Dansk</span>
-                
-                
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                
-                <div class="task-nav-list">
-
-                    
-                    <button href="#opgave-block-1" class="btn task-btn opg-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-2" class="btn task-btn opg-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-3" class="btn task-btn opg-btn">Opgave 3 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-4" class="btn task-btn opg-btn">Opgave 4 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-
-                </div>
-
-                <h1 class="page-title">Klimamad på plakaten</h1>
-            </div>
-
-
-            <div class="content-block">
-
-<p>Mange børn i Danmark spiser kylling, leverpostej eller fiskefrikadeller til frokost. Men er det en frokost, der er god for klimaet?</p>
-   <p>Her ser I en madpyramide.</p>
-   <p>[#Klimavenlig madpyramide – ligger i ”Links, illustrationer o.a.”#]</p>
-   <p>I kender måske allerede madpyramiden og ved, at I skal spise mest fra bunden, mindre fra midten og mindst fra toppen. Før viste madpyramiden kun, hvad der var sundt at spise, men denne madpyramide viser også hvad, der er bedst for klimaet.</p>
-   <p>Her lærer I, hvordan I kan fortælle om klimavenlig mad til jeres familie og venner, så de får lyst til at spise klimavenlig mad.</p>
-
-    
-</div> <!-- end content-section -->
-
-
-<div class="content-divider"></div>
-
-<div id="opgave-block-1" class="content-block opgave-block">
-    <span class="label label-lg">Opgave 1</span>
-    <h1>Hvad spiser I til frokost?</h1>
-    <p>Fortæl I jeres gruppe, hvad I plejer at spise til frokost.</p>
-    <p>Kig på madpyramiden og svar på spørgsmålene:</p>
-<ol>
-    <li>Tror I jeres frokost er god for klimaet?</li>
-    <li>Forklar hvorfor eller hvorfor ikke?</li>
-</ol>    
-</div> <!-- end content-section -->
-
-<div id="opgave-block-2" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 2</span>
-    <h1>En klimavenlig frokost</h1>
-<p>Sammen med jeres gruppe skal I finde på en klimavenlig frokost.</p>
-<p>Brug madpyramiden og disse seks klimaråd:</p><ol>
-    <li>Spis mindre kød</li>
-    <li>Spis årstidens frugt og grøntsager (ikke fra opvarmet drivhus)</li>
-    <li>Spis kartofler og pasta i stedet for ris</li>
-    <li>Drik vand fra hanen i stedet for vand på købeflaske</li>
-    <li>Lav ikke mere mad end I kan spise (eller brug rester til frokost eller aften dagen efter)</li>
-    <li>Spis mad, der kan dyrkes og laves i det land du bor i</li>
-</ol>
-<p>Skriv eller tegn jeres forslag til en klimavenlig frokost.</p></div> <!-- end content-section -->
-
-<div id="opgave-block-3" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 3</span>
-    <h1>Lav en reklame</h1>
-<p>Når man skal lave en reklame, skal man tænke sig godt om. Tænk på:</p>
-<ul>
-    <li>Hvordan får vi børn og forældre til at spise klimavenlig mad?</li>
-    <li>Hvordan får vi dem til at købe bønner i stedet for leverpostej og æbler i stedet for appelsiner?</li>
-</ul>
-<p>Tænk på hvad der er vigtigt, når I spiser:</p>
-<ul>
-    <li>Smag</li>
-    <li>Udseende</li>
-    <li>Let at lave</li>
-    <li>Sundhed</li>
-    <li>Miljø og klima</li>
-</ul>
-<p>I jeres gruppe skal I lave en plakat, som fortæller og viser, hvad en klimavenlig frokost er. I kan også vise, at man skal huske at tænke på klimaet, når man spiser.</p>
-<p>Husk, at plakaten skal hænges op i klassen eller et andet sted på skolen.</p></div> <!-- end content-section -->
-<div id="opgave-block-4" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 4</span>
-    <h1>Opsamling: præsentation</h1>
-<p>Alle grupperne præsenterer plakaterne for resten af klassen.</p>
-<p>Tænk over følgende, når I skal forberede præsentationen:</p><ul>
-    <li>Hvordan viser jeres billede, hvad en klimavenlig frokost er?</li>
-    <li>Hvordan har I brugt den klimavenlige madpyramide og de seks klimaråd?</li>
-</ul>
-<p>Tænk over følgende, når I evaluerer de andre gruppers plakater:</p><ul>
-    <li>Hvordan ser deres plakat ud?</li>
-    <li>Er den nem at forstå?</li>
-    <li>Hvad synes I, der er godt ved de andres plakater, og hvordan kunne de blive endnu bedre?</li>
-    <li>Får deres plakater jer lyst til at spise klimavenlig frokost?</li>
-</ul></div> <!-- end content-section -->
-        </div>
-    </div>
-</div>
-
-
-
-<div id="matematik" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Lektion 1D
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
-                        <ul class="task-nav-list dropdown-menu">
-                            
-                            <li><i class="fa fa-check"></i> CO2 beregner</li>
-                            
-                            <li><i class="fa fa-check"></i> Jeres frokost</li>
-                            
-                            <li><i class="fa fa-check"></i> En vægt</li>
-                            
-                            <li><i class="fa fa-check"></i> CO2-skema</li>
-                            
-                            <li><i class="fa fa-check"></i> Papir til at lægge maden på mens i vejer den</li>
-                            
-                            <li><i class="fa fa-check"></i> Stort stykke karton</li>
-                            
-                            <li><i class="fa fa-check"></i> Tuscher og farver</li>
-                            
-                            <li><i class="fa fa-check"></i> Billeder af forskellige frokoster</li>
-                            
-                        </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#matematik-means-collapse" aria-expanded="false" aria-controls="matematik-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
-                    </li>
-                    
-                    
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#matematik-goals-collapse" aria-expanded="false" aria-controls="matematik-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    
-                    
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                <div class="collapse" id="matematik-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            
-                            <li><i class="fa fa-check"></i> CO2 beregner</li>
-                            
-                            <li><i class="fa fa-check"></i> Jeres frokost</li>
-                            
-                            <li><i class="fa fa-check"></i> En vægt</li>
-                            
-                            <li><i class="fa fa-check"></i> CO2-skema</li>
-                            
-                            <li><i class="fa fa-check"></i> Papir til at lægge maden på mens i vejer den</li>
-                            
-                            <li><i class="fa fa-check"></i> Stort stykke karton</li>
-                            
-                            <li><i class="fa fa-check"></i> Tuscher og farver</li>
-                            
-                            <li><i class="fa fa-check"></i> Billeder af forskellige frokoster</li>
-                            
-                        </ul>
-                    </div>
-                </div>   
-                
-                
-                
-                <div class="collapse" id="matematik-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            
-                            <li>Modellering. I kan bruge en matematisk model i forhold til temaet klimavenlig mad.</li>
-                            
-                            <li>Tal. I kan bruge decimaltal.</li>
-                            
-                            <li>Ræsonnement og tankegang. I kan afgøre, om jeres frokost er klimavenlig ud fra dine egne undersøgelser.</li>
-                            
-                        </ol>
-                    </div>
-                </div>   
-                
-
-                
-                <span class="label label-lg label-madkundskab">Matematik</span>
-                
-                
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                
-                <div class="task-nav-list">
-
-                    
-                    <button href="#opgave-block-1" class="btn task-btn opg-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-2" class="btn task-btn opg-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-3" class="btn task-btn opg-btn">Opgave 3 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-
-                </div>
-
-                <h1 class="page-title">Madpakke med CO2 </h1>
-            </div>
-
-
-            <div class="content-block">
-<p>Klimaet har stor betydning for, om vi kan leve på jorden. Og den mad vi spiser, har betydning for, hvordan klimaet bliver.</p>
-<p>Her kan I regne ud, om jeres mad er god eller dårlig for klimaet?</p>
-
-</div> <!-- end content-section -->
-
-<div class="content-divider"></div>
-
-<div id="opgave-block-1" class="content-block opgave-block">
-    <span class="label label-lg">Opgave 1</span>
-    <h1>CO2 i frokosten</h1>
-
-<p>I kan regne ud, om jeres frokost er klimavenlig med en CO2-beregner. En CO2-beregner er et digitalt værktøj, som kan regne ud, hvor meget CO2 forskellige madvarer udleder.</p>
-<p>Find CO2-beregneren her: [#Link til beregner ligger i ”Links, illustrationer o.a.”#]</p>
-<p>I skal nu undersøge CO2-indholdet i jeres frokost. I skal hver især veje de forskellige madvarer i jeres frokost og bruge CO2-beregneren til at finde CO2-udledningen. Brug skemaet til at samle oplysningerne.</p>
-<p>Madvare</p>
-<p>Vægt (gram)</p>
-<p>CO2 udledning</p>
-<p>Total</p>
-Sammenlign jeres skemaer på klassen. Er de meget forskellige? Hvorfor?
-
-
-</div> <!-- end content-section -->
-
-<div id="opgave-block-2" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 2</span>
-    <h1>En mere klimavenlig frokost</h1>
-<p>I skal finde ud af, om jeres frokost kan blive mere klimavenlig ved at finde madvarer, der udleder mindre CO2. I kan kigge på CO2-beregneren og madpyramiden.  Lav i grupper en liste over de madvarer I kunne bytte ud med nogle, der udleder mindre CO2.</p>
-<p>[#Klimavenlig madpyramide – ligger i ”Links, illustrationer o.a.”#]</p>
-<p>Er jeres frokoster allerede klimavenlig, eller kan de blive bedre?</p></div> <!-- end content-section -->
-
-<div id="opgave-block-3" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 3</span>
-    <h1>Lav en CO2-plakat</h1>
-<p>Lav en plakat til at hænge op jeres skole, som viser hvor meget CO2, der er i forskellige madvarer og frokoster.</p>
-<p>Plakaten kan f.eks. hedde ”Er din mad god for klimaet?”</p></div> <!-- end content-section -->
-        </div>
-    </div>
-</div>
-
-
-
-<div id="historie" class="popup madkundskab-popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
-
-    <div class="popup-content">
-
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    
-                    Lektion 1E
-                    
-                </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    
-                    <li>
-<<<<<<< HEAD
-                        <a class="task-nav-item" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">I skal bruge <span class="caret"></span></a>
-                        
-                        <ul class="task-nav-list dropdown-menu">
-                            
-                            <li><i class="fa fa-check"></i> {"Teksterne"=>"”Har mennesket altid dyrket jorden?”,  ”Er stenalderkost overhovedet sundt” og / eller ”Stenalderjægerne guffede gerne kulhydrater"}</li>
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internettet</li>
-                            
-                        </ul>
-=======
-                        <a role="button" data-toggle="collapse" href="#historie-means-collapse" aria-expanded="false" aria-controls="historie-means-collapse">I skal bruge <span class="caret"></span></a>
->>>>>>> origin/master
-                    </li>
-                    
-                    
-                    <li>
-                       <a role="button" data-toggle="collapse" href="#historie-goals-collapse" aria-expanded="false" aria-controls="historie-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    
-                    
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    
-                    
-                    
-                </ul>
-            </nav>
-<<<<<<< HEAD
-            
-            
-            <div class="collapse" id="collapseExample" aria-expanded="false">
-            <div class="well">
-JKHFKJDHSFKJHSDFKJHSDF
-            </div>
-            </div>
-            
-=======
-
-
->>>>>>> origin/master
-            <div class="content-block">
-
-                
-                <div class="collapse" id="historie-means-collapse">
-                    <div class="task-nav-list">
-                        <ul>
-                            
-                            <li><i class="fa fa-check"></i> {"Teksterne"=>"”Har mennesket altid dyrket jorden?”,  ”Er stenalderkost overhovedet sundt” og / eller ”Stenalderjægerne guffede gerne kulhydrater"}</li>
-                            
-                            <li><i class="fa fa-check"></i> Adgang til internettet</li>
-                            
-                        </ul>
-                    </div>
-                </div>   
-                
-                
-                
-                <div class="collapse" id="historie-goals-collapse">
-                    <div class="task-nav-list">
-                        <ol>
-                            
-                            <li>(4. klasse) Livsgrundlag og produktion. I kan forklare, hvordan og hvorfor vores kost har ændret sig fra stenalderen og til i dag.</li>
-                            
-                            <li>(5.-6. klasse) Kronologi, brud og kontinuitet. I kan forklare, hvorfor stenalderen hedder sådan, og hvorfor der er forskel på jægerstenalder og bondestenalder.</li>
-                            
-                        </ol>
-                    </div>
-                </div>   
-                
-
-                
-                <span class="label label-lg label-madkundskab">Historie</span>
-                
-                
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                
-                <div class="task-nav-list">
-
-                    
-                    <button href="#opgave-block-1" class="btn task-btn opg-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-2" class="btn task-btn opg-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-                    <button href="#opgave-block-3" class="btn task-btn opg-btn">Opgave 3 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    
-
-                </div>
-
-                <h1 class="page-title">Stenaldermad og klima</h1>
-            </div>
-
-
-            <div class="content-block">
-<p>Kostvanerne i Danmark har ændret sig gennem tiden. I stenalderen spiste man helt anderledes, end man gør i dag. Dengang spiste mennesker mange nødder, rødder, grøntsager og frugt. Nogle siger, at stenalderkost er meget sundt – men er det godt for klimaet?</p>
-<p>Her lærer I om stenalderen, og om hvordan livsgrundlaget har ændret sig gennem tiden. I lærer også om kosten i stenalderen var bedre for klimaet end det, vi spiser i dag.</p>
-
-</div> <!-- end content-section -->
-
-<div class="content-divider"></div>
-
-<div id="opgave-block-1" class="content-block opgave-block">
-    <span class="label label-lg">Opgave 1</span>
-    <h1>Jægerstenalderen (13.000-4.000 år før vor tid) </h1>
-    <p>Før mennesker begyndte at dyrke jorden og holde husdyr, levede og spiste de meget anderledes, end vi gør i dag. Det skal I læse om og se en lille film om her.</p>
-    <p>Læse teksten ”Har mennesket altid dyrket jorden?” [#Teksten ligger i ”Tekster o.a. til pdf.”#]</p>
-    <p>Se stemningsfilmen: ”Stenalderstemning fra Sagnlandet Lejre” [#LINK ligger i ”Links, illustrationer o.a.”#]</p>
-<p>Svar på spørgsmålene i gruppen:</p> 
-<ul>
-    <li>Hvad spiste man i stenalderen?</li>
-    <li>Hvorfor?</li>
-    <li>Hvordan adskiller denne kost sig fra moderne kost?</li>
-    <li>Hvorfor har vores kost ændret sig fra dengang til nu?</li>
-</ul>
-</div> <!-- end content-section -->
-
-<div id="opgave-block-2" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 2</span>
-    <h1>Stenalderkost i dag</h1>
-
-<p>Selvom vores kost generelt ser anderledes ud i dag, så er det de seneste år blevet moderne at spise ”stenaldermad”.</p>
-<p>Sammen på klassen kan I vælge at læse én af artiklerne:</p><ul>
-    <li>”Er stenalderkost overhovedet sundt” Teksten ligger i ”Tekster o.a. til pdf.”#]</li>
-    <li>”Stenalderjægerne guffede gerne kulhydrater” Teksten ligger i ”Tekster o.a. til pdf.”#]</li>
-</ul>
-<p>Diskuter, hvad I ved om stenalderkost. Hvad fortæller artiklerne jer?</p>
-<p>Diskuter i jeres gruppe, hvordan disse faktorer kan have påvirket vores madvaner:</p> 
-<ul>
-    <li>Der er mange forskellige varer til salg i butikkerne</li>
-    <li>Vi har penge at købe mad for i dag, så vi behøver ikke fange og finde det selv</li>
-    <li>Maden er blevet billigere</li>
-</ul>
-
-
-</div> <!-- end content-section -->
-
-<div id="opgave-block-3" class="content-block opgave-block"> 
-    <span class="label label-lg">Opgave 3</span>
-    <h1>Er stenaldermad god for klimaet? </h1>
-<p>Nu ved I en masse om stenaldermad og om, hvordan den er anderledes end den mad, vi spiser i dag. Det er nu tid til at undersøge, om stenaldermad er mere eller mindre klimavenlig end den mad I plejer at spise.</p>
-<p>Kig på denne klimavenlige madpyramide: [#Klimavenlig madpyramide – ligger i ”Links, illustrationer o.a.”#]</p>
-<p>Svar på spørgsmålene:</p><ul>
-    <li>Hvilken mad er bedst for klimaet, jeres eller stenalderfolkets?</li>
-    <li>Hvorfor?</li>
-    <li>Hvordan har vores liv ændret sig fra stenalderen frem til nu?</li>
-    <li>Har vi brug for mere, mindre eller anderledes mad nu? (tænk for eksempel på, om I bevæger jer mere eller mindre end man gjorde i stenalderen)</li>
-    <li>Hvordan spiser vi mere klimavenlig mad i fremtiden?</li>
-</ul>
+        
+    </div> <!-- fullpage end -->
  
-<h5>Ekstra aktiviteter: illustrér kostændringen eller lav jægerfolkets æblegrød</h5>
-<p>Tegn en tegning i grupper, der viser forskellen på, hvordan man spiste i stenalderen, og hvordan man spiser nu. Vis også hvorfor (tegn for eksempel en person, der samler bær og nødder eller en, der løber efter sit bytte, i forhold til en person, der sidder og arbejder foran computeren eller køber ind i supermarkedet eller kører i sin bil).</p>
-<p>I kan udforske stenaldermad ved at lave jægerfolkets æblegrød: [#Opskriften ligger i ”Tekster o.a. til pdf.”#].</p>
-</div> <!-- end content-section -->
-        </div>
-    </div>
-</div>
+    <div id="beskrivelse" class="popup tema01-popup">
+         <div class="gradient-overlay"></div>
+        <button class="popup-close"></button>
+        
+                  
+        <div class="popup-content">
+            
+               <div class="popup-content-inner">
+                  
+                   <a class="popup-brand" href="#firstPage/0">
+          <img alt="Brand" src="images/spisornli_logo_black.svg"/>
+      </a>
+                   <nav id="" class="navbar task-nav">
+                       <span class="navbar-brand">Forløb 1</span><span class="brand-title">Er jeres mad god for klimaet?</span>
+                       
+                   
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="task-nav-item" href="#"><i class="fa fa-download"></i> Dokumenter</a></li>
+                        <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+                        <li><a class="task-nav-item" href="#"><i class="fa fa-print"></i> Print</a></li>
+                    </ul>
+                       
+                   </nav>
+                   
+                   
+                   <div class="task-nav-list">
+                <ul class="docs-nav">
+                    <li><a href="#"><i class="fa fa-file"></i> Intro: Er jeres mad god for klimaet? (PDF)</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Lektion 1A: Oksekød eller æbler (PDF)</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Lektion 1B: Jorden: Et kæmpestort drivhus (PDF)</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Lektion 1C: Klimamad på plakaten (PDF)</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Lektion 1D: Madpakke med CO2 (PDF)</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Lektion 1E: Stenaldermad og klima (PDF)</a></li>
+                </ul>
+                </div>
+                   
+                   
+                   <div class="content-block">
+                   <span class="label label-lg label-primary">Intro</span>
+            <h1 class="page-title">Er jeres mad god for klimaet?</h1>
+                   
+            <p>Har I tænkt på, at det I spiser har betydning for klimaet?</p>
+            <p>Vores mad udleder CO2 og andre drivhusgasser som varmer jorden op. Det fører til klimaforandringer. Det betyder derfor noget for vores klima og miljø, hvad vi putter i munden.</p>
+            <p>I dette forløb skal I undersøge, hvad klima-mad er og om jeres frokost er god eller dårlig for klimaet. I skal undersøge drivhuseffekten og CO2-indholdet i jeres frokost, og undersøge om vores generelle kost er blevet mere eller mindre god for klimaet gennem tiden.</p>
+            
+            <h5>Der er forskel på miljø og klima</h5>
+                   
+            <p>Miljø er alt det der omgiver os, som naturen har skabt: blomster, træer, vandløb, dyr osv. </p>
+            <p>Klimaet er en del af miljøet. Klima har at gøre med vejret. Ikke som en vejrudsigt, men som en generel beskrivelse af, hvordan vejret er et bestemt sted over en længere periode. En varm sommerdag siger ikke noget om vores klima. Men hvis alle somre bliver varmere og varmere over en længere periode, så kan det fortæller os noget om, at vores klima ændrer sig og generelt bliver varmere. </p>
+            <p>Så selvom maden er klimavenlig kan den stadig bidrage til andre miljøproblemer, f.eks. vandforurening eller luftforurening.</p>
+                        </div>  
+                    </div>   
+                </div>
+            </div>
+    
+    
+    <div id="madkundskab01" class="popup madkundskab-popup">
+        <div class="gradient-overlay"></div>
+        <button class="popup-close"></button>
+                  
+        <div class="popup-content">
+          
+               <div class="popup-content-inner">
+                     
+                   <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
+                   <nav id="" class="navbar task-nav">
+                        <span class="navbar-brand">LEKTION 1A</span>
+
+                       <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a class="task-nav-item" href="#">I skal bruge <span class="caret"></span></a></li>
+                            <li><a class="task-nav-item" href="#">Læringsmål <span class="caret"></span></a></li>
+                            
+                    
+                
+                           <li><a class="task-nav-item" href="#"><i class="fa fa-download"></i> Dokumenter</a></li>
+                           <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+                            <li><a class="task-nav-item" href="#"><i class="fa fa-print"></i> Print</a></li>
+                        </ul>
+                       
+                       
+                     
+                   </nav>
+                <div class="task-nav-list">
+                <ul>
+                    <li><i class="fa fa-check"></i> Adgang til internet</li>
+                    <li><i class="fa fa-check"></i> Adgang til internet</li>
+                    <li><i class="fa fa-check"></i> Adgang til internet</li>
+                    <li><i class="fa fa-check"></i> Adgang til internet</li>
+                </ul>
+                </div>
+          
+                    
+                <div class="task-nav-list">
+                <ol>
+                    <li>Sundhedsbevidsthed: I kan analysere jeres valg af mad jeres din hverdag</li>
+                    <li>Sundhedsbevidsthed: I kan begrunde jeres valg af mad ud fra hensyn til ernæring og miljø</li>
+                    <li>Sundhedsbevidsthed: Du kan omsætte analyser og vurderinger i nye måltidsforslag til eget brug</li>
+                </ol>
+                </div>
+               
+                <div class="task-nav-list">
+                <ul class="docs-nav">
+                    <li><a href="#"><i class="fa fa-file"></i> Fil til download</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Fil til download</a></li>
+                    <li><a href="#"><i class="fa fa-file"></i> Fil til download</a></li>
+
+                </ul>
+                </div>
+                
+                   
+               
+                
+                   
+                
+                   
+            <div class="content-block">
+                <span class="label label-lg label-madkundskab">madkundskab</span> <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
+                <div class="task-nav-list">
+            <button class="btn task-btn">Opgave 1 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+            <button class="btn task-btn">Opgave 2 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+            <button class="btn task-btn">Opgave 3 <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+            </div>
+            
+            <h1 class="page-title">Oksekød eller æbler</h1>
+                   
+           
+            <p>Madpyramiden er et pyramideformet billede, der viser, hvad man bør spise.</p>
+            <p>Før i tiden var madpyramiden kun lavet ud fra, hvad der var sundt for os mennesker at spise. Den moderne madpyramide viser også, hvad der er bedst for klimaet. Derfor bliver den også kaldt ’Den klimavenlige madpyramide’. </p> 
+                
+            <div class="image-wrapper"><img src="images/Tema01_Klimavenlig-madpyramide.jpg" /></div>
+            <p>Ved at kigge på madpyramiden kan I finde ud af, om den mad, I plejer at spise, er god eller dårlig for klimaet. I skal spise mest af det fra bunden, lidt mindre af det fra midten og mindst af det fra toppen. </p>                   
+            <p>I dette forløb lærer I at vælge råvarer og lave hele måltider, der er klimavenlige.</p>
+                </div> <!-- end content-section -->
+            
+                
+                 <div class="content-divider"></div>
+              
+                   
+                <div class="content-block opgave-block">
+                <span class="label label-lg label-madkundskab">Opgave 1</span>
+                <h1>Forklar madvarernes placering i den klimavenlige madpyramide</h1>
+                <p>Når man siger, at noget mad er dårlig for klimaet, så er det fordi, at det udleder meget CO2. Madvarer udleder CO2 eller andre drivhusgasser af flere årsager.</p>
+                    
+                    <ul>
+                    <li>De bliver transporteret langt</li>
+                    <li>De bliver dyrket i opvarmede drivhuse</li>
+                    <li>Der bliver fældet skov for at kunne dyrke dem</li>
+                    <li>Jorden, hvor de vokser, afgiver drivhusgasser, når den bearbejdes </li>
+                    <li>Køerne, som laver mælk og oksekød, bøvser og prutter</li>
+                    <li>Der bruges energi i produktionen og til at producere gødning, sprøjtegifte og emballage osv.</li>
+                    
+                    
+                    </ul>
+                <p>På klassen skal I sammen vælge to madvarer fra hvert af de tre rum i madpyramiden.  
+I ved at dem fra det øverste rum udleder meget CO2, at dem fra midten udleder lidt mindre og at dem, der står nederst udleder mindst. Diskuter på klassen, hvorfor I tror, at de seks madvarer i har valgt er placeret der i pyramiden, hvor de er.</p>
+                    
+                   <h6>Husk at tænke på:</h6>
+                <ol>
+                    <li>Hvor bliver madvaren dyrket eller fremstillet? (For eksempel i drivhuse, som kræver meget energi til opvarmning)</li>
+                    <li>Skal madvaren transporteres langt med fly eller lastbil?</li>
+                    <li>Er det et dyr, der skal bruge meget foder og vand, eller er det planter, der kun skal bruge lidt vand og gødning?</li>
+                </ol>
+                </div> <!-- end content-section -->
+                   
+                <div class="content-block opgave-block"> 
+                   <span class="label label-lg label-madkundskab">Opgave 2</span>
+                   <h1>Sammensæt to måltider</h1>
+                   <p>I skal nu sammensætte to måltider. Ét, der er meget dårligt for klimaet og ét, der er bedre for klimaet.</p> <p>Husk, at man skal spise varieret. Og husk, at det skal smage lækkert. </p>
+                </div> <!-- end content-section -->
+                
+                <div class="content-block opgave-block"> 
+                   <span class="label label-lg label-madkundskab">Opgave 3</span>
+                   <h1>Opsamling: præsentation og diskussion</h1>
+                   <p>Præsenter jeres idéer til retter for resten af klassen. Forklar, hvorfor de er enten dårlige eller gode for klimaet eller måske midt i mellem. </p>
+                   <p>Diskuter på klassen, hvad I kan gøre for at tage højde for klimaet, når I vælger madvarer. </p>
+                </div> <!-- end content-section -->
+                 
+                    </div>   
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+     <script type="text/javascript">
+	$(function() {
+		$('.popup').easyModal({
+            top:0,
+			overlay: 0.2,
+            hasVariableWidth: true,
+            zIndex:function(){return 10000;}
+		});
+
+		$('.popup-open').click(function(e) {
+			var target = $(this).attr('href');
+			$(target).trigger('openModal');
+			e.preventDefault();
+		});
+
+		$('.popup-close').click(function(e) {
+			$('.popup').trigger('closeModal');
+		});
+	});
+	</script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script type="text/javascript">
-            $(function() {
-                $('.popup').easyModal({
-                    top:0,
-                    overlay: 0.2,
-                    hasVariableWidth: true,
-                    zIndex:function(){return 10000;}
-                });
-
-                $('.popup-open').click(function(e) {
-                    var target = $(this).attr('href');
-                    $(target).trigger('openModal');
-                    e.preventDefault();
-                });
-
-                $('.popup-close').click(function(e) {
-                    $('.popup').trigger('closeModal');
-                });
-                $('.opg-btn').click(function(e) {
-                    var target = $(this).attr('href');
-                    $('.popup').scrollTo(target,1000);
-                });
-            });
-        </script>
-
-
-    </body>
+</body>
 </html>
