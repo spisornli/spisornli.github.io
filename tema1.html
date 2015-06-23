@@ -55,7 +55,12 @@ title: Er din mad god for klimaet?
                     <p>{{ block.intro }}</p>
 
                     <a class="btn popup-open" type="button" href="#{{ block.id }}">
-                        Start
+                       {% if block.lession %}
+                            Start
+                            {% else %}
+                            Introduktion
+                            {% endif %}
+                        
                         <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
 
                 </div>
