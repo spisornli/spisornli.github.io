@@ -39,7 +39,13 @@ title: Er din mad god for klimaet?
                 <div class="image-wrapper"><div class="illu-circle"><img src="{{ block.image }}" /></div></div>
                 <div class="text-wrapper">
                     <div class="task-header">
-                        <span class="label item-label">Lektion {{ block.theme }}{{ block.lession }}</span>                    
+                        <span class="label item-label">
+                            {% if block.lession %}
+                            Lektion {{ block.theme }}{{ block.lession }}
+                            {% else %}
+                            Temaforløb {{ block.theme }}
+                            {% endif %}
+                        </span>                    
                         {% if block.time %}
                         <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
                         {% endif %}
@@ -48,7 +54,9 @@ title: Er din mad god for klimaet?
                     <h4 class="item-title"><a href="#secondPage/1">{{ block.title }}</a></h4>
                     <p>{{ block.intro }}</p>
 
-                    <a class="btn popup-open" type="button" href="#{{ block.id }}">Start<span class="badge"><i class="fa fa-arrow-right"></i></span></a>
+                    <a class="btn popup-open" type="button" href="#{{ block.id }}">
+                        Start
+                        <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
 
                 </div>
             </div>
@@ -72,9 +80,16 @@ title: Er din mad god for klimaet?
 
             <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
             <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">Lektion {{ block.theme }}{{ block.lession }}</span>
+                <span class="navbar-brand">
+                    {% if block.lession %}
+                    Lektion {{ block.theme }}{{ block.lession }}
+                    {% else %}
+                    Temaforløb {{ block.theme }}
+                    {% endif %}
+                </span>
 
                 <ul class="nav navbar-nav navbar-right">
+                    {% if means %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">I skal bruge <span class="caret"></span></a>
                         <ul class="task-nav-list dropdown-menu">
@@ -83,6 +98,8 @@ title: Er din mad god for klimaet?
                             {% endfor %}
                         </ul>
                     </li>
+                    {% endif %}
+                    {% if goals %}
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Læringsmål <span class="caret"></span></a>
                         <ul class="task-nav-list dropdown-menu">
@@ -91,16 +108,19 @@ title: Er din mad god for klimaet?
                             {% endfor %}
                         </ul>
                     </li>
+                    {% endif %}
+                    {% if pdf %}
                     <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+                    {% endif %}
                 </ul>
 
 
 
             </nav>
-            
+
             {{ block.content }}
 
-            
+
         </div>   
     </div>
 </div>
