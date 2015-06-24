@@ -1,0 +1,27 @@
+---
+layout: fag
+title: Natur og teknologi
+---
+<nav class="navbar top-menu" id="">
+    <ul id="myMenu" class="nav navbar-nav">
+        <li data-menuanchor="firstPage" class="active tema tema1"><a href="#firstPage">{{ page.title }}</a></li>
+        <li data-menuanchor="secondPage" class="madkundskab"><a href="#secondPage">1</a></li>
+        <li data-menuanchor="3rdPage" class="natur-teknologi"><a href="#3rdPage">2</a></li>
+        <li data-menuanchor="4thPage" class="dansk"><a href="#4thPage">3</a></li>
+        <li data-menuanchor="5thPage" class="matematik"><a href="#5thPage">4</a></li>
+        <li data-menuanchor="6thPage" class="historie"><a href="#6thPage">5</a></li>
+    </ul>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://spisornli.dk">
+                <img alt="Brand" src="images/spisornli_logo.svg"/>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<div id="fullpage">
+   {% include slides_subject.html param="Natur og teknologi" %}    
+</div> <!-- fullpage end -->
+
+{% include popups_subject.html param="Natur og teknologi" %}
