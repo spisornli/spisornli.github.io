@@ -406,16 +406,16 @@ img {
 }
 
 .task-btn {
-    background: #F9F9F9;
+    background:  darken($body-bg, 5%);
     letter-spacing: 0;
     margin-right: 5px;
     letter-spacing: 0.03em;
-    color: rgba($text-color, .6);
+    color: rgba($text-color, .8);
     font-size: 14px;
     
     &:hover {
-        background: #fff;
-        color: rgba($text-color, .7);
+        background: darken($body-bg, 3%);
+        color: rgba($text-color, .9);
     }
 
     .badge {
@@ -443,98 +443,24 @@ img {
     background: $brand-primary-dark;
 }
 
-
-
-
-
 #section-madkundskab {
     background: $madkundskab;
-    
-        
-    .item-info {
-        color: rgba($madkundskab-dark, .8);
-        a { color: rgba($madkundskab-dark, 1) }
-        a:hover { color: darken($madkundskab-dark, 10%); }
-        .opg-num { 
-            color: rgba($madkundskab-dark, .5); 
-            border-right-color: rgba($madkundskab-dark, .5); 
-        }        
-    }
-  
 }
-
-
-
 
 #section-natur-teknologi {
     background: $natur-teknologi;
-    
-    
-    .item-info {
-        color: rgba($natur-teknologi-dark, .8);
-        a { color: rgba($natur-teknologi-dark, 1) }
-        a:hover { color: darken($natur-teknologi-dark, 10%); }
-        .opg-num { 
-            color: rgba($natur-teknologi-dark, .5); 
-            border-right-color: rgba($natur-teknologi-dark, .5); 
-        }        
-    }
-
-    
-    .start-button {
-        background: lighten($natur-teknologi, 20%);
-        color: rgba($text-color, .65);        
-        &:hover {
-            background: lighten($natur-teknologi, 30%);
-            color: rgba($text-color, .8);
-        }
-    }
 }
 
 #section-dansk {
     background: $dansk;
-    
-    
-    .item-info {
-        color: rgba($dansk-dark, .8);
-        a { color: rgba($dansk-dark, 1) }
-        a:hover { color: darken($dansk-dark, 10%); }
-        .opg-num { 
-            color: rgba($dansk-dark, .5); 
-            border-right-color: rgba($dansk-dark, .5); 
-        }        
-    }
-
 }
 
 #section-matematik {
-    background: $matematik;
-    
-    .item-info {
-        color: rgba($matematik-dark, .8);
-        a { color: rgba($matematik-dark, 1) }
-        a:hover { color: darken($matematik-dark, 10%); }
-        .opg-num { 
-            color: rgba($matematik-dark, .5); 
-            border-right-color: rgba($matematik-dark, .5); 
-        }        
-    }
-   
+    background: $matematik;  
 }
 
 #section-historie {
     background: $historie;
-    
-    .item-info {
-        color: rgba($historie-dark, .8);
-        a { color: rgba($historie-dark, 1) }
-        a:hover { color: darken($historie-dark, 10%); }
-        .opg-num { 
-            color: rgba($historie-dark, .5); 
-            border-right-color: rgba($historie-dark, .5); 
-        }        
-    }
-  
 }
 
 
@@ -708,8 +634,8 @@ img {
 
 .popup .task-nav, .item-nav {
     margin-bottom: 17px;
-    background-color: $brand-primary;
-    color: #fff;
+    background-color: rgba($text-color, .8);
+    color: rgba($body-bg,1);
     border-radius: 2px;
     border: none;
     line-height: 40px;
@@ -762,7 +688,7 @@ img {
         height: 40px;
         background-color: rgba(0,0,0,0.0);
         border-right: 1px solid rgba(0,0,0,0.08);
-        color: #fff;
+        color: rgba($body-bg,1) !important;
         font-weight: 600;
     }
     
@@ -812,7 +738,7 @@ img {
             position: absolute;
             left:16px;
             top:1px;
-            color: rgba(255,255,255,1);
+            color: rgba($text-color,1);
             
         }
     }
@@ -828,7 +754,7 @@ img {
 
 
 .task-nav-list {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid darken($body-bg, 5%);
     padding-top: 14px;
     margin-top: 15px;
     margin-bottom: 17px;
@@ -845,7 +771,7 @@ img {
         
         li {
             padding: 12px 15px 12px 35px;
-            background-color: #f9f9f9;
+            background-color: darken($body-bg, 3%);
             display: block;
             border-radius: 2px;
             margin:2px 0;
@@ -865,7 +791,7 @@ img {
         display: inline-block;
         margin: 2px 0;
         padding: 12px 15px;
-        background-color: #f9f9f9;
+        background-color: darken($body-bg, 3%);
         
         }
     }
@@ -878,13 +804,14 @@ img {
         a {
             display: inline-block;
             padding: 12px 15px;
-            background-color: #f9f9f9;
+            background-color: darken($body-bg, 3%);
         
         }
     }
     
     .fa {
-        margin-right: 6px;    
+        margin-right: 6px; 
+        color: rgba($text-color,1);
     }
      
     
@@ -957,28 +884,96 @@ img {
 }
 
 
-.madkundskab-popup {
 
-    .task-nav {
-        background-color: $madkundskab-dark;
-    }
-    .content-divider {
-        background-color: $madkundskab-dark;
-    }
-    
-    a {
-        color: $madkundskab-dark;
-    }
-    
-    .prefix {
-        color: $madkundskab-dark;
-    }
-    
-    .image-wrapper {
-        background: darken($madkundskab-dark, 10%);
-    }
 
+#madkundskab {
+    .content-divider { background-color: $madkundskab; }
+    .label { background-color: $madkundskab; }
+    a {color: $madkundskab-dark}
+    .task-nav .navbar-brand { background-color: $madkundskab; }
+    .task-btn { background-color: rgba($madkundskab,.1); }
+    .opgave-block { background-color: rgba($madkundskab,.1); }
+    .task-nav-list {
+        ul li { background-color: rgba($madkundskab,.1); }
+        ol li { background-color: rgba($madkundskab,.1); }
+        .docs-nav li  { 
+            background-color: transparent;
+            a { background-color: rgba($madkundskab,.1); }
+        }
+    }
+    
 }
+
+#natur-teknologi {
+    .content-divider { background-color: $natur-teknologi; }
+    .label { background-color: $natur-teknologi; color:$text-color; }
+    a {color: $natur-teknologi-dark}
+    .task-nav .navbar-brand {background-color: $natur-teknologi; color:$text-color; }
+    .task-btn { background-color: rgba($natur-teknologi,.1); }
+    .opgave-block { background-color: rgba($natur-teknologi,.1); }
+    .task-nav-list {
+        ul li { background-color: rgba($natur-teknologi,.1); }
+        ol li { background-color: rgba($natur-teknologi,.1); }
+        .docs-nav li  { 
+            background-color: transparent;
+            a { background-color: rgba($natur-teknologi,.1); }
+        }
+    }
+}
+
+#dansk {
+    .content-divider { background-color: $dansk; }
+    .label { background-color: $dansk; }
+    a {color: $dansk}
+    .task-nav .navbar-brand { background-color: $dansk; }
+    .task-btn { background-color: rgba($dansk,.1); }
+    .opgave-block { background-color: rgba($dansk,.1); }
+    .task-nav-list {
+        ul li { background-color: rgba($dansk,.1); }
+        ol li { background-color: rgba($dansk,.1); }
+        .docs-nav li  { 
+            background-color: transparent;
+            a { background-color: rgba($dansk,.1); }
+        }
+    }
+    
+}
+
+#matematik {
+    .content-divider { background-color: $matematik; }
+    .label { background-color: $matematik; }
+    a {color: $matematik-dark}
+    .task-nav .navbar-brand { background-color: $matematik; }
+    .task-btn { background-color: rgba($matematik,.1); }
+    .opgave-block { background-color: rgba($matematik,.1); }
+    .task-nav-list {
+        ul li { background-color: rgba($matematik,.1); }
+        ol li { background-color: rgba($matematik,.1); }
+        .docs-nav li  { 
+            background-color: transparent;
+            a { background-color: rgba($matematik,.1); }
+        }
+    }
+}
+
+#historie {
+    .content-divider { background-color: $historie; }
+    .label { background-color: $historie; }
+    a {color: $historie}
+    .task-nav .navbar-brand { background-color: $historie; }
+    .task-btn { background-color: rgba($historie,.1); }
+    .opgave-block { background-color: rgba($historie,.1); }
+    .task-nav-list {
+        ul li { background-color: rgba($historie,.1); }
+        ol li { background-color: rgba($historie,.1); }
+        .docs-nav li  { 
+            background-color: transparent;
+            a { background-color: rgba($historie,.1); }
+        }
+    }
+}
+
+
 
 
 
@@ -1064,7 +1059,7 @@ img {
     margin: 15px 0px 35px 0px;
     display: block;
     
-    border-top: 1px solid #E5E5E5;
+    border-top: 1px solid darken($body-bg, 5%);
     padding-top: 14px;
 }
 
@@ -1074,7 +1069,8 @@ img {
     border-radius: 4px;
     margin: 35px 0;
     padding: 30px 30px;
-    background: rgba($madkundskab-dark, .08);
+    background: darken($body-bg, 3%);
+    border-top: none;
     
     h1 {
         font-family: $headingsAmaticBold-font-family;
