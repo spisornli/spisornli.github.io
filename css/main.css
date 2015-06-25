@@ -7561,14 +7561,14 @@ img {
   #section-front .image-wrapper {
     position: absolute;
     margin: 0;
-    top: 43%;
-    left: -60px;
+    top: 40%;
+    left: -50px;
     ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
     /* line 1144, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     #section-front .image-wrapper .illu-circle {
-      width: 500px;
+      width: 490px;
       height: auto; }
   /* line 1151, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
