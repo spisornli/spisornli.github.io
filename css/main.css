@@ -1590,7 +1590,7 @@ a {
   a:hover, a:focus {
     color: #a93434;
     text-decoration: underline;
-    outline: none;
+    outline: none !important;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
