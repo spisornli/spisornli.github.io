@@ -7561,7 +7561,7 @@ img {
   #section-front .image-wrapper {
     position: absolute;
     margin: 0;
-    top: 48%;
+    top: 50%;
     left: -125px;
     ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
