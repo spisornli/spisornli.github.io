@@ -575,7 +575,7 @@ img {
         a:hover, a:focus { background: lighten($dansk, 45%); }
         a:after { color: lighten($dansk, 25%); }
     }
-    .dansk.active > a { background: lighten($dansk, 25%); }
+    .dansk.active > a { background: lighten($dansk, 35%); }
     
     .matematik {
         a:hover, a:focus { background: lighten($matematik, 35%); }
