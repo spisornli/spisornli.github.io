@@ -1283,7 +1283,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             text-transform: none;
             
             &:hover {
-                color: rgba($body-bg,.6);
+                color: darken($body-bg, 10%);
             }
             
          
