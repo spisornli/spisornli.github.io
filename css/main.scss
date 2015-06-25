@@ -1211,6 +1211,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         margin-bottom: 0px;
     }
     
+    .front-label {
+        font-family: $headingsAmaticBold-font-family;
+        display: inline-block;
+        height: 54px;
+        width: 54px;
+        line-height: 52px;
+        margin: 0 5px 0 0;
+        float: left;
+        background: rgba($text-color,.9);
+        color: rgba($body-bg,1);
+        font-size: 36px;
+        font-weight: normal;
+        border-radius: 2px;
+        padding: 0 0 0 3px;
+}
+    
 }
 
 
@@ -1405,21 +1421,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 }
 
-.front-label {
-    font-family: $headingsAmaticBold-font-family;
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    line-height: 58px;
-    margin: 0 5px 0 0;
-    float: left;
-    background: rgba($text-color,.9) !important;
-    color: rgba($body-bg,1) !important;
-    font-size: 30px;
-    font-weight: normal !important;
-    border-radius: 2px;
-    padding: 0 0 0 3px  !important;
-}
+
 
 .front-illu {
     overflow: hidden;
