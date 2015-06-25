@@ -1371,14 +1371,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         letter-spacing: 0.15em;
         font-size: 14px;
         font-weight: 400;
-        color: rgba($text-color,.8);
+        color: rgba($text-color,.9);
         padding: 0 20px 10px 0px;
         
         .fa {
             position: relative;
             margin-right: 3px;
             top:0px;
-            color: rgba($body-bg-dark,.9);
+            color: rgba($body-bg-dark,1);
             font-size: 17px;
         }
     }
