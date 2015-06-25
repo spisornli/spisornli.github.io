@@ -1372,7 +1372,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
 }
 
-
+.workinprogress-small {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding: 4px;
+    font-size: 10px;
+    background: rgba($brand-primary,.8);
+    
+    .fa {
+        margin: 0;
+        float: right;
+    }
+}
 
 .home-menu-logo {
     width: 320px;
