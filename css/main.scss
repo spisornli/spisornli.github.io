@@ -1306,7 +1306,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     margin-top: 6px;
     display: inline-block;
     
-    a { color:$body-bg; margin-left: 5px; }
+    a { 
+        color:$body-bg; 
+        margin-left: 6px; 
+        
+        .fa {
+            margin-right: 3px;
+        }
+    }
 }
 
 
