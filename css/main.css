@@ -7792,8 +7792,8 @@ img {
 
 /* line 1424, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
-  width: 260px;
-  margin-bottom: 0px;
+  width: 250px;
+  margin-bottom: -2px;
   margin-top: -10px; }
   /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
