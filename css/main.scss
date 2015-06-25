@@ -1296,6 +1296,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             margin-right: 5px;
             top:1px;
             font-size: 16px;
+            color: rgba($body-bg,.9);
         }
     
     .fa-user {
@@ -1339,7 +1340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         
         .fa {
             position: relative;
-            margin-right: 3px;
+            margin-right: 1px;
             top:0px;
             color: rgba($body-bg,.9);
         }
