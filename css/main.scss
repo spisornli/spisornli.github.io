@@ -1327,7 +1327,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu-header {
     display: block;
-    margin: 10px 0px 8px 7px;
+    margin: 10px 0px 8px 6px;
     
     .home-menu-title {
         text-transform: uppercase;
@@ -1340,7 +1340,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         .fa {
             position: relative;
             margin-right: 3px;
-            color: rgba($body-bg,.9) !important;
             top:0px;
         }
     }
