@@ -1186,8 +1186,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
                 
         a {
             font-family: $headingsAmaticBold-font-family;
-            background: rgba($text-color,.9) !important;
-            color: rgba($body-bg,1) !important;
+            background: rgba($text-color,.9);
+            color: rgba($body-bg,1);
             display:inline-block;
             padding: 0px 15px 0px 15px;
             border-radius: 2px;
@@ -1198,7 +1198,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             font-weight: normal;
             letter-spacing: 0.03em;
             position: relative;
-                &:hover { text-decoration: none; }
+            
+                &:hover { 
+                    text-decoration: none;
+                    background: rgba($text-color,.7);
+                
+                }
         }
     }
     
@@ -1281,6 +1286,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             float: left;
             font-weight: 300;
             text-transform: none;
+            
          
         }
     }
