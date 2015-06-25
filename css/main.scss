@@ -1201,7 +1201,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             
                 &:hover { 
                     text-decoration: none;
-                    background: rgba($text-color,.7);
+                    background: rgba($text-color,.5);
                 
                 }
         }
@@ -1281,6 +1281,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             float: left;
             font-weight: 300;
             text-transform: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
             
          
         }
