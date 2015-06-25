@@ -61,7 +61,7 @@ a {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
     outline: none !important;
-    outline-offset: none !important;
+    outline-offset: 0px !important;
       
         -webkit-transition: all .2s ease-in-out;
         -moz-transition: all .2s ease-in-out;
