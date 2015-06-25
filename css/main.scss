@@ -1241,6 +1241,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
                 &:hover { text-decoration: none; }
         }
     }
+    .fa-exclamation-circle {
+        color: rgba($brand-primary,1);
+        position: absolute;
+        right: 4px;
+        top:4px;
+    }
 
 }
 
@@ -1300,12 +1306,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         top:0px;
     }
     
-    .fa-exclamation-circle {
-        color: rgba($brand-primary,1);
-        position: absolute;
-        right: 4px;
-        top:4px;
-    }
+    
 
 }
 
