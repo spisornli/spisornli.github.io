@@ -1354,6 +1354,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     border-radius: 2px;
     letter-spacing: 0.03em;
     font-weight: 400;
+    
+    .fa {
+        margin: 0 2px 0 -2px;
+    }
 }
 
 .home-menu-logo {
