@@ -66,6 +66,8 @@
                 {% if block.time %}
                 <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
                 {% endif %}
+                
+                {% if block.assignments %}
                 <div class="task-nav-list">
 
                     {% for i in (1..block.assignments) %}
@@ -73,6 +75,7 @@
                     {% endfor %}
 
                 </div>
+                {% endif %}
 
                 <h1 class="page-title">{{ block.title }}</h1>
             </div>
