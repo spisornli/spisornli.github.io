@@ -7699,7 +7699,8 @@ img {
   display: inline-block; }
   /* line 1309, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block a {
-    color: #F9F7EF; }
+    color: #F9F7EF;
+    margin-left: 5px; }
 
 /* line 1313, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
