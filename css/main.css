@@ -7628,7 +7628,7 @@ img {
     display: inline-block;
     height: 54px;
     width: 54px;
-    line-height: 52px;
+    line-height: 54px;
     margin: 0 5px 0 0;
     float: left;
     background: rgba(37, 58, 68, 0.9);
@@ -7636,7 +7636,7 @@ img {
     font-size: 36px;
     font-weight: normal;
     border-radius: 2px;
-    padding: 0 0 0 1px; }
+    padding: 0 0 0 3px; }
 
 /* line 1235, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-fag ul, .home-menu ul {
