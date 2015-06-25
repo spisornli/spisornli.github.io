@@ -7750,8 +7750,8 @@ img {
 /* line 1370, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress-small {
   position: absolute;
-  bottom: 2px;
-  left: 2px;
+  bottom: 0px;
+  left: 0px;
   text-align: center;
   padding: 2px 3px;
   background: indianred;
