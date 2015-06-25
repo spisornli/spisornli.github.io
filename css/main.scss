@@ -1344,6 +1344,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     display: inline-block;
     
     a { 
+        color:rgba($text-color,1); 
         margin-left: 10px; 
         
         &:hover {
