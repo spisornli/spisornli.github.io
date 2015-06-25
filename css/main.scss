@@ -573,7 +573,7 @@ img {
     .natur-teknologi.active > a { background: lighten($natur-teknologi, 25%); }
     
     .dansk {
-        a:hover, a:focus { background: lighten($dansk, 45%); }
+        a:hover, a:focus { background: lighten($dansk, 35%); }
         a:after { color: lighten($dansk, 25%); }
     }
     .dansk.active > a { background: lighten($dansk, 35%); }
