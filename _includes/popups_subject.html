@@ -1,6 +1,6 @@
 {% for block in site.blocks %}
 {% if block.subject == include.param %}
-<div id="{{ block.id }}" class="popup madkundskab-popup">
+<div id="{{ block.id }}-{{ block.theme }}{{ block.lession }}" class="popup madkundskab-popup">
     <div class="gradient-overlay"></div>
     <button class="popup-close"></button>
 
