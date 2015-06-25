@@ -1299,6 +1299,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     .fa-user {
         top:0px;
     }
+    
+    .fa-exclamation-circle {
+        color: rgba($brand-primary,1);
+        position: absolute;
+        right: 4px;
+        top:4px;
+    }
 
 }
 

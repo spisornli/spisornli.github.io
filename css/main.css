@@ -7693,27 +7693,33 @@ img {
 /* line 1299, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu .fa-user {
   top: 0px; }
+/* line 1303, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.home-menu .fa-exclamation-circle {
+  color: indianred;
+  position: absolute;
+  right: 4px;
+  top: 4px; }
 
-/* line 1306, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1313, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .contact-block {
   font-size: 13px;
   border-top: 1px solid rgba(37, 58, 68, 0.1);
   padding-top: 13px;
   margin-top: 6px;
   display: inline-block; }
-  /* line 1313, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1320, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block a {
     color: #F9F7EF;
     margin-left: 6px; }
-    /* line 1317, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1324, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .contact-block a .fa {
       margin-right: 3px; }
 
-/* line 1324, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1331, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
   margin: 10px 0px 8px 5px; }
-  /* line 1328, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1335, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
     letter-spacing: 0.15em;
@@ -7721,14 +7727,14 @@ img {
     font-weight: 400;
     color: rgba(37, 58, 68, 0.8);
     padding: 0 20px 10px 0px; }
-    /* line 1336, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1343, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 5px;
       color: rgba(249, 247, 239, 0.9) !important;
       top: 0px; }
 
-/* line 1346, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1353, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 4px;
@@ -7743,11 +7749,11 @@ img {
   border-radius: 2px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1361, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1368, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1366, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1373, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress-small {
   top: 4px;
   right: 4px;
@@ -7756,20 +7762,20 @@ img {
   padding: 2px 4px;
   font-size: 10px;
   background: rgba(205, 92, 92, 0.8); }
-  /* line 1375, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1382, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress-small .fa {
     margin: 0; }
 
-/* line 1380, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1387, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 320px;
   margin-bottom: 0px;
   margin-top: -50px; }
-  /* line 1384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1391, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -10px; }
 
-/* line 1390, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1397, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-label {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -7785,7 +7791,7 @@ img {
   border-radius: 2px;
   padding: 0 0 0 3px !important; }
 
-/* line 1406, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1413, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-illu {
   overflow: hidden;
   max-width: 400px;
