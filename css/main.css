@@ -7726,9 +7726,10 @@ img {
       position: relative;
       margin-right: 2px;
       top: 0px;
-      color: rgba(249, 247, 239, 0.9); }
+      color: rgba(249, 247, 239, 0.9);
+      font-size: 16px; }
 
-/* line 1351, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1352, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7742,11 +7743,11 @@ img {
   font-size: 10px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1365, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1366, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1370, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1371, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress-small {
   position: absolute;
   bottom: 0px;
@@ -7756,21 +7757,21 @@ img {
   background: indianred;
   font-size: 10px;
   line-height: 1; }
-  /* line 1380, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1381, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress-small .fa {
     margin: 0;
     color: rgba(249, 247, 239, 0.9); }
 
-/* line 1387, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1388, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 230px;
   margin-bottom: -7px;
   margin-top: -30px; }
-  /* line 1391, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1392, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -9px; }
 
-/* line 1397, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1398, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-label {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -7786,7 +7787,7 @@ img {
   border-radius: 2px;
   padding: 0 0 0 3px !important; }
 
-/* line 1413, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1414, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-illu {
   overflow: hidden;
   max-width: 400px;
