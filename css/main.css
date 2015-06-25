@@ -7681,7 +7681,7 @@ img {
     text-transform: none; }
     /* line 1285, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu li a:hover {
-      text-decoration: underline; }
+      color: rgba(249, 247, 239, 0.6); }
 /* line 1293, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu li:last-child {
   border-right: none; }
