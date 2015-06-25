@@ -7635,7 +7635,7 @@ img {
     margin: 0 2px 0 0;
     float: left;
     background: #253a44;
-    color: #f9f7ef;
+    color: #f2efdc;
     font-size: 34px;
     font-weight: normal;
     border-top-left-radius: 2px;
@@ -7660,7 +7660,7 @@ img {
   .home-menu-fag li a, .home-menu li a {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     background: rgba(37, 58, 68, 0.9);
-    color: #f9f7ef;
+    color: #f2efdc;
     padding: 0px 11px;
     border-radius: 2px;
     font-size: 15px;
@@ -7692,7 +7692,7 @@ img {
     line-height: 1;
     height: auto;
     background: transparent !important;
-    color: #f9f7ef;
+    color: #f2efdc;
     padding: 0;
     margin: 0;
     letter-spacing: 0.02em;
@@ -7702,7 +7702,7 @@ img {
     text-transform: none; }
     /* line 1308, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu li a:hover {
-      color: #ebe4ca; }
+      color: #e4deb7; }
 /* line 1316, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu li:last-child {
   border-right: none; }
