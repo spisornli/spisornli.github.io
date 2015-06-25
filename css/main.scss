@@ -1346,9 +1346,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     left:0;
     right:0;
     bottom: 0;
-    text-align: center;
+    text-align: left;
     background: rgba($brand-primary,.8);
     color: $body-bg;
+    font-family: $headings-font-family;
+    padding: 0 15px;
 }
 
 .home-menu-logo {
