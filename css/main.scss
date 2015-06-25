@@ -1342,10 +1342,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .workinprogress {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 4px;
+    left: 4px;
     text-align: left;
-    background: rgba($brand-primary,.8);
+    background: rgba($brand-primary,.9);
     color: $body-bg;
     font-family: $headings-font-family;
     padding: 5px 13px;
