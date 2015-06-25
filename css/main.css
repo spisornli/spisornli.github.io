@@ -7753,9 +7753,9 @@ img {
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 3px;
-      top: 0px;
+      top: -1px;
       color: rgba(249, 247, 239, 0.9);
-      font-size: 15px; }
+      font-size: 16px; }
 
 /* line 1388, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
