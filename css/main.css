@@ -7729,7 +7729,7 @@ img {
 .workinprogress {
   position: absolute;
   bottom: 4px;
-  left: 4px;
+  right: 4px;
   text-align: left;
   background: rgba(205, 92, 92, 0.9);
   color: #F9F7EF;
@@ -7738,18 +7738,20 @@ img {
   line-height: 1;
   font-size: 16px;
   text-transform: none;
-  border-radius: 2px; }
+  border-radius: 2px;
+  letter-spacing: 0;
+  font-weight: 300; }
 
-/* line 1358, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1360, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 320px;
   margin-bottom: 0px;
   margin-top: -50px; }
-  /* line 1362, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1364, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -10px; }
 
-/* line 1368, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1370, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-label {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   display: inline-block;
@@ -7765,7 +7767,7 @@ img {
   border-radius: 2px;
   padding: 0 0 0 3px !important; }
 
-/* line 1384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1386, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-illu {
   overflow: hidden;
   max-width: 400px;
