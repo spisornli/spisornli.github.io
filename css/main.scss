@@ -1300,9 +1300,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 
 .contact-block {
-    font-size: 12px;
+    font-size: 13px;
     border-top: 1px solid rgba($text-color,.1);
-    padding-top: 15px;
+    padding-top: 13px;
+    margin-top: 5px;
+    display: inline-block;
 }
 
 
