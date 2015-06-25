@@ -7731,9 +7731,9 @@ img {
     .contact-block a:hover {
       color: #ebe4ca;
       text-decoration: none; }
-    /* line 1355, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-    .contact-block a .fa {
-      margin-right: 3px; }
+  /* line 1356, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .contact-block .fa {
+    margin-right: 3px; }
 
 /* line 1362, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
