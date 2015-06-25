@@ -7627,7 +7627,6 @@ img {
     margin-bottom: 0px; }
   /* line 1217, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema .front-label, .home-menu-fag .front-label, .home-menu .front-label {
-    font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
     height: 52px;
     width: 52px;
@@ -7635,14 +7634,15 @@ img {
     margin: 0 2px 0 0;
     float: left;
     background: rgba(37, 58, 68, 0.9);
-    color: #f9f7ef;
+    color: indianred;
     font-size: 34px;
     font-weight: normal;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    padding: 0 0 0 3px; }
+    padding: 0 0 0 3px;
+    font-weight: 600; }
 
 /* line 1241, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-fag ul, .home-menu ul {

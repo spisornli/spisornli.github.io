@@ -1215,7 +1215,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
     
     .front-label {
-        font-family: $headingsAmaticBold-font-family;
         display: inline-block;
         height: 52px;
         width: 52px;
@@ -1223,7 +1222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         margin: 0 2px 0 0;
         float: left;
         background: rgba($text-color,.9);
-        color: rgba($body-bg,1);
+        color: rgba($brand-primary,1);
         font-size: 34px;
         font-weight: normal;
         border-top-left-radius: 2px;
@@ -1231,6 +1230,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         padding: 0 0 0 3px;
+        font-weight: 600;
 }
     
 }
