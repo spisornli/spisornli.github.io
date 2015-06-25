@@ -313,6 +313,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 display: inline-block;
                 border-radius: 2px;
                 background: rgba($text-color,0.9);
+                color: $body-bg;
                 
                 a {
                     color: $body-bg;
