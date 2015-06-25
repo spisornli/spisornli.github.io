@@ -7729,7 +7729,7 @@ img {
     margin-left: 10px; }
     /* line 1350, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .contact-block a:hover {
-      color: #ebe4ca;
+      color: rgba(37, 58, 68, 0.6);
       text-decoration: none; }
   /* line 1356, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block .fa {
