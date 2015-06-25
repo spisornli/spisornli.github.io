@@ -7608,10 +7608,10 @@ img {
       display: inline-block;
       padding: 0px 15px 0px 15px;
       border-radius: 2px;
-      font-size: 36px;
+      font-size: 30px;
       text-transform: uppercase;
-      line-height: 54px;
-      height: 54px;
+      line-height: 50px;
+      height: 50px;
       font-weight: normal;
       letter-spacing: 0.03em;
       position: relative; }
@@ -7626,14 +7626,14 @@ img {
   .home-menu-tema .front-label, .home-menu-fag .front-label, .home-menu .front-label {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
-    height: 54px;
-    width: 54px;
-    line-height: 54px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
     margin: 0 5px 0 0;
     float: left;
     background: rgba(37, 58, 68, 0.9);
     color: #f9f7ef;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: normal;
     border-radius: 2px;
     padding: 0 0 0 3px; }
