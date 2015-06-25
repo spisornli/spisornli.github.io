@@ -1335,11 +1335,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             color: rgba($body-bg,.9) !important;
             top:0px;
         }
-        
     }
-   
 }
 
+
+.workinprogress {
+    background: rgba($brand-primary,.9);
+    padding: 5px 12px:
+    
+}
 
 .home-menu-logo {
     width: 320px;
