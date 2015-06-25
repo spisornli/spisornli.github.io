@@ -1343,10 +1343,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .workinprogress {
     position: absolute;
     bottom: 4px;
-    right: 4px;
-    text-align: left;
-    background: rgba($brand-primary,.9);
-    color: $body-bg;
+    left: -20px;
+    text-align: center;
+    background: rgba($body-bg,.9);
+    color: rgba($text-color,.9);
     font-family: $headings-font-family;
     padding: 5px 13px;
     line-height: 1;
