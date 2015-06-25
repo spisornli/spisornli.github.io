@@ -7792,14 +7792,12 @@ img {
 
 /* line 1424, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
-  width: 270px;
-  margin-bottom: -2px;
-  margin-top: 0px; }
-  /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  width: 260px; }
+  /* line 1427, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -12px; }
 
-/* line 1436, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1435, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .front-illu {
   overflow: hidden;
   max-width: 400px;
