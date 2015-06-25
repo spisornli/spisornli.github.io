@@ -1379,12 +1379,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     left: 0px;
     bottom: 0px;
     padding: 4px;
-    font-size: 10px;
     background: rgba($brand-primary,.8);
     
     .fa {
         margin: 0;
         float: right;
+        color: rgba($body-bg,.9);
     }
 }
 

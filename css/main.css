@@ -7761,12 +7761,12 @@ img {
   left: 0px;
   bottom: 0px;
   padding: 4px;
-  font-size: 10px;
   background: rgba(205, 92, 92, 0.8); }
-  /* line 1385, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress-small .fa {
     margin: 0;
-    float: right; }
+    float: right;
+    color: rgba(249, 247, 239, 0.9); }
 
 /* line 1391, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
