@@ -1248,6 +1248,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     
     ul {
+        display: inline-block;
+        margin: 0px;
+        border-bottom: none;
+        padding: 0px;
         overflow: visible;
     }
     
@@ -1295,7 +1299,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
-
+.contact-block {
+    font-size: 12px;
+    border-top: 1px solid rgba($text-color,.1);
+    padding-top: 15px;
+}
 
 
 .home-menu-header {
