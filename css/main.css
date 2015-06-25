@@ -7737,7 +7737,7 @@ img {
   background: indianred;
   color: rgba(249, 247, 239, 0.9);
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-  padding: 5px 10px;
+  padding: 5px 7px;
   line-height: 1;
   font-size: 10px;
   letter-spacing: 0.03em;
@@ -7752,7 +7752,7 @@ img {
   bottom: 0px;
   left: 0px;
   text-align: center;
-  padding: 2px 3px;
+  padding: 2px 3px 3px 3px;
   background: indianred;
   font-size: 10px;
   line-height: 1; }
