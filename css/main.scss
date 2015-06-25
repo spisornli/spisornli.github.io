@@ -1134,8 +1134,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     .image-wrapper {
         position: absolute;
         margin: 0;
-        top:45%;
-        left:-100px;
+        top:48%;
+        left:-120px;
         
         ms-transform: translateY(-50%); 
    	    -webkit-transform: translateY(-50%); 
@@ -1149,7 +1149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
     
     .text-wrapper {
-       left: 520px;
+        left: 510px;
         width: 650px;
     }
 
@@ -1432,13 +1432,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 }
 
-
-
-.front-illu {
-    overflow: hidden;
-    max-width: 400px;
-    margin: 0 auto .1em auto
-}
 
 
 
