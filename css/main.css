@@ -7495,7 +7495,7 @@ img {
 .popup .content-block {
   margin: 15px 0px 35px 0px;
   display: block;
-  padding-top: 14px; }
+  padding: 0px; }
 
 /* line 1064, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .content-title-block {
