@@ -7740,7 +7740,7 @@ img {
 /* line 1365, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 0px; }
+  margin: 10px 0px 8px 5px; }
   /* line 1369, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
@@ -7748,7 +7748,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     color: rgba(37, 58, 68, 0.8);
-    padding: 10 20px 18px 5px; }
+    padding: 0 20px 10px 0px; }
     /* line 1377, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
