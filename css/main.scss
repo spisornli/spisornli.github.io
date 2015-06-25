@@ -1058,10 +1058,16 @@ img {
 .popup .content-block {
     margin: 15px 0px 35px 0px;
     display: block;
-    
+    padding-top: 14px;
+}
+
+.popup .content-title-block {
+    margin: 15px 0px 35px 0px;
+    display: block;
     border-top: 1px solid darken($body-bg, 5%);
     padding-top: 14px;
 }
+
 
 .popup .opgave-block {
     position: relative;
@@ -1070,7 +1076,6 @@ img {
     margin: 35px 0;
     padding: 30px 30px;
     background: darken($body-bg, 3%);
-    border-top: none;
     
     h1 {
         font-family: $headingsAmaticBold-font-family;
