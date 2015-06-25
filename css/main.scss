@@ -1324,6 +1324,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         color:$body-bg; 
         margin-left: 6px; 
         
+        &:hover {
+            color: darken($body-bg, 10%);
+            text-decoration: none;
+        }
+        
         .fa {
             margin-right: 3px;
         }
