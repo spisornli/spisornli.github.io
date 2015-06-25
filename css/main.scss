@@ -1190,7 +1190,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             color: rgba($body-bg,1);
             display:inline-block;
             padding: 0px 15px 0px 15px;
-            border-radius: 2px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
             font-size: 30px;
             text-transform: uppercase;
             line-height: 50px;
