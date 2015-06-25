@@ -1368,10 +1368,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .home-menu-title {
         text-transform: uppercase;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.12em;
         font-size: 14px;
         font-weight: 400;
-        color: rgba($text-color,.9);
+        color: rgba($text-color,1);
         padding: 0 20px 10px 0px;
         
         .fa {
