@@ -1196,10 +1196,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             border-bottom-right-radius: 2px;
             font-size: 34px;
             text-transform: uppercase;
-            line-height: 50px;
-            height: 50px;
+            line-height: 52px;
+            height: 52px;
             font-weight: normal;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.03em;
             position: relative;
             
                 &:hover { 
@@ -1217,9 +1217,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     .front-label {
         font-family: $headingsAmaticBold-font-family;
         display: inline-block;
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
+        height: 52px;
+        width: 52px;
+        line-height: 52px;
         margin: 0 2px 0 0;
         float: left;
         background: rgba($text-color,.9);
