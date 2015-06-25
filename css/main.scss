@@ -1303,8 +1303,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     font-size: 13px;
     border-top: 1px solid rgba($text-color,.1);
     padding-top: 13px;
-    margin-top: 5px;
+    margin-top: 6px;
     display: inline-block;
+    
+    a { color:$body-bg; }
 }
 
 
