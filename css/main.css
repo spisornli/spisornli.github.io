@@ -7676,10 +7676,10 @@ img {
     color: rgba(249, 247, 239, 0.9);
     padding: 0;
     margin: 0;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     border-radius: 0;
     float: left;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: none; }
 /* line 1288, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu li:last-child {
@@ -7727,7 +7727,7 @@ img {
       margin-right: 2px;
       top: 0px;
       color: rgba(249, 247, 239, 0.9);
-      font-size: 16px; }
+      font-size: 15px; }
 
 /* line 1352, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
