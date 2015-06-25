@@ -7753,7 +7753,7 @@ img {
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 3px;
-      top: -1px;
+      top: 0px;
       color: rgba(249, 247, 239, 0.9);
       font-size: 17px; }
 
