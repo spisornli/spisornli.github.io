@@ -7561,18 +7561,18 @@ img {
   #section-front .image-wrapper {
     position: absolute;
     margin: 0;
-    top: 50%;
+    top: 45%;
     left: -105px;
     ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
     /* line 1144, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     #section-front .image-wrapper .illu-circle {
-      width: 550px;
+      width: 500px;
       height: auto; }
   /* line 1151, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
-    left: 500px;
+    left: 480px;
     width: 650px;
     padding-left: 50px;
     border-left: 1px solid rgba(37, 58, 68, 0.1); }
