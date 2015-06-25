@@ -1203,7 +1203,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             letter-spacing: 0.03em;
             position: relative;
             
-                &:hover { 
+                &:hover, &:focus { 
                     text-decoration: none;
                     background: rgba($text-color,.5);
                 
