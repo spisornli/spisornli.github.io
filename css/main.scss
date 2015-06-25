@@ -1363,6 +1363,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
 }
 
+.workinprogress-small {
+    bottom: 4px;
+    left: 4px;
+    padding: 5px 10px;
+    font-size: 10px;
+    
+    .fa {
+        margin: 0;
+    }
+}
+
 .home-menu-logo {
     width: 320px;
     margin-bottom: 0px;
