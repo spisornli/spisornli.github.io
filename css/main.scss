@@ -1343,6 +1343,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     padding-right: 30px;
     margin-top: 6px;
     display: inline-block;
+    font-weight: 400;
     
     a { 
         color:rgba($text-color,1); 
@@ -1358,9 +1359,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             margin-right: 3px;
     }
     
-    .contact-footer {
-        font-weight: 400;
-    }
 }
 
 
