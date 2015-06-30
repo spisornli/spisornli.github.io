@@ -1163,12 +1163,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     margin-bottom: 3px;
 }
 
-
+.home-menu-tema {
+    float: left;
+    width: 500px;
+}
 
 .home-menu-tema, .home-menu-fag, .home-menu {
     list-style-type: none;
     padding: 0;
-    display: block;
+    display: inline-block;
     text-align: left;
     margin: 0;
     overflow: hidden;
