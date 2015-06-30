@@ -1225,7 +1225,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         height: 40px;
         width: 40px;
         line-height: 40px;
-        margin: 0 2px 0 0;
+        margin: 0;
         float: left;
         background: rgba($text-color,1);
         color: rgba($body-bg-dark,1);
@@ -1236,6 +1236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         padding: 0 0 0 3px;
+        border-right: 1px solid rgba($body-bg,.3);
 }
     
 }
