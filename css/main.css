@@ -7594,7 +7594,7 @@ img {
   /* line 1172, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema a.f1:after {
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 0;
     content: url(../images/fagforløb-1.svg);
     height: 216px;
