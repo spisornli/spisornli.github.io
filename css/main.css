@@ -7608,15 +7608,15 @@ img {
       background: #253a44;
       color: #f2efdc;
       display: inline-block;
-      padding: 0px 15px 0px 15px;
+      padding: 0px 12px 0px 12px;
       border-top-left-radius: 0px;
       border-bottom-left-radius: 0px;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
-      font-size: 32px;
+      font-size: 26px;
       text-transform: uppercase;
-      line-height: 50px;
-      height: 50px;
+      line-height: 40px;
+      height: 40px;
       font-weight: normal;
       letter-spacing: 0.03em;
       position: relative; }
@@ -7631,14 +7631,14 @@ img {
   .home-menu-tema .front-label, .home-menu-fag .front-label, .home-menu .front-label {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
     margin: 0 2px 0 0;
     float: left;
     background: #253a44;
     color: #f2efdc;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: normal;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
