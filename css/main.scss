@@ -1168,9 +1168,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     width: 370px;
     
     a {
-        background-image: url(../images/fagforløb-1.svg);
-        background: no-repeat;
+        background: url(../images/fagforløb-1.svg) no-repeat;
+    
     }
+    
 }
 
 .home-menu-tema, .home-menu-fag {
