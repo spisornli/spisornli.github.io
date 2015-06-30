@@ -1161,6 +1161,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .home-menu-wrapper {
     display: block;
     margin-bottom: 3px;
+    border-top: 1px solid rgba($text-color,.1);
 }
 
 .home-menu-tema {
@@ -1365,18 +1366,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu-header {
     display: block;
-    margin-top: 15px;
     
        
     .home-menu-title {
-        display: inline-block;
         text-transform: uppercase;
         letter-spacing: 0.12em;
         font-size: 14px;
         font-weight: 400;
         color: rgba($text-color,1);
-        padding: 10px 20px 10px 10px;
-        border-top: 1px solid rgba($text-color,.1);
+        padding: 10px;
         overflow: hidden;
         
         .fa {
