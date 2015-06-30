@@ -7646,29 +7646,33 @@ img {
     border-bottom-right-radius: 0px;
     padding: 0 0 0 3px; }
 
-/* line 1244, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-.home-menu-fag ul, .home-menu ul {
-  overflow: hidden;
-  display: inline-block; }
-/* line 1249, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-.home-menu-fag li, .home-menu li {
-  margin-right: 4px;
-  margin-bottom: 0; }
-  /* line 1253, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  .home-menu-fag li a, .home-menu li a {
-    font-family: 'amaticbold', Helvetica, Arial, sans-serif;
-    background: rgba(37, 58, 68, 0.9);
-    color: #f2efdc;
-    padding: 0px 11px;
-    border-radius: 2px;
-    font-size: 15px;
-    text-transform: uppercase;
-    line-height: 30px;
-    height: 30px;
-    font-weight: normal;
-    letter-spacing: 0.08em;
-    float: left; }
-
+/* .home-menu-fag, .home-menu {
+   
+    ul {
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    li {
+        margin-right: 4px;
+        margin-bottom: 0;
+                
+        a {
+            font-family: $headingsAmaticBold-font-family;
+            background: rgba($text-color,.9);
+            color: rgba($body-bg-dark,1);
+            padding: 0px 11px;
+            border-radius: 2px;
+            font-size: 15px;
+            text-transform: uppercase;
+            line-height: 30px;
+            height: 30px;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            float: left;
+        }
+    }
+}*/
 /* line 1274, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu ul {
   display: inline-block;
