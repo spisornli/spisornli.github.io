@@ -7551,31 +7551,35 @@ img {
   width: 100%;
   ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  /*.image-wrapper {
+        position: absolute;
+        margin: 0;
+        top:40%;
+        left:-45px;
+        
+        ms-transform: translateY(-50%); 
+   	    -webkit-transform: translateY(-50%); 
+        transform: translateY(-50%);
+        
+        .illu-circle {
+            width: 340px;
+            height: auto; 
+        }
+    
+    }
+    
+    .text-wrapper {
+        left: 400px;
+        width: 650px;
+        padding-left: 50px;
+        border-left: 3px solid rgba($text-color,.0);
+    }*/ }
   /* line 1128, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .item-wrapper {
     width: 940px;
     z-index: 1;
     overflow: visible; }
-  /* line 1134, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  #section-front .image-wrapper {
-    position: absolute;
-    margin: 0;
-    top: 40%;
-    left: -45px;
-    ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    /* line 1144, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-    #section-front .image-wrapper .illu-circle {
-      width: 490px;
-      height: auto; }
-  /* line 1151, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-  #section-front .text-wrapper {
-    left: 470px;
-    width: 650px;
-    padding-left: 50px;
-    border-left: 3px solid rgba(37, 58, 68, 0); }
 
 /* line 1161, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-wrapper {
