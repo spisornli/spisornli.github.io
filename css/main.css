@@ -7740,7 +7740,7 @@ img {
 /* line 1365, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 15px 0; }
+  margin-top: 15px; }
   /* line 1370, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     display: inline-block;
