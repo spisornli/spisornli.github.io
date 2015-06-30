@@ -7592,20 +7592,23 @@ img {
   width: 370px; }
   /* line 1170, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema a:after {
+    position: absolute;
+    left: 0;
+    top: 0;
     content: url(../images/fagforløb-1.svg); }
 
-/* line 1177, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1180, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema, .home-menu-fag {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   text-align: left;
   margin: 0; }
-  /* line 1184, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1187, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema ul, .home-menu-fag ul {
     margin: 0;
     padding: 0; }
-  /* line 1190, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1193, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema li, .home-menu-fag li {
     font-family: inherit;
     margin-bottom: 4px;
@@ -7613,7 +7616,7 @@ img {
     position: relative;
     list-style-type: none;
     overflow: hidden; }
-    /* line 1198, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1201, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-tema li a, .home-menu-fag li a {
       font-family: 'amaticbold', Helvetica, Arial, sans-serif;
       background: #253a44;
@@ -7631,14 +7634,14 @@ img {
       font-weight: normal;
       letter-spacing: 0.03em;
       position: relative; }
-      /* line 1216, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+      /* line 1219, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .home-menu-tema li a:hover, .home-menu-tema li a:focus, .home-menu-fag li a:hover, .home-menu-fag li a:focus {
         text-decoration: none;
         background: rgba(37, 58, 68, 0.5); }
-  /* line 1224, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1227, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema li:last-child, .home-menu-fag li:last-child {
     margin-bottom: 0px; }
-  /* line 1228, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1231, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema .front-label, .home-menu-fag .front-label {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
@@ -7685,11 +7688,11 @@ img {
         }
     }
 }*/
-/* line 1279, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1282, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu {
   display: block;
   padding: 10px; }
-  /* line 1284, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1287, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu ul {
     display: inline-block;
     margin: 0px;
@@ -7697,14 +7700,14 @@ img {
     padding: 0px;
     overflow: visible;
     list-style-type: none; }
-  /* line 1294, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1297, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu li {
     margin: 0 12px 0 0;
     border-right: 1px solid rgba(249, 247, 239, 0.2);
     padding-right: 12px;
     overflow: visible;
     float: left; }
-    /* line 1302, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1305, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu li a {
       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
       font-size: 12px;
@@ -7719,23 +7722,23 @@ img {
       float: left;
       font-weight: 300;
       text-transform: none; }
-      /* line 1317, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+      /* line 1320, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .home-menu li a:hover {
         color: #e4deb7; }
-  /* line 1325, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1328, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu li:last-child {
     border-right: none; }
-  /* line 1331, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1334, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu .fa {
     position: relative;
     margin-right: 5px;
     top: 1px;
     font-size: 14px; }
-  /* line 1339, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1342, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu .fa-user {
     top: 0px; }
 
-/* line 1348, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1351, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .contact-block {
   font-size: 13px;
   border-top: 1px solid rgba(37, 58, 68, 0.1);
@@ -7743,23 +7746,23 @@ img {
   padding-right: 30px;
   display: inline-block;
   font-weight: 400; }
-  /* line 1356, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1359, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block a {
     color: #253a44;
     margin-left: 10px; }
-    /* line 1360, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1363, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .contact-block a:hover {
       color: rgba(37, 58, 68, 0.6);
       text-decoration: none; }
-  /* line 1366, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1369, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block .fa {
     margin-right: 3px; }
 
-/* line 1373, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1376, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
   margin: 15px 0 10px 0; }
-  /* line 1377, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1380, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -7768,7 +7771,7 @@ img {
     color: #253a44;
     padding: 10px;
     overflow: hidden; }
-    /* line 1386, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1389, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
@@ -7776,7 +7779,7 @@ img {
       color: #f2efdc;
       font-size: 17px; }
 
-/* line 1397, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1400, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7790,11 +7793,11 @@ img {
   font-size: 10px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1411, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1414, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1416, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1419, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress-small {
   position: absolute;
   bottom: 0px;
@@ -7804,17 +7807,17 @@ img {
   background: indianred;
   font-size: 10px;
   line-height: 1; }
-  /* line 1426, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1429, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress-small .fa {
     margin: 0;
     color: rgba(249, 247, 239, 0.9); }
 
-/* line 1433, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1436, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 280px;
   margin-bottom: 0px;
   margin-top: -80px; }
-  /* line 1438, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1441, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -9px; }
 
