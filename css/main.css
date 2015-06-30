@@ -7592,7 +7592,7 @@ img {
   width: 370px; }
   /* line 1170, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema a:after {
-    content: "url(../images/fagforløb-1.svg)"; }
+    content: url(../images/fagforløb-1.svg); }
 
 /* line 1177, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema, .home-menu-fag {
