@@ -7809,7 +7809,7 @@ img {
 .home-menu-logo {
   width: 240px;
   margin-bottom: 0px;
-  margin-top: 0px; }
+  margin-top: -50px; }
   /* line 1431, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -9px; }
