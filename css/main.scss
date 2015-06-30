@@ -1167,8 +1167,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     float: left;
     width: 370px;
     
-    a {
-        background: url(../images/fagforløb-1.svg) no-repeat;
+    a:after {
+        content: "url(../images/fagforløb-1.svg)";
     
     }
     
