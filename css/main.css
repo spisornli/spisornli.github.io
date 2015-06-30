@@ -7751,9 +7751,8 @@ img {
     color: #253a44;
     padding: 10px 20px 10px 10px;
     border-top: 1px solid rgba(37, 58, 68, 0.1);
-    overflow: hidden;
-    float: left; }
-    /* line 1382, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    overflow: hidden; }
+    /* line 1381, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
@@ -7761,7 +7760,7 @@ img {
       color: #f2efdc;
       font-size: 17px; }
 
-/* line 1393, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1392, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7775,11 +7774,11 @@ img {
   font-size: 10px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1407, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1406, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1412, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1411, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress-small {
   position: absolute;
   bottom: 0px;
@@ -7789,17 +7788,17 @@ img {
   background: indianred;
   font-size: 10px;
   line-height: 1; }
-  /* line 1422, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1421, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress-small .fa {
     margin: 0;
     color: rgba(249, 247, 239, 0.9); }
 
-/* line 1429, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 240px;
   margin-bottom: -3px;
   margin-top: 0px; }
-  /* line 1434, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1433, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -9px; }
 
