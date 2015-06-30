@@ -1161,11 +1161,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .home-menu-wrapper {
     display: block;
     margin: 0px;
+    position: relative;
 }
 
 .home-menu-tema {
     float: left;
     width: 370px;
+    
     
     a:after {
         position: absolute;
