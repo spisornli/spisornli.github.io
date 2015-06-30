@@ -7685,7 +7685,7 @@ img {
 /* line 1273, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu {
   display: block;
-  margin: 10px 0; }
+  padding: 10px; }
   /* line 1278, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu ul {
     display: inline-block;
