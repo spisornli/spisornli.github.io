@@ -7690,7 +7690,7 @@ img {
     display: inline-block;
     margin: 0px;
     border-bottom: none;
-    padding: 11px 0px 12px 0px;
+    padding: 15px 0px;
     overflow: visible;
     list-style-type: none;
     border-top: 1px solid rgba(37, 58, 68, 0);
@@ -7738,34 +7738,34 @@ img {
 .home-text {
   line-height: 1.4;
   margin-bottom: 20px; }
-  /* line 1350, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1351, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-text span {
     font-weight: 400; }
 
-/* line 1355, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1356, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .contact-block {
   font-size: 13px;
   padding: 15px 0;
   display: inline-block;
   font-weight: 400;
   color: rgba(37, 58, 68, 0.8); }
-  /* line 1362, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1363, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block a {
     color: #253a44;
     margin-left: 10px; }
-    /* line 1366, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1367, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .contact-block a:hover {
       color: rgba(37, 58, 68, 0.6);
       text-decoration: none; }
-  /* line 1372, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1373, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block .fa {
     margin-right: 3px; }
 
-/* line 1379, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1380, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
   margin: 0px 0 13px 0; }
-  /* line 1383, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -7774,7 +7774,7 @@ img {
     color: #253a44;
     padding: 10px;
     overflow: hidden; }
-    /* line 1392, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1393, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
@@ -7782,7 +7782,7 @@ img {
       color: indianred;
       font-size: 17px; }
 
-/* line 1403, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1404, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7796,16 +7796,16 @@ img {
   font-size: 10px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1417, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1418, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1424, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1425, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 230px;
   margin-bottom: 15px;
   margin-top: -20px; }
-  /* line 1429, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1430, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -8px; }
 

@@ -1280,7 +1280,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         display: inline-block;
         margin: 0px;
         border-bottom: none;
-        padding: 11px 0px 12px 0px;
+        padding: 15px 0px;
         overflow: visible;
         list-style-type: none;
         border-top: 1px solid rgba($text-color,.0);
@@ -1347,6 +1347,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .home-text {
     line-height: 1.4;
     margin-bottom: 20px;
+    
     span {
         font-weight: 400;
     }
