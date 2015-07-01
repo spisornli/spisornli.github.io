@@ -7690,7 +7690,7 @@ img {
     display: inline-block;
     margin: 0px;
     border-bottom: none;
-    padding: 10px;
+    padding: 10px 10px 11px 10px;
     overflow: visible;
     list-style-type: none;
     border-top: 1px solid rgba(37, 58, 68, 0.1);
