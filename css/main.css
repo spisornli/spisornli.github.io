@@ -6757,8 +6757,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 /* line 242, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .item-wrapper {
   display: block;
-  padding: 0;
-  max-width: 940px;
+  padding: 0 20px;
+  max-width: 980px;
   margin: 0px auto 0 auto;
   position: relative; }
   /* line 249, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -6767,12 +6767,12 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     overflow: hidden;
     padding: 0;
     float: left;
-    margin-left: -50px;
+    margin-left: 0px;
     margin-top: -30px; }
     /* line 259, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .item-wrapper .image-wrapper .illu-circle {
-      width: 330px;
-      height: 330px;
+      width: 300px;
+      height: auto;
       margin: 0px;
       position: relative;
       padding: 0px;
@@ -6784,8 +6784,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   /* line 275, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .item-wrapper .text-wrapper {
     display: inline-block;
-    left: 50px;
-    width: 650px;
+    left: 40px;
+    width: 600px;
     position: relative;
     top: 0; }
     /* line 287, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */

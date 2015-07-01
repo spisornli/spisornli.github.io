@@ -241,8 +241,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 .item-wrapper {
     display: block;
-    padding: 0;
-    max-width: 940px;
+    padding: 0 20px;
+    max-width: 980px;
     margin: 0px auto 0 auto;
     position: relative;
         
@@ -251,14 +251,14 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             overflow: hidden;
             padding: 0;
             float: left;
-            margin-left: -50px;
+            margin-left: 0px;
             margin-top: -30px;
             
             
             
             .illu-circle {
-                width: 330px;
-                height: 330px;
+                width: 300px;
+                height: auto;
                 margin: 0px;
                 position: relative;
                 padding: 0px;
@@ -274,8 +274,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
         .text-wrapper {
             display: inline-block;
-            left: 50px;
-            width: 650px;
+            left: 40px;
+            width: 600px;
             position: relative;
             top:0;
             
