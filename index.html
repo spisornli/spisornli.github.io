@@ -4,7 +4,7 @@ title: Spisornli
 ---
 <header>
 <script type="text/javascript">
-    var randomSlide = Math.floor(Math.random() * $('#myCarousel .carousel-inner li').size());
+    var randomSlide = Math.floor(Math.random() * $('#myCarousel .carousel-inner .item').size());
 
     jQuery(document).ready(function($) {
         $('#myCarousel').carousel(randomSlide);
