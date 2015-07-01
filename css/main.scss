@@ -1302,15 +1302,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             line-height: 1;
             height: auto;
             background: transparent !important;
+            color: rgba($text-color,1);
             padding: 0;
             margin:  0;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.0em;
             border-radius: 0;
             float: left;
             font-weight: 400;
             text-transform: none;
             
             &:hover {
+                text-decoration: none;
+                color: rgba($brand-primary,1);
             }
             
          
@@ -1324,10 +1327,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
     
     .fa {
-            position: relative;
-            margin-right: 5px;
-            top:1px;
-            font-size: 14px;
+        position: relative;
+        margin-right: 5px;
+        top:1px;
+        font-size: 14px;
+        color: rgba($brand-primary,1);
             
         }
     
