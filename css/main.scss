@@ -1125,14 +1125,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     transform: translateY(-50%);
 
     .item-wrapper {
-        width: 940px;
-        z-index: 1;
-        overflow: visible;
+    
     }
     
     .illu-circle {
-            width: 330px;
-            height: auto; 
+            
         }
     
     .image-wrapper {
@@ -1141,7 +1138,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
     
     .text-wrapper {
-        width: 600px;
 
     }
 
