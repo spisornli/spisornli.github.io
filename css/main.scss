@@ -1135,21 +1135,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             height: auto; 
         }
     
-    /*.image-wrapper {
-        position: absolute;
-        margin: 0;
-        top:40%;
-        left:-45px;
-        
-        ms-transform: translateY(-50%); 
-   	    -webkit-transform: translateY(-50%); 
-        transform: translateY(-50%);
-        
-        
-    
+    .image-wrapper {
+        margin-left: 0px;
+        margin-top: 0px;
     }
     
-    .text-wrapper {
+    /*.text-wrapper {
         left: 400px;
         width: 650px;
         padding-left: 50px;
