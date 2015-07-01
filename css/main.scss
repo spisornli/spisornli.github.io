@@ -1380,6 +1380,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         width: 130px;
         margin-top: 10px;
         float: left;
+        
+        img {
+            margin-left: -5px;
+        }
     }
 }
 

@@ -7763,12 +7763,15 @@ img {
   width: 130px;
   margin-top: 10px;
   float: left; }
+  /* line 1384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  .contact-block-wrapper .noah-logo img {
+    margin-left: -5px; }
 
-/* line 1386, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1390, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
   margin: 0px 0 13px 0; }
-  /* line 1390, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1394, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -7777,7 +7780,7 @@ img {
     color: #253a44;
     padding: 10px;
     overflow: hidden; }
-    /* line 1399, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1403, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
@@ -7785,7 +7788,7 @@ img {
       color: indianred;
       font-size: 17px; }
 
-/* line 1410, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1414, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7799,16 +7802,16 @@ img {
   font-size: 10px;
   letter-spacing: 0.03em;
   font-weight: 400; }
-  /* line 1424, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1431, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1435, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 230px;
   margin-bottom: 15px;
   margin-top: -20px; }
-  /* line 1436, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1440, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -8px; }
 
