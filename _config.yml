@@ -15,6 +15,11 @@ markdown: kramdown
 collections:
 - blocks
 
+collections:
+  blocks:
+    output: true
+    layout: tema
+
 prose:
   rooturl: "_posts"
   metadata:
