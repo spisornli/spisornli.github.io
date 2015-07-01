@@ -18,7 +18,8 @@ collections:
 collections:
   blocks:
     output: true
-    layout: block
+    values:
+      layout: block
 
 prose:
   rooturl: "_posts"
