@@ -1349,6 +1349,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 
 .home-text {
+    border-top: 1px solid rgba($brand-primary,.1);
     display: inline-block;
     line-height: 1.4;
     margin-bottom: 15px;
