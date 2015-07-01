@@ -7620,8 +7620,8 @@ img {
       color: #f2efdc;
       display: inline-block;
       padding: 0px 15px 0px 15px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
       font-size: 26px;
@@ -7645,7 +7645,7 @@ img {
     height: 46px;
     width: 46px;
     line-height: 46px;
-    margin: 0;
+    margin: 0 4px 0 0;
     float: left;
     background: indianred;
     color: #f2efdc;
@@ -7653,8 +7653,8 @@ img {
     font-weight: normal;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     padding: 0 0 0 3px; }
 
 /* .home-menu-fag, .home-menu {
