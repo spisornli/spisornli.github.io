@@ -1400,6 +1400,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .home-menu-header {
     display: block;
     margin: 0px 0 5px 0;
+    overflow: hidden;
        
     .home-menu-title {
         text-transform: uppercase;
@@ -1408,7 +1409,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         font-weight: 400;
         color: rgba($text-color,1);
         padding: 14px 14px 18px 14px;
-        overflow: hidden;
+        
         
         .fa {
             position: relative;
