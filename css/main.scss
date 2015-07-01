@@ -1187,7 +1187,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         font-family: inherit;
         margin-bottom: 4px;
         display:block;
-        position: relative;
+        
         list-style-type: none;
                 
         a {
@@ -1206,6 +1206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             height: 46px;
             font-weight: normal;
             letter-spacing: 0.03em;
+            position: relative;
             
                 &:hover, &:focus { 
                     text-decoration: none;
