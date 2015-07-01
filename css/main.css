@@ -7540,9 +7540,9 @@ img {
 /* HOMEPAGE */
 /* line 1112, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .homepage {
-  background: indianred;
-  background-image: url(../images/NOAH-plakat_baggrund_Snapseed.jpg);
-  background-size: cover; }
+  /*background: $brand-primary;
+    background-image: url(../images/NOAH-plakat_baggrund_Snapseed.jpg);
+    background-size: cover;*/ }
 
 /* line 1119, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-front {
