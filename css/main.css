@@ -7608,9 +7608,8 @@ img {
     font-family: inherit;
     margin-bottom: 4px;
     display: block;
-    position: relative;
     list-style-type: none; }
-    /* line 1193, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1192, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-tema li a, .home-menu-fag li a {
       font-family: 'amaticbold', Helvetica, Arial, sans-serif;
       background: #253a44;
@@ -7626,7 +7625,8 @@ img {
       line-height: 46px;
       height: 46px;
       font-weight: normal;
-      letter-spacing: 0.03em; }
+      letter-spacing: 0.03em;
+      position: relative; }
       /* line 1210, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .home-menu-tema li a:hover, .home-menu-tema li a:focus, .home-menu-fag li a:hover, .home-menu-fag li a:focus {
         text-decoration: none;
