@@ -7739,7 +7739,7 @@ img {
 .home-text {
   display: inline-block;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-top: 15px;
   padding-right: 30px; }
   /* line 1358, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -7776,7 +7776,7 @@ img {
 /* line 1400, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 0px 0 5px 0;
+  margin: 0px;
   overflow: hidden; }
   /* line 1406, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
@@ -7786,7 +7786,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     color: #253a44;
-    padding: 14px 14px 14px 14px; }
+    padding: 14px 14px 18px 14px; }
     /* line 1416, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
