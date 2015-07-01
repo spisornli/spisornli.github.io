@@ -7736,7 +7736,8 @@ img {
 
 /* line 1347, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-text {
-  line-height: 1.4; }
+  line-height: 1.4;
+  margin-bottom: 20px; }
   /* line 1350, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-text span {
     font-weight: 400; }
@@ -7763,7 +7764,7 @@ img {
 /* line 1379, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 18px 0 13px 0; }
+  margin: 0px 0 13px 0; }
   /* line 1383, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
