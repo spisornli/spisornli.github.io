@@ -1130,6 +1130,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         overflow: visible;
     }
     
+    .illu-circle {
+            width: 330px;
+            height: auto; 
+        }
+    
     /*.image-wrapper {
         position: absolute;
         margin: 0;
@@ -1140,10 +1145,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
    	    -webkit-transform: translateY(-50%); 
         transform: translateY(-50%);
         
-        .illu-circle {
-            width: 340px;
-            height: auto; 
-        }
+        
     
     }
     
