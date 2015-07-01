@@ -7691,8 +7691,8 @@ img {
     padding: 11px 10px 12px 10px;
     overflow: visible;
     list-style-type: none;
-    border-top: 1px solid rgba(37, 58, 68, 0.1);
-    border-bottom: 1px solid rgba(37, 58, 68, 0.1);
+    border-top: 1px solid rgba(37, 58, 68, 0.05);
+    border-bottom: 1px solid rgba(37, 58, 68, 0.05);
     float: left; }
   /* line 1289, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu li {
