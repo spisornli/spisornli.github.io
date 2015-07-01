@@ -7583,7 +7583,7 @@ img {
   transform: translateY(-50%); }
   /* line 1158, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .image-wrapper {
-    margin-top: 20px; }
+    margin-top: 40px; }
   /* line 1162, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
     left: 55px;
@@ -7825,6 +7825,6 @@ img {
   margin-top: 0px; }
   /* line 1455, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
-    margin-left: -20px; }
+    margin-left: -30px; }
 
 /*# sourceMappingURL=main.css.map */
