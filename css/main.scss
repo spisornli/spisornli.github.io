@@ -1353,12 +1353,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     }
 }
 
-.contact-block {
-    font-size: 13px;
-    padding: 15px 0;
-    display: inline-block;
-    font-weight: 400;
-    color:rgba($text-color,.8); 
+
+.contact-block-wrapper {
+
+    .contact-block {
+        font-size: 13px;
+        padding: 15px 0;
+        display: inline-block;
+        font-weight: 400;
+        color:rgba($text-color,.8); 
     
     a { 
         color:rgba($text-color,1); 
@@ -1370,12 +1373,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         }
     }
     
-    .fa {
+        .fa {
             margin-right: 3px;
+        }
+    
     }
     
+    .noah-logo {
+        width: 130px;
+        margin-top: 20px;
+        float: left;
+    }
 }
-
 
 .home-menu-header {
     display: block;
@@ -1434,9 +1443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
-.noah-logo {
-    width: 130px;
-}
+
 
 
 
