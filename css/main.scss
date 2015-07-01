@@ -1280,10 +1280,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         display: inline-block;
         margin: 0px;
         border-bottom: none;
-        padding: 11px 10px 12px 10px;
+        padding: 11px 0px 12px 0px;
         overflow: visible;
         list-style-type: none;
-        border-top: 1px solid rgba($text-color,.05);
+        border-top: 1px solid rgba($text-color,.0);
         border-bottom: 1px solid rgba($text-color,.05);
         float: left;
 
@@ -1313,7 +1313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             
             &:hover {
                 text-decoration: none;
-                color: rgba($brand-primary,1);
+                color: rgba($brand-primary-dark,1);
             }
             
          
