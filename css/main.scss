@@ -1226,7 +1226,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         line-height: 46px;
         margin: 0;
         float: left;
-        background: rgba($text-color,1);
+        background: rgba($brand-primary,1);
         color: rgba($body-bg-dark,1);
         font-size: 26px;
         font-weight: normal;
@@ -1300,7 +1300,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             line-height: 1;
             height: auto;
             background: transparent !important;
-            color: rgba($body-bg-dark,1);
             padding: 0;
             margin:  0;
             letter-spacing: 0.02em;
@@ -1310,7 +1309,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             text-transform: none;
             
             &:hover {
-                color: darken($body-bg-dark, 10%);
             }
             
          
