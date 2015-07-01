@@ -1211,7 +1211,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             
                 &:hover, &:focus { 
                     text-decoration: none;
-                    background: rgba($text-color,.5);
+                    background: rgba($text-color,.9);
                 
                 }
         }
@@ -1419,7 +1419,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu-logo {
     width: 230px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: -20px;
     
     img {
