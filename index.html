@@ -3,6 +3,16 @@ layout: default
 title: Spisornli
 ---
 
+<script type="text/javascript">
+    var randomSlide = Math.floor(Math.random() * $('#myCarousel .carousel-inner li').size());
+
+    jQuery(document).ready(function($) {
+        $('#myCarousel').carousel(randomSlide);
+        $('#myCarousel').carousel('next');
+    });
+
+</script>
+
 <div id="fullpage">
 
 
