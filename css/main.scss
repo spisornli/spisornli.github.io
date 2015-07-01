@@ -1387,7 +1387,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .workinprogress {
     position: absolute;
     bottom: 0px;
-    left: 0px;
+    right: 0px;
     text-align: center;
     background: rgba($brand-primary,1);
     color: rgba($body-bg,.9);
