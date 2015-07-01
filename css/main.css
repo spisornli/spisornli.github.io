@@ -7776,7 +7776,7 @@ img {
 /* line 1400, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 0px 0 13px 0; }
+  margin: 0px 0 10px 0; }
   /* line 1404, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     text-transform: uppercase;
@@ -7790,7 +7790,7 @@ img {
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
-      top: 0px;
+      top: 1px;
       color: indianred;
       font-size: 20px; }
 
