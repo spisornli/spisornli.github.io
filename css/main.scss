@@ -1271,16 +1271,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu {
     display: block;
-    padding: 10px;
-    border-top: 1px solid rgba($text-color,.1);
+    
     
     ul {
         display: inline-block;
         margin: 0px;
         border-bottom: none;
-        padding: 0px;
+        padding: 10px;
         overflow: visible;
         list-style-type: none;
+        border-top: 1px solid rgba($text-color,.1);
+
     }
     
     
