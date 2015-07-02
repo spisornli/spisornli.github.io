@@ -18,6 +18,11 @@ collections:
 collections:
   blocks:
     output: true
+
+defaults:
+  -
+    scope:
+      type: "blocks"
     values:
       layout: block
 
