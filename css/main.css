@@ -7743,7 +7743,8 @@ img {
 .home-text {
   display: inline-block;
   line-height: 1.4;
-  padding: 15px 0px; }
+  padding: 15px 15px;
+  background: #f9f7ef; }
   /* line 1358, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-text span {
     font-weight: 400; }
