@@ -7620,12 +7620,12 @@ img {
     /* line 1201, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-tema li a, .home-menu-fag li a {
       font-family: 'amaticbold', Helvetica, Arial, sans-serif;
-      background: #f2efdc;
-      color: #253a44;
+      background: #253a44;
+      color: #f2efdc;
       display: inline-block;
       padding: 0px 15px 0px 15px;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
       font-size: 26px;
@@ -7649,16 +7649,16 @@ img {
     height: 46px;
     width: 46px;
     line-height: 46px;
-    margin: 0 3px 0 0;
+    margin: 0 0px 0 0;
     float: left;
     background: indianred;
     color: #f2efdc;
     font-size: 26px;
     font-weight: normal;
-    border-top-left-radius: 23px;
-    border-bottom-left-radius: 23px;
-    border-top-right-radius: 23px;
-    border-bottom-right-radius: 23px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding: 0 0 0 3px; }
 
 /* .home-menu-fag, .home-menu {

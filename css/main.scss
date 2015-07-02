@@ -1200,12 +1200,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
                 
         a {
             font-family: $headingsAmaticBold-font-family;
-            background: rgba($body-bg-dark,1);
-            color: rgba($text-color,1);
+            background: rgba($text-color,1);
+            color: rgba($body-bg-dark,1);
             display:inline-block;
             padding: 0px 15px 0px 15px;
-            border-top-left-radius: 2px;
-            border-bottom-left-radius: 2px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
             font-size: 26px;
@@ -1235,16 +1235,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         height: 46px;
         width: 46px;
         line-height: 46px;
-        margin: 0 3px 0 0;
+        margin: 0 0px 0 0;
         float: left;
         background: rgba($brand-primary,1);
         color: rgba($body-bg-dark,1);
         font-size: 26px;
         font-weight: normal;
-        border-top-left-radius: 23px;
-        border-bottom-left-radius: 23px;
-        border-top-right-radius: 23px;
-        border-bottom-right-radius: 23px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
         padding: 0 0 0 3px;
 }
     
