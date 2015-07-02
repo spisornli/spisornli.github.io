@@ -1399,12 +1399,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu-header {
     display: block;
-    margin: 0px;
+    margin: 10px 0px;
     overflow: hidden;
     
        
     .home-menu-title {
-        display: block;
+        display: inline-block;
         text-transform: uppercase;
         letter-spacing: 0.12em;
         font-size: 14px;

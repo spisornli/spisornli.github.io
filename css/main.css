@@ -7778,11 +7778,11 @@ img {
 /* line 1400, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
-  margin: 0px;
+  margin: 10px 0px;
   overflow: hidden; }
   /* line 1406, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
-    display: block;
+    display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 14px;
