@@ -307,18 +307,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     
             .task-header {}
             
-            .item-label {
-                background: rgba($body-bg,0.9);
-                color: rgba($text-color,0.6);
-                font-weight: 400;
-                
-                .badge {
-                    background: rgba($text-color,0.05);
-                    color: inherit;
-                    border-color: transparent;
-                    font-weight: 400;
-                }
-            }
+            
     
             
             
@@ -359,6 +348,19 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
         }   
     
 }
+
+.item-label {
+                background: rgba($body-bg,0.9);
+                color: rgba($text-color,0.6);
+                font-weight: 400;
+                
+                .badge {
+                    background: rgba($text-color,0.05);
+                    color: inherit;
+                    border-color: transparent;
+                    font-weight: 400;
+                }
+            }
 
 img {
     width: 100%;
@@ -1460,13 +1462,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
-/* Undervisningsforløb */
+/* Oversigt */
+
+.grid-header {
+    display: block;
+    height: 100px;
+}
+
+.col-fixed {
+
+}
 
 
 .grid-item-wrapper {
     display: block;
-    background: $brand-primary;
+    background: rgba($text-color, .05);
+    border: 2px;
+    padding: 20px;
 }
+
+.grid-image-wrapper {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
