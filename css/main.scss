@@ -1410,7 +1410,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         font-weight: 400;
         color: rgba($text-color,1);
         padding: 5px 13px 7px;
-        background: rgba($body-bg,1);
+        background: darken($body-bg-dark, 10%);
         border-radius: 2px;
         
         
