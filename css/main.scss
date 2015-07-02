@@ -276,8 +276,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             float: left;
             margin-left: -15px;
             margin-top: -30px;
-            
-            
+
             
             .illu-circle {
                 width: 300px;
@@ -300,54 +299,43 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             left: 40px;
             width: 615px;
             position: relative;
-            top:0;
-            
-                
-            
-    
-            .task-header {}
-            
-            
-    
-            
-            
-            .item-title {
-                font-family: $headingsAmaticBold-font-family;
-                text-transform: uppercase;
-                line-height: 1;
-                font-weight: normal;
-                font-size: 65px;
-                margin-bottom: 20px;
-                margin-top: 20px;
-                letter-spacing: 0.04em;
-                padding: 10px 15px 12px;
-                display: inline-block;
-                border-radius: 2px;
-                background: rgba($text-color,0.9);
-                color: $body-bg;
-                
-                a {
-                    color: $body-bg;
-                }
-                
-            }  
-        
-            p {
-                color: rgba($text-color, .7);
-                font-weight: 300;
-                line-height: 1.35;
-                font-size: 140%;
-                background: rgba($body-bg,0.9);
-                padding: 10px 17px 15px 17px;
-                display:inline-block;
-                margin-bottom: 20px;
-            }
-            
-            
-            
+            top:0;  
         }   
     
 }
+
+.item-title {
+    font-family: $headingsAmaticBold-font-family;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: normal;
+    font-size: 65px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    letter-spacing: 0.04em;
+    padding: 10px 15px 12px;
+    display: inline-block;
+    border-radius: 2px;
+    background: rgba($text-color,0.9);
+    color: $body-bg;
+                
+    a {
+        color: $body-bg;
+    }
+                
+}
+
+p.item-text {
+    color: rgba($text-color, .7);
+    font-weight: 300;
+    line-height: 1.35;
+    font-size: 140%;
+    background: rgba($body-bg,0.9);
+    padding: 10px 17px 15px 17px;
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
 
 .item-label {
                 background: rgba($body-bg,0.9);
@@ -1467,35 +1455,129 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .grid-header {
     display: block;
     height: 100px;
+    margin: 20px 5% 0px 5%;
+    padding: 0 15px;
+    
+    .page-title {
+    
+    
+    }
 }
 
-.col-fixed {
-
+.grid-row-header {
+    display: block;
+    margin: 20px 15px 25px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba($brand-primary, 1);
 }
+
+
 
 
 .grid-item-wrapper {
     display: block;
-    background: rgba($text-color, .05);
-    border: 2px;
-    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    overflow: hidden;
+    
+    &:hover {
+        text-decoration: none;
+        opacity: .8;
+    }
 }
 
 .grid-image-wrapper {
-    width: 200px;
-    margin: 0 auto;
-}
-
-.grid-item {
-    text-align: center;
+    height: 300px;
+    
+    .grid-image {
+        width: 240px;
+        margin: 0 auto;
+        position: relative;
+        top:50%;
+        ms-transform: translateY(-50%); 
+   	    -webkit-transform: translateY(-50%); 
+        transform: translateY(-50%);
+    }
+    
     
 }
 
+.grid-item-title {
+    font-family: $headingsAmaticBold-font-family;
+    color: rgba($body-bg, 1);
+    margin: 20px 0px 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+}
+
+.grid-item {
+    padding: 20px;
+    background: rgba($text-color, 1);
+    color: rgba($body-bg, 1);
+    
+    .item-label {
+        padding: 0px 8px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        font-weight: 600;
+        
+    }
+    
+    p {
+        font-size: 13px;
+        color: lighten($text-color, 50%);
+    }
+}
 
 
 
 
+.grid-madkundskab {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($madkundskab, 1);
+    }
+}
 
+
+.grid-natur-teknologi {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($natur-teknologi, 1);
+    }
+}
+
+.grid-dansk {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($dansk, 1);
+    }
+}
+
+.grid-matematik {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($matematik, 1);
+    }
+}
+
+.grid-historie {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($historie, 1);
+    }
+}
+
+.grid-opskrift {
+    
+    .grid-image-wrapper, .item-label {
+        background: rgba($brand-primary, 1);
+    }
+}
 
 
 
