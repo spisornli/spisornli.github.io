@@ -7787,16 +7787,16 @@ img {
     letter-spacing: 0.12em;
     font-size: 14px;
     font-weight: 400;
-    color: #f9f7ef;
-    padding: 5px 13px 8px;
-    background: indianred;
+    color: #253a44;
+    padding: 5px 13px 7px;
+    background: #eeead1;
     border-radius: 2px; }
     /* line 1417, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
       top: 2px;
-      color: #f9f7ef;
+      color: indianred;
       font-size: 22px; }
 
 /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
