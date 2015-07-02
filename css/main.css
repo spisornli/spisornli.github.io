@@ -7828,4 +7828,10 @@ img {
   .home-menu-logo img {
     margin-left: -8px; }
 
+/* Undervisningsforløb */
+/* line 1466, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.grid-item-wrapper {
+  display: block;
+  background: indianred; }
+
 /*# sourceMappingURL=main.css.map */

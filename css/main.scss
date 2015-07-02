@@ -1460,8 +1460,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
+/* Undervisningsforløb */
 
 
+.grid-item-wrapper {
+    display: block;
+    background: $brand-primary;
+}
 
 
 
