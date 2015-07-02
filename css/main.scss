@@ -1408,9 +1408,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         letter-spacing: 0.12em;
         font-size: 14px;
         font-weight: 400;
-        color: rgba($text-color,1);
+        color: rgba($body-bg,1);
         padding: 5px 13px 7px;
-        background: darken($body-bg-dark, 5%);
+        background: rgba($brand-primary, 1);
         border-radius: 2px;
         
         
