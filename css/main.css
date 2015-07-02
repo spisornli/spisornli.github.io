@@ -7788,7 +7788,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     color: #f9f7ef;
-    padding: 5px 13px 7px;
+    padding: 5px 13px 8px;
     background: indianred;
     border-radius: 2px; }
     /* line 1417, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -7796,7 +7796,7 @@ img {
       position: relative;
       margin-right: 4px;
       top: 2px;
-      color: indianred;
+      color: #f9f7ef;
       font-size: 22px; }
 
 /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
