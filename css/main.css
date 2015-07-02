@@ -7810,17 +7810,18 @@ img {
   line-height: 1;
   font-size: 10px;
   letter-spacing: 0.03em;
-  font-weight: 400; }
-  /* line 1441, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  font-weight: 400;
+  display: none; }
+  /* line 1442, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1448, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1449, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 230px;
   margin-bottom: 0px;
   margin-top: 0px; }
-  /* line 1453, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1454, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -8px; }
 
