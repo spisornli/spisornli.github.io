@@ -1454,12 +1454,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .grid-header {
     display: block;
-    height: 100px;
-    margin: 20px 5% 0px 5%;
+    margin: 30px 5% 0px 5%;
     padding: 0 15px;
+    height:100px;
 }
 
 
+.oversigt-logo {
+    width: 300px;
+    float: right;
+}
+
+
+.oversigt-nav-wrapper {
+    margin: 0 15px;
+    border-top: 1px solid rgba($brand-primary, .1);
+    padding-top: 20px;
+}
+
+.forl-btn {
+    background: rgba($brand-primary, 1);
+    color: rgba($body-bg, 1);
+    font-size: 13px;
+    height: 30px;
+    line-height: 31px;
+    padding: 0em 11px;
+    
+    .badge {
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 11px;
+        margin-right: -11px;
+        margin-left: 12px;
+    }
+}
 
 
 .grid-row-header {
@@ -1616,7 +1644,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         background: rgba($brand-primary, 1);
     }
 }
-
 
 
 
