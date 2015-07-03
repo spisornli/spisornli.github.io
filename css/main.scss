@@ -1454,38 +1454,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .grid-header {
     display: block;
-    margin: 30px 5% 0px 5%;
+    margin: 30px 5% 10px 5%;
     padding: 0 15px;
-    height:100px;
+    height:80px;
+    position: relative;
+    
+    .page-title {
+        font-size: 50px;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 5px;
+        
+    }
 }
 
 
 .oversigt-logo {
-    width: 300px;
-    float: right;
+    width: 240px;    
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
 }
 
 
 .oversigt-nav-wrapper {
     margin: 0 15px;
-    border-top: 1px solid rgba($brand-primary, .1);
+    border-top: 5px solid rgba($text-color, 1);
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .forl-btn {
-    background: rgba($brand-primary, 1);
-    color: rgba($body-bg, 1);
+    background: darken($body-bg-dark, 5%);
     font-size: 13px;
-    height: 30px;
+    height: 31px;
     line-height: 31px;
-    padding: 0em 11px;
+    padding: 0em 12px;
     
     .badge {
-        height: 30px;
-        line-height: 30px;
-        padding: 0px 11px;
-        margin-right: -11px;
-        margin-left: 12px;
+        height: 31px;
+        line-height: 31px;
+        padding: 0px 9px;
+        margin-right: -12px;
+        margin-left: 10px;
     }
 }
 
@@ -1552,10 +1563,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         text-decoration: none;
         opacity: .8;
     }
+    
+    .item-label {
+        padding: 0px 8px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-right: 3px;
+        float: left;
+    }
 }
 
 .grid-image-wrapper {
     height: 300px;
+    padding: 20px;
+    position: relative;
     
     .grid-image {
         width: 240px;
@@ -1565,7 +1589,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         ms-transform: translateY(-50%); 
    	    -webkit-transform: translateY(-50%); 
         transform: translateY(-50%);
-    }   
+    }
+    
+    .item-label {
+        position: absolute;
+        top:10px;
+        left:10px;
+        color: rgba($body-bg, .9);
+    }
 }
 
 .grid-item-title {
@@ -1584,14 +1615,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     background: rgba($text-color, 1);
     color: rgba($body-bg, 1);
     
-    .item-label {
-        padding: 0px 8px;
-        height: 22px;
-        line-height: 22px;
-        font-size: 10px;
-        font-weight: 600;
-        
-    }
+    
     
     p {
         font-size: 13px;
@@ -1600,13 +1624,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
+.grid-label-wrapper {
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
 
 
 .grid-madkundskab {
     
     .grid-image-wrapper, .item-label {
         background: rgba($madkundskab, 1);
-    }
+    
+        .item-label {
+            background: darken($madkundskab, 10%);
+        }
+    }    
 }
 
 
@@ -1614,6 +1648,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($natur-teknologi, 1);
+        
+        .item-label {
+            background: darken($natur-teknologi, 10%);
+        }
     }
 }
 
@@ -1621,6 +1659,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($dansk, 1);
+        
+        .item-label {
+            background: darken($dansk, 10%);
+        }
     }
 }
 
@@ -1628,6 +1670,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($matematik, 1);
+        
+        .item-label {
+            background: darken($matematik, 10%);
+        }
     }
 }
 
@@ -1635,6 +1681,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($historie, 1);
+        
+        .item-label {
+            background: darken($historie, 10%);
+        }
     }
 }
 
@@ -1642,11 +1692,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($brand-primary, 1);
+        
+        .item-label {
+            background: darken($brand-primary, 10%);
+        }
     }
 }
 
 
 
+.beta-warning {
+    color: rgba($brand-primary, 1);
+    font-size: 12px;
 
+    .fa {
+        margin-right: 3px;
+    }
+}
 
 
