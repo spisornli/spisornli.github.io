@@ -1561,8 +1561,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     &:hover {
         text-decoration: none;
-        opacity: .8;
+        opacity: .7;
     }
+    
+    
     
     .item-label {
         padding: 0px 8px;
@@ -1574,6 +1576,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         margin-right: 3px;
         float: left;
     }
+}
+
+
+
+.grid-item-link {
+
+    
 }
 
 .grid-image-wrapper {
