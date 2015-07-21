@@ -18,17 +18,21 @@ title: Oversigt
   <div class="row">
 
     <div class="oversigt-nav-wrapper">
-      <button class="btn task-btn forl-btn" href="#opgave-block-3">Temaforløb 1<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-      <button class="btn task-btn forl-btn" href="#opgave-block-3">Temaforløb 2<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-      <button class="btn task-btn forl-btn" href="#opgave-block-3">Temaforløb 3<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-      <button class="btn task-btn forl-btn" href="#opgave-block-3">Temaforløb 4<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-      <button class="btn task-btn forl-btn" href="#opgave-block-3">Temaforløb 5<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+      <button class="btn task-btn forl-btn" href="#theme1">Temaforløb 1<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+      <button class="btn task-btn forl-btn" href="#theme2">Temaforløb 2<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+      <button class="btn task-btn forl-btn" href="#theme3">Temaforløb 3<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+      <button class="btn task-btn forl-btn" href="#theme4">Temaforløb 4<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+      <button class="btn task-btn forl-btn" href="#theme5">Temaforløb 5<span class="badge"><i class="fa fa-arrow-down"></i></span></button>
     </div>
+
+
 
     {% for block in site.blocks %}
     {% if block.theme == "1" %}
     {% unless block.lession %}
 
+
+    <a name="theme{{ block.theme }}"></a>
     <div class="grid-row-header">
       <div class="grid-title-wrapper">
         <span class="grid-title-label">{{ block.theme }}</span>
@@ -185,6 +189,7 @@ title: Oversigt
     {% if block.theme == "2" %}
     {% unless block.lession %}
 
+    <a name="theme{{ block.theme }}"></a>
     <div class="grid-row-header">
       <div class="grid-title-wrapper">
         <span class="grid-title-label">{{ block.theme }}</span>
@@ -196,7 +201,7 @@ title: Oversigt
     {% endunless %}
     {% endif %}
     {% endfor %}
-    
+
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "A" %}   
@@ -337,9 +342,10 @@ title: Oversigt
     <div class="clearfix visible-sm-block"></div>
     <div class="clearfix visible-md-block visible-lg-block"></div>
 
-        {% for block in site.blocks %}
+    {% for block in site.blocks %}
     {% if block.theme == "3" %}
     {% unless block.lession %}
+    <a name="theme{{ block.theme }}"></a>
 
     <div class="grid-row-header">
       <div class="grid-title-wrapper">
@@ -493,10 +499,11 @@ title: Oversigt
     <div class="clearfix visible-sm-block"></div>
     <div class="clearfix visible-md-block visible-lg-block"></div>
 
-        {% for block in site.blocks %}
+    {% for block in site.blocks %}
     {% if block.theme == "4" %}
     {% unless block.lession %}
 
+    <a name="theme{{ block.theme }}"></a>
     <div class="grid-row-header">
       <div class="grid-title-wrapper">
         <span class="grid-title-label">{{ block.theme }}</span>
@@ -649,10 +656,11 @@ title: Oversigt
     <div class="clearfix visible-sm-block"></div>
     <div class="clearfix visible-md-block visible-lg-block"></div>
 
-        {% for block in site.blocks %}
+    {% for block in site.blocks %}
     {% if block.theme == "5" %}
     {% unless block.lession %}
 
+    <a name="theme{{ block.theme }}"></a>
     <div class="grid-row-header">
       <div class="grid-title-wrapper">
         <span class="grid-title-label">{{ block.theme }}</span>
