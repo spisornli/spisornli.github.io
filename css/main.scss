@@ -645,7 +645,7 @@ img {
 
 
 
-.popup .task-nav, .item-nav {
+.popup .task-nav, .item-nav, .blockpage .task-nav {
     margin-bottom: 17px;
     background-color: rgba($text-color, .8);
     color: rgba($body-bg,1);
@@ -888,7 +888,7 @@ img {
 
 
 
-.popup .image-wrapper {
+.popup .image-wrapper, .blockpage .image-wrapper{
     margin: 35px 0;
 }
 
@@ -1001,7 +1001,7 @@ img {
 
 }
 
-.popup-content {
+.popup-content, .blockpage-content {
     position: absolute;
     top:0%;
     left:50%;
@@ -1013,7 +1013,7 @@ img {
     transform: translate(-50%,0%);
 }
 
-.popup-content-inner {
+.popup-content-inner, .blockpage-content-inner {
     margin: 25px 0 200px 0;
     position: relative;
 }
@@ -1057,7 +1057,7 @@ img {
     
 }
 
-.popup-brand {
+.popup-brand, .blockpage-brand {
     display: block;
     width: 180px;
     margin: 20px 0 22px -5px;
@@ -1068,13 +1068,13 @@ img {
     }
 }
 
-.popup .content-block {
+.popup .content-block, .blockpage .content-block {
     margin: 15px 0px 35px 0px;
     display: block;
     padding: 0px;
 }
 
-.popup .content-title-block {
+.popup .content-title-block, .blockpage .content-title-block {
     margin: 15px 0px 35px 0px;
     display: block;
     border-top: 1px solid darken($body-bg, 5%);
@@ -1082,7 +1082,7 @@ img {
 }
 
 
-.popup .opgave-block {
+.popup .opgave-block, .blockpage .opgave-block {
     position: relative;
     display: block;
     border-radius: 4px;
