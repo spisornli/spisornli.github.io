@@ -44,7 +44,7 @@ title: Oversigt
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "A" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -66,7 +66,7 @@ title: Oversigt
     <div class="grid-natur-teknologi col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "B" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -90,7 +90,7 @@ title: Oversigt
     <div class="grid-dansk col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "C" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -114,7 +114,7 @@ title: Oversigt
     <div class="grid-matematik col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "D" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -138,7 +138,7 @@ title: Oversigt
     <div class="grid-historie col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "E" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -159,7 +159,7 @@ title: Oversigt
     <div class="grid-opskrift col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "1" and block.lession == "F" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -200,7 +200,7 @@ title: Oversigt
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "A" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -222,7 +222,7 @@ title: Oversigt
     <div class="grid-natur-teknologi col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "B" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -246,7 +246,7 @@ title: Oversigt
     <div class="grid-dansk col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "C" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -270,7 +270,7 @@ title: Oversigt
     <div class="grid-matematik col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "D" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -294,7 +294,7 @@ title: Oversigt
     <div class="grid-historie col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "E" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -315,7 +315,7 @@ title: Oversigt
     <div class="grid-opskrift col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "2" and block.lession == "F" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -356,7 +356,7 @@ title: Oversigt
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "A" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -378,7 +378,7 @@ title: Oversigt
     <div class="grid-natur-teknologi col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "B" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -402,7 +402,7 @@ title: Oversigt
     <div class="grid-dansk col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "C" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -426,7 +426,7 @@ title: Oversigt
     <div class="grid-matematik col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "D" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -450,7 +450,7 @@ title: Oversigt
     <div class="grid-historie col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "E" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -471,7 +471,7 @@ title: Oversigt
     <div class="grid-opskrift col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "3" and block.lession == "F" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -512,7 +512,7 @@ title: Oversigt
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "A" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -534,7 +534,7 @@ title: Oversigt
     <div class="grid-natur-teknologi col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "B" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -558,7 +558,7 @@ title: Oversigt
     <div class="grid-dansk col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "C" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -582,7 +582,7 @@ title: Oversigt
     <div class="grid-matematik col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "D" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -606,7 +606,7 @@ title: Oversigt
     <div class="grid-historie col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "E" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -627,7 +627,7 @@ title: Oversigt
     <div class="grid-opskrift col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "4" and block.lession == "F" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -668,7 +668,7 @@ title: Oversigt
     <div class="grid-madkundskab col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "A" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -690,7 +690,7 @@ title: Oversigt
     <div class="grid-natur-teknologi col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "B" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -714,7 +714,7 @@ title: Oversigt
     <div class="grid-dansk col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "C" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -738,7 +738,7 @@ title: Oversigt
     <div class="grid-matematik col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "D" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -762,7 +762,7 @@ title: Oversigt
     <div class="grid-historie col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "E" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
@@ -783,7 +783,7 @@ title: Oversigt
     <div class="grid-opskrift col-fixed col-sm-6 col-md-4">
       {% for block in site.blocks %}
       {% if block.theme == "5" and block.lession == "F" %}   
-      <a href="/blocks/{{ block.theme }}{{ block.lession }}.html" class="grid-item-wrapper">    
+      <a href="/blocks/{{ block.theme }}{{ block.lession | downcase }}.html" class="grid-item-wrapper">    
         <div class="grid-image-wrapper">
           <span class="label item-label">Madkundskab</span>
           <div class="grid-image"><img src="{{ block.image }}" /></div>
