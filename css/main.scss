@@ -182,6 +182,14 @@ a.disabled  {
 }
 
 
+.link-collapse {
+    
+    &:after {
+    
+    }
+}
+
+
 /* SLIDE NAVIGATION */
 
 .fp-controlArrow {
@@ -329,7 +337,7 @@ p.item-text {
     color: rgba($text-color, .7);
     font-weight: 300;
     line-height: 1.35;
-    font-size: 140%;
+    font-size: 100%;
     background: rgba($body-bg,0.9);
     padding: 10px 17px 15px 17px;
     display:inline-block;
@@ -356,26 +364,55 @@ img {
 }
 
 
+
 .btn {
-    
-    background: rgba($body-bg,0.9);
     border: none;
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 4px 12px;
+                
+    &:hover, &:focus {
+
+    }
+    
+
+    
+}
+
+.btn-link {
+    padding: 0;
+    border-radius: 0;
+    overflow: none;
+    display: inline;
+    line-height: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: baseline;
+    white-space:normal;
+    
+    .fa {
+        margin-right: 3px;
+        margin-left: 4px;
+    }
+
+}
+
+.btn.popup-open, .task-btn {
+    background: rgba($body-bg,0.9);
     color: $text-color;
     font-size: 14px;
-    border-radius: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.05em;
     height: 36px;
     line-height: 36px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     padding: 0em 15px;
-    overflow: hidden;
-                
+
+    
     &:hover, &:focus {
         background: rgba($body-bg,0.7);
     }
     
-
     .fa {
         margin-left: 0px;
         position: relative;
@@ -645,7 +682,7 @@ img {
 
 
 
-.popup .task-nav, .item-nav {
+.popup .task-nav, .item-nav, .blockpage .task-nav {
     margin-bottom: 17px;
     background-color: rgba($text-color, .8);
     color: rgba($body-bg,1);
@@ -888,7 +925,7 @@ img {
 
 
 
-.popup .image-wrapper {
+.popup .image-wrapper, .blockpage .image-wrapper{
     margin: 35px 0;
 }
 
@@ -1001,7 +1038,7 @@ img {
 
 }
 
-.popup-content {
+.popup-content, .blockpage-content {
     position: absolute;
     top:0%;
     left:50%;
@@ -1013,7 +1050,7 @@ img {
     transform: translate(-50%,0%);
 }
 
-.popup-content-inner {
+.popup-content-inner, .blockpage-content-inner {
     margin: 25px 0 200px 0;
     position: relative;
 }
@@ -1057,7 +1094,7 @@ img {
     
 }
 
-.popup-brand {
+.popup-brand, .blockpage-brand {
     display: block;
     width: 180px;
     margin: 20px 0 22px -5px;
@@ -1068,13 +1105,13 @@ img {
     }
 }
 
-.popup .content-block {
+.popup .content-block, .blockpage .content-block {
     margin: 15px 0px 35px 0px;
     display: block;
     padding: 0px;
 }
 
-.popup .content-title-block {
+.popup .content-title-block, .blockpage .content-title-block {
     margin: 15px 0px 35px 0px;
     display: block;
     border-top: 1px solid darken($body-bg, 5%);
@@ -1082,7 +1119,7 @@ img {
 }
 
 
-.popup .opgave-block {
+.popup .opgave-block, .blockpage .opgave-block {
     position: relative;
     display: block;
     border-radius: 4px;
@@ -1454,24 +1491,103 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .grid-header {
     display: block;
-    height: 100px;
-    margin: 20px 5% 0px 5%;
+    margin: 30px 5% 10px 5%;
     padding: 0 15px;
+    height:80px;
+    position: relative;
     
     .page-title {
-    
-    
+        font-size: 50px;
+        margin-bottom: 0;
+        position: absolute;
+        bottom: 5px;
+        
     }
 }
+
+
+.oversigt-logo {
+    width: 240px;    
+    position: absolute;
+    bottom: 0px;
+    right: 8px;
+}
+
+
+.oversigt-nav-wrapper {
+    margin: 0 15px;
+    border-top: 5px solid rgba($text-color, 1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.forl-btn {
+    background: darken($body-bg-dark, 5%);
+    font-size: 13px;
+    height: 31px;
+    line-height: 31px;
+    padding: 0em 12px;
+    
+    .badge {
+        height: 31px;
+        line-height: 31px;
+        padding: 0px 9px;
+        margin-right: -12px;
+        margin-left: 10px;
+    }
+}
+
 
 .grid-row-header {
     display: block;
     margin: 20px 15px 25px;
-    padding-bottom: 23px;
-    border-bottom: 1px solid rgba($brand-primary, 1);
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba($brand-primary, .1);
+    border-top: 1px solid rgba($brand-primary, .1);
+    
+    .item-text {
+        max-width: 500px;
+        margin: 0;
+    }
 }
 
 
+
+
+.grid-title-wrapper {
+    margin: 0px 0px 20px;
+    
+    
+    .grid-title-label {
+        font-family: $headingsAmaticBold-font-family;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 60px;
+        font-size: 2em;
+        float: left;
+        background: rgba($brand-primary, 1);
+        color: rgba($body-bg, 1);
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        
+    }
+    
+    .item-title {
+        margin: 0;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 15px;
+        font-size: 2em;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+
+
+/* GRID ITEMS */
 
 
 .grid-item-wrapper {
@@ -1482,12 +1598,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     &:hover {
         text-decoration: none;
-        opacity: .8;
+        opacity: .7;
     }
+    
+    
+    
+    .item-label {
+        padding: 0px 8px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-right: 3px;
+        float: left;
+    }
+}
+
+
+
+.grid-item-link {
+
+    
 }
 
 .grid-image-wrapper {
     height: 300px;
+    padding: 20px;
+    position: relative;
     
     .grid-image {
         width: 240px;
@@ -1499,7 +1637,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         transform: translateY(-50%);
     }
     
-    
+    .item-label {
+        position: absolute;
+        top:10px;
+        left:10px;
+        color: rgba($body-bg, .9);
+    }
 }
 
 .grid-item-title {
@@ -1518,14 +1661,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     background: rgba($text-color, 1);
     color: rgba($body-bg, 1);
     
-    .item-label {
-        padding: 0px 8px;
-        height: 22px;
-        line-height: 22px;
-        font-size: 10px;
-        font-weight: 600;
-        
-    }
+    
     
     p {
         font-size: 13px;
@@ -1534,13 +1670,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 
+.grid-label-wrapper {
+    display: block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
 
 
 .grid-madkundskab {
     
     .grid-image-wrapper, .item-label {
         background: rgba($madkundskab, 1);
-    }
+    
+        .item-label {
+            background: darken($madkundskab, 10%);
+        }
+    }    
 }
 
 
@@ -1548,6 +1694,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($natur-teknologi, 1);
+        
+        .item-label {
+            background: darken($natur-teknologi, 10%);
+        }
     }
 }
 
@@ -1555,6 +1705,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($dansk, 1);
+        
+        .item-label {
+            background: darken($dansk, 10%);
+        }
     }
 }
 
@@ -1562,6 +1716,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($matematik, 1);
+        
+        .item-label {
+            background: darken($matematik, 10%);
+        }
     }
 }
 
@@ -1569,6 +1727,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($historie, 1);
+        
+        .item-label {
+            background: darken($historie, 10%);
+        }
     }
 }
 
@@ -1576,12 +1738,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .grid-image-wrapper, .item-label {
         background: rgba($brand-primary, 1);
+        
+        .item-label {
+            background: darken($brand-primary, 10%);
+        }
     }
 }
 
 
 
+.beta-warning {
+    color: rgba($brand-primary, 1);
+    font-size: 12px;
 
-
+    .fa {
+        margin-right: 3px;
+    }
+}
 
 
