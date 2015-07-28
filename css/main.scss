@@ -936,7 +936,14 @@ img {
 
 
 
-#madkundskab {
+#madkundskab,
+#madkundskab-A,
+#madkundskab-1A,
+#madkundskab-2A,
+#madkundskab-3A,
+#madkundskab-4A,
+#madkundskab-5A {
+    
     .content-divider { background-color: $madkundskab; }
     .label { background-color: $madkundskab; }
     a {color: $madkundskab-dark}
@@ -954,7 +961,14 @@ img {
     
 }
 
-#natur-teknologi {
+#natur-teknologi,
+#natur-teknologi-B,
+#natur-teknologi-1B,
+#natur-teknologi-2B,
+#natur-teknologi-3B,
+#natur-teknologi-4B,
+#natur-teknologi-5B {
+    
     .content-divider { background-color: $natur-teknologi; }
     .label { background-color: $natur-teknologi; color:$text-color; }
     a {color: $natur-teknologi-dark}
@@ -971,7 +985,14 @@ img {
     }
 }
 
-#dansk {
+#dansk,
+#dansk-C, 
+#dansk-1C, 
+#dansk-2C, 
+#dansk-3C, 
+#dansk-4C, 
+#dansk-5C {
+    
     .content-divider { background-color: $dansk; }
     .label { background-color: $dansk; }
     a {color: $dansk}
@@ -989,7 +1010,14 @@ img {
     
 }
 
-#matematik {
+#matematik,
+#matematik-D,
+#matematik-1D,
+#matematik-2D,
+#matematik-3D,
+#matematik-4D,
+#matematik-5D {
+    
     .content-divider { background-color: $matematik; }
     .label { background-color: $matematik; }
     a {color: $matematik-dark}
@@ -1006,7 +1034,14 @@ img {
     }
 }
 
-#historie {
+#historie,
+#historie-E,
+#historie-1E,
+#historie-2E,
+#historie-3E,
+#historie-4E,
+#historie-5E {
+    
     .content-divider { background-color: $historie; }
     .label { background-color: $historie; }
     a {color: $historie}
