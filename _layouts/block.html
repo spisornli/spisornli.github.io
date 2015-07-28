@@ -1,111 +1,142 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
+  <head>
 
-        <title>SpisOrnli | {{ page.title }}</title>
+    <title>SpisOrnli | {{ page.title }}</title>
 
-        <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/print-lars.css">
 
-        <meta charset="utf-8">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="/js/jquery.slimscroll.min.js"></script>
-        <script src="/js/jquery.fullPage.min.js"></script>
-        <script src="/js/jquery.easings.min.js"></script>
-        <script src="/js/jquery.easyModal.js"></script>
-        <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/jquery.slimscroll.min.js"></script>
+    <script src="/js/jquery.fullPage.min.js"></script>
+    <script src="/js/jquery.easings.min.js"></script>
+    <script src="/js/jquery.easyModal.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
-    </head>
-    <body class="blockpage-body">
+  </head>
+  <body class="blockpage-body">
 
-<div id="{{ page.id }}" class="blockpage">
+    <div id="{{ page.id }}" class="blockpage">
 
-    <div class="blockpage-content">
+      <div class="blockpage-content">
 
         <div class="blockpage-content-inner">
-            <a class="blockpage-brand" href="#firstPage/0"><img alt="Brand" src="/images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    {% if page.lession %}
-                    Lektion {{ page.theme }}{{ page.lession }}
-                    {% else %}
-                    Temaforløb {{ page.theme }}
-                    {% endif %}
+          <a class="blockpage-brand" href="#firstPage/0"><img alt="Brand" src="/images/spisornli_logo_black.svg"/></a>
+
+          <div class="clearfix">
+            <div class="print-only print-header">
+             <div class="print-header-image">
+                  {% if page.image %}
+                  <img class="print-svg" src="/{{ page.image }}">
+                  {% else %}
+                  <img src="/images/placeholder.svg">
+                  {% endif %}
+              </div>
+              <div class="print-header-text">
+                <span class="label label-lg">
+                  {% if page.lession %}
+                  Lektion {{ page.theme }}{{ page.lession }}
+                  {% else %}
+                  Temaforløb {{ page.theme }}
+                  {% endif %}
                 </span>
-
-                <ul class="nav navbar-nav navbar-right">
-                    {% if page.means %}
-                    <li>
-                        <a role="button" data-toggle="collapse" href="#{{ page.id }}-means-collapse" aria-expanded="false" aria-controls="{{ page.id }}-means-collapse">I skal bruge <span class="caret"></span></a>
-                    </li>
-                    {% endif %}
-                    {% if page.goals %}
-                    <li>
-                        <a role="button" data-toggle="collapse" href="#{{ page.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ page.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    {% endif %}
-                    {% if page.pdf %}
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-
-
-
-            {% if page.means %}
-            <div class="collapse" id="{{ page.id }}-means-collapse">
-                <div class="task-nav-list">
-                    <ul>
-                        {% for mean in page.means %}
-                        <li><i class="fa fa-check"></i> {{ mean }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>   
-            {% endif %}
-
-            {% if page.goals %}
-            <div class="collapse" id="{{ page.id }}-goals-collapse">
-                <div class="task-nav-list">
-                    <ol>
-                        {% for goal in page.goals %}
-                        <li>{{ goal }}</li>
-                        {% endfor %}
-                    </ol>
-                </div>
-            </div>   
-            {% endif %}
-            <div class="content-block content-title-block">
-                {% if page.subject %}
-                <span class="label label-lg label-madkundskab">{{ page.subject }}</span>
-                {% endif %}
-                {% if page.time %}
-                <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                {% endif %}
-
-                {% if page.assignments %}
-                <div class="task-nav-list">
-
-                    {% for i in (1..page.assignments) %}
-                    <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    {% endfor %}
-
-                </div>
-                {% endif %}
-
                 <h1 class="page-title">{{ page.title }}</h1>
+              </div>
+              
             </div>
+          </div>
+
+          <nav id="" class="navbar task-nav">
+            <span class="navbar-brand">
+              {% if page.lession %}
+              Lektion {{ page.theme }}{{ page.lession }}
+              {% else %}
+              Temaforløb {{ page.theme }}
+              {% endif %}
+            </span>
+
+            <ul class="nav navbar-nav navbar-right">
+              {% if page.means %}
+              <li>
+                <a role="button" data-toggle="collapse" href="#{{ page.id }}-means-collapse" aria-expanded="false" aria-controls="{{ page.id }}-means-collapse">I skal bruge <span class="caret"></span></a>
+              </li>
+              {% endif %}
+              {% if page.goals %}
+              <li>
+                <a role="button" data-toggle="collapse" href="#{{ page.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ page.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
+              </li>
+              {% endif %}
+              {% if page.pdf %}
+              <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+              {% endif %}
+            </ul>
+          </nav>
 
 
-            {{ content }}
-            {% if page.theme != "1" %}
-            <div class="alert alert-warning" role="alert">Opgaverne kommer snart</div>
+
+          {% if page.means %}
+          <div class="collapse" id="{{ page.id }}-means-collapse">
+            <div class="task-nav-list">
+              <div class="print-only">
+                <span class="label label-lg">Det skal I bruge</span>
+              </div>
+              <ul>
+                {% for mean in page.means %}
+                <li><i class="fa fa-check"></i> {{ mean }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>   
+          {% endif %}
+
+          {% if page.goals %}
+          <div class="collapse" id="{{ page.id }}-goals-collapse">
+            <div class="task-nav-list">
+              <div class="print-only">
+                <span class="label label-lg">Læringsmål</span>
+              </div>
+              <ol>
+                {% for goal in page.goals %}
+                <li>{{ goal }}</li>
+                {% endfor %}
+              </ol>
+            </div>
+          </div>   
+          {% endif %}
+          <div class="content-block content-title-block">
+            {% if page.subject %}
+            <span class="label label-lg label-madkundskab">{{ page.subject }}</span>
             {% endif %}
+            {% if page.time %}
+            <span class="label label-lg label-madkundskab"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
+            {% endif %}
+
+            {% if page.assignments %}
+            <div class="task-nav-list print-hide">
+
+              {% for i in (1..page.assignments) %}
+              <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+              {% endfor %}
+
+            </div>
+            {% endif %}
+
+            <h1 class="page-title print-hide">{{ page.title }}</h1>
+          </div>
+
+
+          {{ content }}
+          {% if page.theme != "1" %}
+          <div class="alert alert-warning" role="alert">Opgaverne kommer snart</div>
+          {% endif %}
         </div>
+      </div>
     </div>
-</div>
 
 
-    </body>
+  </body>
 </html>

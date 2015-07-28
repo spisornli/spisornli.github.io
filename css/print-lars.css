@@ -1,0 +1,44 @@
+.print-only {
+  display: none;
+}
+
+@media print {
+ .collapse {
+    display: block !important;
+    height: auto !important;
+}
+  .print-only {
+    display: block;
+  }
+  .print-hide {
+    display: none;
+  }
+  .opgave-block {
+    page-break-before:always;
+    page-break-before: always;
+  }
+  .page-title {
+    margin: 10px 0;
+    font-size: 3.5em;
+  }
+  .print-header .label{
+    margin-top: 50px;
+  }
+
+  .print-header-image img {
+    width: 100%;
+    height: auto;
+    float: right;
+  }
+  .print-svg {
+        width: 100%;
+    height: auto;
+  }
+}
+
+  .print-header-text {
+    float:left;
+  }
+    .print-header-image {
+    float:right;
+  }
