@@ -190,6 +190,17 @@ a.disabled  {
 }
 
 
+
+.table-bordered {
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 30px;
+    
+    tbody > tr > td,
+    thead > tr > th {
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+}
+
 /* SLIDE NAVIGATION */
 
 .fp-controlArrow {
