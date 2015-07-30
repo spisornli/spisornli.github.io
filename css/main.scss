@@ -44,8 +44,7 @@
 
 
 .content-block ul, ol {
-    margin-top: 0px;
-    margin-bottom: 13.5px;
+    margin: 13.5px 0;
     
     li {
         padding-left: 10px; 
@@ -71,8 +70,21 @@ ol {
         text-align: right;
         content: counter(item) ".";
     }
+    
+    ul {
+    
+        li {
+            list-style-type: disc;
+            padding-left: 10px;
+            text-indent:0;
+            list-style-position: outside;
+        }  
+        
+        li:before {
+            display: none !important;
+        }
+    }
 }
-
 
 a.btn-info:visited {
     color: $btn-info-color;

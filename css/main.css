@@ -6589,23 +6589,22 @@ button.close {
 
 /* line 46, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .content-block ul, ol {
-  margin-top: 0px;
-  margin-bottom: 13.5px; }
-  /* line 50, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  margin: 13.5px 0; }
+  /* line 49, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .content-block ul li, ol li {
     padding-left: 10px; }
 
-/* line 55, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 54, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 ol {
   counter-reset: item; }
-  /* line 58, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 57, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   ol li {
     margin: 0;
     padding: 0 0 0 10px;
     text-indent: -15px;
     list-style-type: none;
     counter-increment: item; }
-  /* line 66, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 65, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   ol li:before {
     display: inline-block;
     width: 15px;
@@ -6613,16 +6612,25 @@ ol {
     font-weight: 600;
     text-align: right;
     content: counter(item) "."; }
+  /* line 76, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  ol ul li {
+    list-style-type: disc;
+    padding-left: 10px;
+    text-indent: 0;
+    list-style-position: outside; }
+  /* line 83, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  ol ul li:before {
+    display: none !important; }
 
-/* line 77, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 89, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.btn-info:visited {
   color: #F9F7EF; }
 
-/* line 81, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 93, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .row {
   margin: 0 5%; }
 
-/* line 86, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 98, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 hr {
   background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.07);
@@ -6630,16 +6638,16 @@ hr {
   height: 0;
   margin: 30px 0; }
 
-/* line 94, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 106, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .slide {
   position: relative; }
 
-/* line 99, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 111, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #canvas-holder {
   max-width: 150px;
   margin: 0 auto; }
 
-/* line 105, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 117, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.slide-pagination {
   display: none;
   position: absolute;
@@ -6653,19 +6661,19 @@ a.slide-pagination {
   -ms-transform: translate(0%, -50%);
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%); }
-  /* line 120, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 132, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   a.slide-pagination:hover {
     color: rgba(0, 0, 0, 0.6); }
 
-/* line 125, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 137, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.slide-pagination-left {
   left: 5%; }
 
-/* line 129, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 141, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.slide-pagination-right {
   right: 5%; }
 
-/* line 134, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 146, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.main-nav-pagination {
   display: inline-block;
   position: absolute;
@@ -6678,15 +6686,15 @@ a.main-nav-pagination {
   -ms-transform: translate(-50%, 0%);
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%); }
-  /* line 147, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 159, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   a.main-nav-pagination:hover {
     color: rgba(0, 0, 0, 0.4); }
 
-/* line 154, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 166, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 a.disabled {
   cursor: not-allowed; }
 
-/* line 161, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 173, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .pagination-numb {
   position: absolute;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -6702,21 +6710,21 @@ a.disabled {
    	-webkit-transform: translate(-50%,0%); 
     transform: translate(-50%,0%);*/ }
 
-/* line 179, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 191, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .col-center {
   margin: 0 auto;
   float: none; }
 
-/* line 194, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 206, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .table-bordered {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 30px; }
-  /* line 199, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 211, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .table-bordered tbody > tr > td, .table-bordered thead > tr > th {
     border: 1px solid rgba(0, 0, 0, 0.1); }
 
 /* SLIDE NAVIGATION */
-/* line 206, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 218, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .fp-controlArrow {
   position: absolute;
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -6731,7 +6739,7 @@ a.disabled {
   margin: 0px;
   transform: none; }
 
-/* line 221, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 233, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .fp-controlArrow.fp-prev {
   left: 5%;
   width: 0px;
@@ -6739,33 +6747,33 @@ a.disabled {
   border-width: 0px;
   border-color: transparent #FFF transparent transparent; }
 
-/* line 229, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 241, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .fp-controlArrow.fp-next {
   right: 5%;
   border: none;
   border-width: 0px;
   border-color: transparent transparent transparent #FFF; }
 
-/* line 236, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 248, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .fp-controlArrow.fp-prev:before {
   content: '«'; }
 
-/* line 240, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 252, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .fp-controlArrow.fp-next:before {
   content: '»'; }
 
-/* line 247, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 259, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small, .h1 small, .h1 .small, .h2 small, .h2 .small, .h3 small, .h3 .small, .h4 small, .h4 .small, .h5 small, .h5 .small, .h6 small, .h6 .small {
   font-weight: inherit;
   line-height: 1;
   color: rgba(0, 0, 0, 0.4);
   font-size: 60%; }
 
-/* line 257, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 269, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .carousel {
   width: 300px; }
 
-/* line 261, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 273, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .carousel .item {
   left: 0 !important;
   -webkit-transition: opacity .5s ease-in-out;
@@ -6774,30 +6782,30 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out; }
 
-/* line 268, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 280, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .carousel-control {
   background-image: none !important;
   /* remove background gradients on controls */ }
 
 /* Fade controls with items */
-/* line 273, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 285, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .next.left, .prev.right {
   opacity: 1;
   z-index: 1; }
 
-/* line 278, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 290, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .active.left, .active.right {
   opacity: 0;
   z-index: 2; }
 
-/* line 284, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 296, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .item-wrapper {
   display: block;
   padding: 0 20px;
   max-width: 980px;
   margin: 0px auto 0 auto;
   position: relative; }
-  /* line 291, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 303, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .item-wrapper .image-wrapper {
     display: inline-block;
     overflow: hidden;
@@ -6805,7 +6813,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     float: left;
     margin-left: 0px;
     margin-top: -30px; }
-    /* line 300, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 312, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .item-wrapper .image-wrapper .illu-circle {
       width: 300px;
       height: auto;
@@ -6817,7 +6825,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
       -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
       transform: translate(-50%, 0%); }
-  /* line 316, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 328, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .item-wrapper .text-wrapper {
     display: inline-block;
     left: 40px;
@@ -6825,7 +6833,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     position: relative;
     top: 0; }
 
-/* line 326, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 338, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .item-title {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -6840,11 +6848,11 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   border-radius: 2px;
   background: rgba(37, 58, 68, 0.9);
   color: #F9F7EF; }
-  /* line 341, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 353, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .item-title a {
     color: #F9F7EF; }
 
-/* line 347, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 359, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 p.item-text {
   color: rgba(37, 58, 68, 0.7);
   font-weight: 300;
@@ -6855,31 +6863,31 @@ p.item-text {
   display: inline-block;
   margin-bottom: 20px; }
 
-/* line 359, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 371, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .item-label {
   background: rgba(249, 247, 239, 0.9);
   color: rgba(37, 58, 68, 0.6);
   font-weight: 400; }
-  /* line 364, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 376, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .item-label .badge {
     background: rgba(37, 58, 68, 0.05);
     color: inherit;
     border-color: transparent;
     font-weight: 400; }
 
-/* line 372, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 384, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 img {
   width: 100%;
   height: auto; }
 
-/* line 379, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 391, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn {
   border: none;
   border-radius: 2px;
   overflow: hidden;
   padding: 4px 12px; }
 
-/* line 393, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 405, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn-link {
   padding: 0;
   border-radius: 0;
@@ -6890,12 +6898,12 @@ img {
   line-height: inherit;
   vertical-align: baseline;
   white-space: normal; }
-  /* line 404, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 416, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .btn-link .fa {
     margin-right: 3px;
     margin-left: 4px; }
 
-/* line 411, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 423, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn.popup-open, .task-btn {
   background: rgba(249, 247, 239, 0.9);
   color: #253A44;
@@ -6906,17 +6914,17 @@ img {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   padding: 0em 15px; }
-  /* line 423, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 435, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .btn.popup-open:hover, .btn.popup-open:focus, .task-btn:hover, .task-btn:focus {
     background: rgba(249, 247, 239, 0.7); }
-  /* line 427, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 439, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .btn.popup-open .fa, .task-btn .fa {
     margin-left: 0px;
     position: relative;
     margin-right: 0px;
     top: 0px;
     color: rgba(249, 247, 239, 0.9); }
-  /* line 435, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 447, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .btn.popup-open .badge, .task-btn .badge {
     height: 36px;
     line-height: 36px;
@@ -6929,7 +6937,7 @@ img {
     margin-left: 12px;
     background: rgba(37, 58, 68, 0.9); }
 
-/* line 450, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 462, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn-sm, .btn-group-sm > .btn {
   color: rgba(37, 58, 68, 0.8);
   font-size: 11px;
@@ -6937,7 +6945,7 @@ img {
   line-height: 24px;
   padding: 0em 11px;
   letter-spacing: 0; }
-  /* line 458, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 470, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .btn-sm .badge, .btn-group-sm > .btn .badge {
     height: 24px;
     line-height: 24px;
@@ -6947,7 +6955,7 @@ img {
     margin-right: 8px;
     background: rgba(37, 58, 68, 0.9); }
 
-/* line 469, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 481, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .task-btn {
   background: #f2eedc;
   letter-spacing: 0;
@@ -6955,48 +6963,48 @@ img {
   letter-spacing: 0.03em;
   color: rgba(37, 58, 68, 0.8);
   font-size: 14px; }
-  /* line 477, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 489, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-btn:hover {
     background: #f5f1e4;
     color: rgba(37, 58, 68, 0.9); }
-  /* line 482, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 494, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-btn .badge {
     background: rgba(249, 247, 239, 0.1);
     border-left: 1px solid rgba(37, 58, 68, 0.1); }
-  /* line 487, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 499, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-btn .fa {
     color: rgba(37, 58, 68, 0.5);
     margin-right: 0 !important; }
 
-/* line 497, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 509, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .btn-primary .fa {
   border-color: #c33d3d; }
 
-/* line 503, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 515, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-intro01 {
   background: #c95050; }
 
-/* line 507, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 519, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-madkundskab {
   background: #4ECDC4; }
 
-/* line 511, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 523, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-natur-teknologi {
   background: #FFCC00; }
 
-/* line 515, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 527, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-dansk {
   background: #ca4068; }
 
-/* line 519, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 531, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-matematik {
   background: #34B491; }
 
-/* line 523, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 535, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-historie {
   background: #FF5252; }
 
-/* line 534, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 546, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .top-menu {
   position: fixed;
   top: 0;
@@ -7011,26 +7019,26 @@ img {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 0; }
 
-/* line 549, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 561, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar .navbar-nav {
   /* NAV TEMA FARVER */
   /* NAV FAG FARVER */ }
-  /* line 551, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 563, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav li > a {
     font-weight: 400;
     color: #253A44;
     background: #f8f5eb; }
-  /* line 557, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 569, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav li.active > a, .navbar .navbar-nav li > a:hover, .navbar .navbar-nav li > a:focus {
     background: #f2eedc;
     outline: none; }
-  /* line 566, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 578, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .tema > a {
     font-weight: 700;
     letter-spacing: -0.02em;
     padding-left: 25px;
     padding-right: 25px; }
-  /* line 573, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 585, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav li > a:after {
     position: absolute;
     z-index: -2;
@@ -7047,89 +7055,89 @@ img {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-  /* line 593, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 605, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .active > a:after {
     bottom: -15px;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-  /* line 608, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 620, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .tema1 > a, .navbar .navbar-nav .tema1 > a:focus, .navbar .navbar-nav .tema1.active > a {
     background: indianred;
     color: #F9F7EF; }
-  /* line 613, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 625, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .tema1.active > a:after, .navbar .navbar-nav .tema1 > a:after {
     color: #d98383; }
-  /* line 617, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 629, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .tema1 > a:hover {
     background: #c95050; }
-  /* line 624, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 636, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .madkundskab a:hover, .navbar .navbar-nav .madkundskab a:focus {
     background: #b1e9e5; }
-  /* line 625, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 637, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .madkundskab a:after {
     color: #8aded8; }
-  /* line 627, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 639, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .madkundskab.active > a {
     background: #b1e9e5; }
-  /* line 630, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 642, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .natur-teknologi a:hover, .navbar .navbar-nav .natur-teknologi a:focus {
     background: #ffe680; }
-  /* line 631, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 643, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .natur-teknologi a:after {
     color: #ffdb4d; }
-  /* line 633, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 645, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .natur-teknologi.active > a {
     background: #ffe680; }
-  /* line 636, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 648, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .dansk a:hover, .navbar .navbar-nav .dansk a:focus {
     background: #f1ccd6; }
-  /* line 637, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 649, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .dansk a:after {
     color: #e6a4b7; }
-  /* line 639, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 651, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .dansk.active > a {
     background: #f1ccd6; }
-  /* line 642, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 654, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .matematik a:hover, .navbar .navbar-nav .matematik a:focus {
     background: #b2e9da; }
-  /* line 643, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 655, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .matematik a:after {
     color: #63d2b3; }
-  /* line 645, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 657, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .matematik.active > a {
     background: #b2e9da; }
-  /* line 648, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 660, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .historie a:hover, .navbar .navbar-nav .historie a:focus {
     background: #ffd2d2; }
-  /* line 649, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 661, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .historie a:after {
     color: #ff9f9f; }
-  /* line 651, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 663, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .navbar .navbar-nav .historie.active > a {
     background: #ffd2d2; }
 
-/* line 657, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 669, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand {
   float: right;
   padding: 10px 0;
   display: block;
   width: 150px; }
 
-/* line 664, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 676, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-brand img {
   max-height: 100%;
   max-width: auto;
   width: 100%;
   overflow: auto; }
 
-/* line 671, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 683, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .navbar-header .navbar-toggle {
   display: block;
   float: right; }
 
-/* line 682, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 694, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .page-title {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -7137,7 +7145,7 @@ img {
   margin: 40px 0 35px 0;
   font-size: 4.5em; }
 
-/* line 696, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 708, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .task-nav, .item-nav, .blockpage .task-nav {
   margin-bottom: 17px;
   background-color: rgba(37, 58, 68, 0.8);
@@ -7152,7 +7160,7 @@ img {
   text-transform: uppercase;
   font-weight: 400;
   overflow: visible !important; }
-  /* line 711, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 723, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .navbar-brand, .item-nav .navbar-brand, .blockpage .task-nav .navbar-brand {
     float: left;
     padding: 0px 15px;
@@ -7164,13 +7172,13 @@ img {
     background-color: rgba(0, 0, 0, 0.04);
     text-transform: uppercase;
     letter-spacing: 0.05em; }
-  /* line 724, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 736, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .brand-title, .item-nav .brand-title, .blockpage .task-nav .brand-title {
     padding: 0 15px;
     line-height: inherit;
     height: 40px;
     display: inline-block; }
-  /* line 732, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 744, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .badge, .item-nav .badge, .blockpage .task-nav .badge {
     font-size: inherit;
     padding: 3px 6px 4px 7px;
@@ -7180,7 +7188,7 @@ img {
     border-radius: 50px;
     margin: 0 -2px 0 6px;
     min-width: auto; }
-  /* line 745, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 757, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .nav > li > a, .item-nav .nav > li > a, .blockpage .task-nav .nav > li > a {
     display: block;
     padding: 0px 15px;
@@ -7190,30 +7198,30 @@ img {
     border-right: 1px solid rgba(0, 0, 0, 0.08);
     color: #f9f7ef !important;
     font-weight: 600; }
-  /* line 756, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 768, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .nav > li:last-child > a, .item-nav .nav > li:last-child > a, .blockpage .task-nav .nav > li:last-child > a {
     border-right: none; }
-  /* line 762, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 774, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .nav > li > a:hover, .item-nav .nav > li > a:hover, .blockpage .task-nav .nav > li > a:hover {
     background-color: rgba(0, 0, 0, 0.08); }
-  /* line 769, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 781, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .caret, .item-nav .caret, .blockpage .task-nav .caret {
     margin-left: 6px;
     margin-right: -2px; }
-  /* line 774, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 786, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .fa, .item-nav .fa, .blockpage .task-nav .fa {
     margin-right: 6px;
     color: white; }
-  /* line 779, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 791, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .navbar-right, .item-nav .navbar-right, .blockpage .task-nav .navbar-right {
     margin: 0; }
-  /* line 785, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 797, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .task-nav-time, .item-nav .task-nav-time, .blockpage .task-nav .task-nav-time {
     float: right;
     padding: 0 16px 0 38px;
     background: rgba(0, 0, 0, 0.08);
     position: relative; }
-    /* line 792, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 804, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .popup .task-nav .task-nav-time:before, .item-nav .task-nav-time:before, .blockpage .task-nav .task-nav-time:before {
       content: "\f017";
       font-family: FontAwesome;
@@ -7225,63 +7233,63 @@ img {
       left: 16px;
       top: 1px;
       color: #253a44; }
-  /* line 807, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 819, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .task-nav .dropdown, .item-nav .dropdown, .blockpage .task-nav .dropdown {
     color: #222;
     text-transform: none;
     line-height: 1.2em; }
 
-/* line 817, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 829, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .task-nav-list {
   border-top: 1px solid #f2eedc;
   padding-top: 14px;
   margin-top: 15px;
   margin-bottom: 17px; }
-  /* line 823, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 835, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-nav-list ul, .task-nav-list ol {
     margin: 0;
     font-size: 14px;
     font-weight: 400; }
-  /* line 829, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 841, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-nav-list ol {
     padding: 0; }
-    /* line 833, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 845, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .task-nav-list ol li {
       padding: 12px 15px 12px 35px;
       background-color: #f5f1e4;
       display: block;
       border-radius: 2px;
       margin: 2px 0; }
-      /* line 840, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+      /* line 852, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .task-nav-list ol li:before {
         padding-right: 8px; }
-  /* line 846, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 858, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-nav-list ul {
     list-style: outside none none;
     padding: 0;
     line-height: 1; }
-    /* line 851, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 863, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .task-nav-list ul li {
       display: inline-block;
       margin: 2px 0;
       padding: 12px 15px;
       background-color: #f5f1e4; }
-  /* line 860, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 872, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-nav-list ul.docs-nav li {
     display: block;
     background-color: transparent;
     padding: 0; }
-    /* line 865, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 877, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .task-nav-list ul.docs-nav li a {
       display: inline-block;
       padding: 12px 15px;
       background-color: #f5f1e4; }
-  /* line 873, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 885, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .task-nav-list .fa {
     margin-right: 6px;
     color: #253a44; }
 
-/* line 888, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 900, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .label {
   font-weight: 400;
   padding: 0px 15px;
@@ -7290,14 +7298,14 @@ img {
   display: inline-block;
   border-radius: 2px;
   margin: 2px 0; }
-  /* line 898, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 910, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .label .label-icon-left {
     position: relative;
     margin-right: 3px;
     margin-left: -2px;
     top: 1px;
     font-size: 18px; }
-  /* line 906, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 918, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .label .badge {
     font-size: inherit;
     padding: 2px 5px 3px 6px;
@@ -7311,179 +7319,179 @@ img {
     max-height: 24px;
     text-align: center; }
 
-/* line 926, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 938, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .content-divider {
   background-color: indianred;
   height: 5px;
   border-radius: 2px;
   margin: 22px 0px; }
 
-/* line 939, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 951, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .image-wrapper, .blockpage .image-wrapper {
   margin: 35px 0; }
 
-/* line 943, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 955, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .tema01-popup .image-wrapper {
   background: #c95050; }
 
-/* line 958, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 970, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .content-divider, #madkundskab-A .content-divider, #madkundskab-1A .content-divider, #madkundskab-2A .content-divider, #madkundskab-3A .content-divider, #madkundskab-4A .content-divider, #madkundskab-5A .content-divider {
   background-color: #4ECDC4; }
-/* line 959, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 971, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .label, #madkundskab-A .label, #madkundskab-1A .label, #madkundskab-2A .label, #madkundskab-3A .label, #madkundskab-4A .label, #madkundskab-5A .label {
   background-color: #4ECDC4; }
-/* line 960, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 972, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab a, #madkundskab-A a, #madkundskab-1A a, #madkundskab-2A a, #madkundskab-3A a, #madkundskab-4A a, #madkundskab-5A a {
   color: #2a958e; }
-/* line 961, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 973, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .task-nav .navbar-brand, #madkundskab-A .task-nav .navbar-brand, #madkundskab-1A .task-nav .navbar-brand, #madkundskab-2A .task-nav .navbar-brand, #madkundskab-3A .task-nav .navbar-brand, #madkundskab-4A .task-nav .navbar-brand, #madkundskab-5A .task-nav .navbar-brand {
   background-color: #4ECDC4; }
-/* line 962, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 974, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .task-btn, #madkundskab-A .task-btn, #madkundskab-1A .task-btn, #madkundskab-2A .task-btn, #madkundskab-3A .task-btn, #madkundskab-4A .task-btn, #madkundskab-5A .task-btn {
   background-color: rgba(78, 205, 196, 0.1); }
-/* line 963, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 975, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .opgave-block, #madkundskab-A .opgave-block, #madkundskab-1A .opgave-block, #madkundskab-2A .opgave-block, #madkundskab-3A .opgave-block, #madkundskab-4A .opgave-block, #madkundskab-5A .opgave-block {
   background-color: rgba(78, 205, 196, 0.1); }
-/* line 965, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 977, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .task-nav-list ul li, #madkundskab-A .task-nav-list ul li, #madkundskab-1A .task-nav-list ul li, #madkundskab-2A .task-nav-list ul li, #madkundskab-3A .task-nav-list ul li, #madkundskab-4A .task-nav-list ul li, #madkundskab-5A .task-nav-list ul li {
   background-color: rgba(78, 205, 196, 0.1); }
-/* line 966, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 978, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .task-nav-list ol li, #madkundskab-A .task-nav-list ol li, #madkundskab-1A .task-nav-list ol li, #madkundskab-2A .task-nav-list ol li, #madkundskab-3A .task-nav-list ol li, #madkundskab-4A .task-nav-list ol li, #madkundskab-5A .task-nav-list ol li {
   background-color: rgba(78, 205, 196, 0.1); }
-/* line 967, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 979, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #madkundskab .task-nav-list .docs-nav li, #madkundskab-A .task-nav-list .docs-nav li, #madkundskab-1A .task-nav-list .docs-nav li, #madkundskab-2A .task-nav-list .docs-nav li, #madkundskab-3A .task-nav-list .docs-nav li, #madkundskab-4A .task-nav-list .docs-nav li, #madkundskab-5A .task-nav-list .docs-nav li {
   background-color: transparent; }
-  /* line 969, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 981, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #madkundskab .task-nav-list .docs-nav li a, #madkundskab-A .task-nav-list .docs-nav li a, #madkundskab-1A .task-nav-list .docs-nav li a, #madkundskab-2A .task-nav-list .docs-nav li a, #madkundskab-3A .task-nav-list .docs-nav li a, #madkundskab-4A .task-nav-list .docs-nav li a, #madkundskab-5A .task-nav-list .docs-nav li a {
     background-color: rgba(78, 205, 196, 0.1); }
 
-/* line 983, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 995, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .content-divider, #natur-teknologi-B .content-divider, #natur-teknologi-1B .content-divider, #natur-teknologi-2B .content-divider, #natur-teknologi-3B .content-divider, #natur-teknologi-4B .content-divider, #natur-teknologi-5B .content-divider {
   background-color: #FFCC00; }
-/* line 984, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 996, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .label, #natur-teknologi-B .label, #natur-teknologi-1B .label, #natur-teknologi-2B .label, #natur-teknologi-3B .label, #natur-teknologi-4B .label, #natur-teknologi-5B .label {
   background-color: #FFCC00;
   color: #253A44; }
-/* line 985, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 997, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi a, #natur-teknologi-B a, #natur-teknologi-1B a, #natur-teknologi-2B a, #natur-teknologi-3B a, #natur-teknologi-4B a, #natur-teknologi-5B a {
   color: #cca300; }
-/* line 986, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 998, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .task-nav .navbar-brand, #natur-teknologi-B .task-nav .navbar-brand, #natur-teknologi-1B .task-nav .navbar-brand, #natur-teknologi-2B .task-nav .navbar-brand, #natur-teknologi-3B .task-nav .navbar-brand, #natur-teknologi-4B .task-nav .navbar-brand, #natur-teknologi-5B .task-nav .navbar-brand {
   background-color: #FFCC00;
   color: #253A44; }
-/* line 987, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 999, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .task-btn, #natur-teknologi-B .task-btn, #natur-teknologi-1B .task-btn, #natur-teknologi-2B .task-btn, #natur-teknologi-3B .task-btn, #natur-teknologi-4B .task-btn, #natur-teknologi-5B .task-btn {
   background-color: rgba(255, 204, 0, 0.1); }
-/* line 988, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1000, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .opgave-block, #natur-teknologi-B .opgave-block, #natur-teknologi-1B .opgave-block, #natur-teknologi-2B .opgave-block, #natur-teknologi-3B .opgave-block, #natur-teknologi-4B .opgave-block, #natur-teknologi-5B .opgave-block {
   background-color: rgba(255, 204, 0, 0.1); }
-/* line 990, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1002, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .task-nav-list ul li, #natur-teknologi-B .task-nav-list ul li, #natur-teknologi-1B .task-nav-list ul li, #natur-teknologi-2B .task-nav-list ul li, #natur-teknologi-3B .task-nav-list ul li, #natur-teknologi-4B .task-nav-list ul li, #natur-teknologi-5B .task-nav-list ul li {
   background-color: rgba(255, 204, 0, 0.1); }
-/* line 991, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1003, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .task-nav-list ol li, #natur-teknologi-B .task-nav-list ol li, #natur-teknologi-1B .task-nav-list ol li, #natur-teknologi-2B .task-nav-list ol li, #natur-teknologi-3B .task-nav-list ol li, #natur-teknologi-4B .task-nav-list ol li, #natur-teknologi-5B .task-nav-list ol li {
   background-color: rgba(255, 204, 0, 0.1); }
-/* line 992, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1004, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #natur-teknologi .task-nav-list .docs-nav li, #natur-teknologi-B .task-nav-list .docs-nav li, #natur-teknologi-1B .task-nav-list .docs-nav li, #natur-teknologi-2B .task-nav-list .docs-nav li, #natur-teknologi-3B .task-nav-list .docs-nav li, #natur-teknologi-4B .task-nav-list .docs-nav li, #natur-teknologi-5B .task-nav-list .docs-nav li {
   background-color: transparent; }
-  /* line 994, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1006, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #natur-teknologi .task-nav-list .docs-nav li a, #natur-teknologi-B .task-nav-list .docs-nav li a, #natur-teknologi-1B .task-nav-list .docs-nav li a, #natur-teknologi-2B .task-nav-list .docs-nav li a, #natur-teknologi-3B .task-nav-list .docs-nav li a, #natur-teknologi-4B .task-nav-list .docs-nav li a, #natur-teknologi-5B .task-nav-list .docs-nav li a {
     background-color: rgba(255, 204, 0, 0.1); }
 
-/* line 1007, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1019, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .content-divider, #dansk-C .content-divider, #dansk-1C .content-divider, #dansk-2C .content-divider, #dansk-3C .content-divider, #dansk-4C .content-divider, #dansk-5C .content-divider {
   background-color: #ca4068; }
-/* line 1008, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1020, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .label, #dansk-C .label, #dansk-1C .label, #dansk-2C .label, #dansk-3C .label, #dansk-4C .label, #dansk-5C .label {
   background-color: #ca4068; }
-/* line 1009, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1021, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk a, #dansk-C a, #dansk-1C a, #dansk-2C a, #dansk-3C a, #dansk-4C a, #dansk-5C a {
   color: #ca4068; }
-/* line 1010, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1022, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .task-nav .navbar-brand, #dansk-C .task-nav .navbar-brand, #dansk-1C .task-nav .navbar-brand, #dansk-2C .task-nav .navbar-brand, #dansk-3C .task-nav .navbar-brand, #dansk-4C .task-nav .navbar-brand, #dansk-5C .task-nav .navbar-brand {
   background-color: #ca4068; }
-/* line 1011, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1023, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .task-btn, #dansk-C .task-btn, #dansk-1C .task-btn, #dansk-2C .task-btn, #dansk-3C .task-btn, #dansk-4C .task-btn, #dansk-5C .task-btn {
   background-color: rgba(202, 64, 104, 0.1); }
-/* line 1012, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1024, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .opgave-block, #dansk-C .opgave-block, #dansk-1C .opgave-block, #dansk-2C .opgave-block, #dansk-3C .opgave-block, #dansk-4C .opgave-block, #dansk-5C .opgave-block {
   background-color: rgba(202, 64, 104, 0.1); }
-/* line 1014, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1026, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .task-nav-list ul li, #dansk-C .task-nav-list ul li, #dansk-1C .task-nav-list ul li, #dansk-2C .task-nav-list ul li, #dansk-3C .task-nav-list ul li, #dansk-4C .task-nav-list ul li, #dansk-5C .task-nav-list ul li {
   background-color: rgba(202, 64, 104, 0.1); }
-/* line 1015, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1027, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .task-nav-list ol li, #dansk-C .task-nav-list ol li, #dansk-1C .task-nav-list ol li, #dansk-2C .task-nav-list ol li, #dansk-3C .task-nav-list ol li, #dansk-4C .task-nav-list ol li, #dansk-5C .task-nav-list ol li {
   background-color: rgba(202, 64, 104, 0.1); }
-/* line 1016, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1028, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #dansk .task-nav-list .docs-nav li, #dansk-C .task-nav-list .docs-nav li, #dansk-1C .task-nav-list .docs-nav li, #dansk-2C .task-nav-list .docs-nav li, #dansk-3C .task-nav-list .docs-nav li, #dansk-4C .task-nav-list .docs-nav li, #dansk-5C .task-nav-list .docs-nav li {
   background-color: transparent; }
-  /* line 1018, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1030, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #dansk .task-nav-list .docs-nav li a, #dansk-C .task-nav-list .docs-nav li a, #dansk-1C .task-nav-list .docs-nav li a, #dansk-2C .task-nav-list .docs-nav li a, #dansk-3C .task-nav-list .docs-nav li a, #dansk-4C .task-nav-list .docs-nav li a, #dansk-5C .task-nav-list .docs-nav li a {
     background-color: rgba(202, 64, 104, 0.1); }
 
-/* line 1032, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1044, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .content-divider, #matematik-D .content-divider, #matematik-1D .content-divider, #matematik-2D .content-divider, #matematik-3D .content-divider, #matematik-4D .content-divider, #matematik-5D .content-divider {
   background-color: #34B491; }
-/* line 1033, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1045, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .label, #matematik-D .label, #matematik-1D .label, #matematik-2D .label, #matematik-3D .label, #matematik-4D .label, #matematik-5D .label {
   background-color: #34B491; }
-/* line 1034, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1046, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik a, #matematik-D a, #matematik-1D a, #matematik-2D a, #matematik-3D a, #matematik-4D a, #matematik-5D a {
   color: #1f6d58; }
-/* line 1035, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1047, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .task-nav .navbar-brand, #matematik-D .task-nav .navbar-brand, #matematik-1D .task-nav .navbar-brand, #matematik-2D .task-nav .navbar-brand, #matematik-3D .task-nav .navbar-brand, #matematik-4D .task-nav .navbar-brand, #matematik-5D .task-nav .navbar-brand {
   background-color: #34B491; }
-/* line 1036, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1048, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .task-btn, #matematik-D .task-btn, #matematik-1D .task-btn, #matematik-2D .task-btn, #matematik-3D .task-btn, #matematik-4D .task-btn, #matematik-5D .task-btn {
   background-color: rgba(52, 180, 145, 0.1); }
-/* line 1037, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1049, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .opgave-block, #matematik-D .opgave-block, #matematik-1D .opgave-block, #matematik-2D .opgave-block, #matematik-3D .opgave-block, #matematik-4D .opgave-block, #matematik-5D .opgave-block {
   background-color: rgba(52, 180, 145, 0.1); }
-/* line 1039, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1051, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .task-nav-list ul li, #matematik-D .task-nav-list ul li, #matematik-1D .task-nav-list ul li, #matematik-2D .task-nav-list ul li, #matematik-3D .task-nav-list ul li, #matematik-4D .task-nav-list ul li, #matematik-5D .task-nav-list ul li {
   background-color: rgba(52, 180, 145, 0.1); }
-/* line 1040, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1052, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .task-nav-list ol li, #matematik-D .task-nav-list ol li, #matematik-1D .task-nav-list ol li, #matematik-2D .task-nav-list ol li, #matematik-3D .task-nav-list ol li, #matematik-4D .task-nav-list ol li, #matematik-5D .task-nav-list ol li {
   background-color: rgba(52, 180, 145, 0.1); }
-/* line 1041, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1053, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #matematik .task-nav-list .docs-nav li, #matematik-D .task-nav-list .docs-nav li, #matematik-1D .task-nav-list .docs-nav li, #matematik-2D .task-nav-list .docs-nav li, #matematik-3D .task-nav-list .docs-nav li, #matematik-4D .task-nav-list .docs-nav li, #matematik-5D .task-nav-list .docs-nav li {
   background-color: transparent; }
-  /* line 1043, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1055, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #matematik .task-nav-list .docs-nav li a, #matematik-D .task-nav-list .docs-nav li a, #matematik-1D .task-nav-list .docs-nav li a, #matematik-2D .task-nav-list .docs-nav li a, #matematik-3D .task-nav-list .docs-nav li a, #matematik-4D .task-nav-list .docs-nav li a, #matematik-5D .task-nav-list .docs-nav li a {
     background-color: rgba(52, 180, 145, 0.1); }
 
-/* line 1056, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1068, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .content-divider, #historie-E .content-divider, #historie-1E .content-divider, #historie-2E .content-divider, #historie-3E .content-divider, #historie-4E .content-divider, #historie-5E .content-divider {
   background-color: #FF5252; }
-/* line 1057, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1069, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .label, #historie-E .label, #historie-1E .label, #historie-2E .label, #historie-3E .label, #historie-4E .label, #historie-5E .label {
   background-color: #FF5252; }
-/* line 1058, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1070, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie a, #historie-E a, #historie-1E a, #historie-2E a, #historie-3E a, #historie-4E a, #historie-5E a {
   color: #FF5252; }
-/* line 1059, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1071, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .task-nav .navbar-brand, #historie-E .task-nav .navbar-brand, #historie-1E .task-nav .navbar-brand, #historie-2E .task-nav .navbar-brand, #historie-3E .task-nav .navbar-brand, #historie-4E .task-nav .navbar-brand, #historie-5E .task-nav .navbar-brand {
   background-color: #FF5252; }
-/* line 1060, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1072, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .task-btn, #historie-E .task-btn, #historie-1E .task-btn, #historie-2E .task-btn, #historie-3E .task-btn, #historie-4E .task-btn, #historie-5E .task-btn {
   background-color: rgba(255, 82, 82, 0.1); }
-/* line 1061, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1073, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .opgave-block, #historie-E .opgave-block, #historie-1E .opgave-block, #historie-2E .opgave-block, #historie-3E .opgave-block, #historie-4E .opgave-block, #historie-5E .opgave-block {
   background-color: rgba(255, 82, 82, 0.1); }
-/* line 1063, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1075, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .task-nav-list ul li, #historie-E .task-nav-list ul li, #historie-1E .task-nav-list ul li, #historie-2E .task-nav-list ul li, #historie-3E .task-nav-list ul li, #historie-4E .task-nav-list ul li, #historie-5E .task-nav-list ul li {
   background-color: rgba(255, 82, 82, 0.1); }
-/* line 1064, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1076, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .task-nav-list ol li, #historie-E .task-nav-list ol li, #historie-1E .task-nav-list ol li, #historie-2E .task-nav-list ol li, #historie-3E .task-nav-list ol li, #historie-4E .task-nav-list ol li, #historie-5E .task-nav-list ol li {
   background-color: rgba(255, 82, 82, 0.1); }
-/* line 1065, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1077, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #historie .task-nav-list .docs-nav li, #historie-E .task-nav-list .docs-nav li, #historie-1E .task-nav-list .docs-nav li, #historie-2E .task-nav-list .docs-nav li, #historie-3E .task-nav-list .docs-nav li, #historie-4E .task-nav-list .docs-nav li, #historie-5E .task-nav-list .docs-nav li {
   background-color: transparent; }
-  /* line 1067, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1079, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #historie .task-nav-list .docs-nav li a, #historie-E .task-nav-list .docs-nav li a, #historie-1E .task-nav-list .docs-nav li a, #historie-2E .task-nav-list .docs-nav li a, #historie-3E .task-nav-list .docs-nav li a, #historie-4E .task-nav-list .docs-nav li a, #historie-5E .task-nav-list .docs-nav li a {
     background-color: rgba(255, 82, 82, 0.1); }
 
-/* line 1076, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1088, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup {
   position: relative;
   background-color: #F9F7EF;
@@ -7493,7 +7501,7 @@ img {
   width: 100%;
   overflow-y: scroll; }
 
-/* line 1087, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1099, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-content, .blockpage-content {
   position: absolute;
   top: 0%;
@@ -7503,12 +7511,12 @@ img {
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%); }
 
-/* line 1099, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1111, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-content-inner, .blockpage-content-inner {
   margin: 25px 0 200px 0;
   position: relative; }
 
-/* line 1105, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1117, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-close {
   position: fixed;
   top: 60px;
@@ -7520,7 +7528,7 @@ img {
   height: 100px;
   padding: 0;
   color: rgba(0, 0, 0, 0.1); }
-  /* line 1117, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1129, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-close:after {
     content: "\f057";
     font-family: FontAwesome;
@@ -7535,34 +7543,34 @@ img {
     ms-transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
     transform: translate(-50%, 0%); }
-  /* line 1134, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1146, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-close:hover {
     color: rgba(0, 0, 0, 0.2); }
 
-/* line 1143, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1155, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup-brand, .blockpage-brand {
   display: block;
   width: 180px;
   margin: 20px 0 22px -5px;
   opacity: .8; }
-  /* line 1149, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1161, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup-brand img, .blockpage-brand img {
     max-width: 100%; }
 
-/* line 1154, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1166, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .content-block, .blockpage .content-block {
   margin: 15px 0px 35px 0px;
   display: block;
   padding: 0px; }
 
-/* line 1160, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1172, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .content-title-block, .blockpage .content-title-block {
   margin: 15px 0px 35px 0px;
   display: block;
   border-top: 1px solid #f2eedc;
   padding-top: 14px; }
 
-/* line 1168, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1180, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .popup .opgave-block, .blockpage .opgave-block {
   position: relative;
   display: block;
@@ -7570,7 +7578,7 @@ img {
   margin: 35px 0;
   padding: 30px 30px;
   background: #f5f1e4; }
-  /* line 1176, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1188, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .popup .opgave-block h1, .blockpage .opgave-block h1 {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     font-weight: inherit;
@@ -7578,7 +7586,7 @@ img {
     line-height: 1;
     font-size: 3em; }
 
-/* line 1185, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1197, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .gradient-overlay {
   position: fixed;
   pointer-events: none;
@@ -7596,14 +7604,14 @@ img {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', endColorstr='#f2f2f2',GradientType=0 ); }
 
 /* HOMEPAGE */
-/* line 1207, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1219, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .homepage {
   /*background: $brand-primary;
     background-image: url(../images/NOAH-plakat_baggrund_Snapseed.jpg);
     background-size: cover;*/
   background: #F2EFDC; }
 
-/* line 1214, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1226, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-front {
   position: absolute;
   top: 50%;
@@ -7611,43 +7619,43 @@ img {
   ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
-  /* line 1231, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1243, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .image-wrapper {
     margin-top: 0px; }
-  /* line 1235, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1247, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
     left: 70px;
     width: 600px; }
 
-/* line 1243, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1255, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-wrapper {
   display: block;
   margin: 0px;
   position: relative; }
 
-/* line 1249, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1261, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema {
   float: left;
   width: 340px; }
 
-/* line 1254, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1266, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema, .home-menu-fag {
   list-style-type: none;
   padding: 0;
   display: inline-block;
   text-align: left;
   margin: 0; }
-  /* line 1261, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1273, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema ul, .home-menu-fag ul {
     margin: 0;
     padding: 0; }
-  /* line 1267, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1279, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema li, .home-menu-fag li {
     font-family: inherit;
     margin-bottom: 4px;
     display: block;
     list-style-type: none; }
-    /* line 1274, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1286, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-tema li a, .home-menu-fag li a {
       font-family: 'amaticbold', Helvetica, Arial, sans-serif;
       background: #253a44;
@@ -7665,14 +7673,14 @@ img {
       font-weight: normal;
       letter-spacing: 0.03em;
       position: relative; }
-      /* line 1293, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+      /* line 1305, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .home-menu-tema li a:hover, .home-menu-tema li a:focus, .home-menu-fag li a:hover, .home-menu-fag li a:focus {
         text-decoration: none;
         background: rgba(37, 58, 68, 0.9); }
-  /* line 1301, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1313, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema li:last-child, .home-menu-fag li:last-child {
     margin-bottom: 0px; }
-  /* line 1305, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1317, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-tema .front-label, .home-menu-fag .front-label {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
@@ -7718,11 +7726,11 @@ img {
         }
     }
 }*/
-/* line 1355, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1367, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu {
   display: block;
   margin-top: 15px; }
-  /* line 1360, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1372, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu ul {
     display: inline-block;
     margin: 0px;
@@ -7731,12 +7739,12 @@ img {
     list-style-type: none;
     border-top: 1px solid rgba(37, 58, 68, 0);
     border-bottom: 1px solid rgba(37, 58, 68, 0.05); }
-  /* line 1371, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1383, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu li {
     padding-right: 18px;
     overflow: visible;
     float: left; }
-    /* line 1377, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1389, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu li a {
       font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
       font-size: 12px;
@@ -7751,67 +7759,67 @@ img {
       float: left;
       font-weight: 400;
       text-transform: none; }
-      /* line 1392, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+      /* line 1404, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
       .home-menu li a:hover {
         text-decoration: none;
         color: #c95050; }
-  /* line 1401, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1413, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu li:last-child {
     border-right: none; }
-  /* line 1407, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1419, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu .fa {
     position: relative;
     margin-right: 5px;
     top: 1px;
     font-size: 14px;
     color: indianred; }
-  /* line 1416, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1428, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu .fa-user {
     top: 0px; }
 
-/* line 1425, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1437, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-text {
   display: inline-block;
   line-height: 1.4;
   margin: 12px 0 14px;
   font-size: 90%; }
-  /* line 1431, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1443, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-text span {
     font-weight: 400; }
 
-/* line 1439, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1451, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .contact-block-wrapper .contact-block {
   font-size: 13px;
   padding: 11px 25px;
   display: inline-block;
   font-weight: 400;
   color: rgba(37, 58, 68, 0.8); }
-  /* line 1446, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1458, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block-wrapper .contact-block a {
     color: #253a44;
     margin-left: 10px; }
-    /* line 1450, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1462, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .contact-block-wrapper .contact-block a:hover {
       color: rgba(37, 58, 68, 0.6);
       text-decoration: none; }
-  /* line 1456, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1468, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block-wrapper .contact-block .fa {
     margin-right: 3px; }
-/* line 1462, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1474, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .contact-block-wrapper .noah-logo {
   width: 130px;
   margin-top: 5px;
   float: left; }
-  /* line 1467, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1479, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .contact-block-wrapper .noah-logo img {
     margin-left: -8px; }
 
-/* line 1473, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1485, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-header {
   display: block;
   margin: 15px 0px;
   overflow: hidden; }
-  /* line 1479, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1491, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-header .home-menu-title {
     display: inline-block;
     text-transform: uppercase;
@@ -7822,7 +7830,7 @@ img {
     padding: 5px 13px 7px;
     background: #eeead1;
     border-radius: 2px; }
-    /* line 1491, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+    /* line 1503, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .home-menu-header .home-menu-title .fa {
       position: relative;
       margin-right: 4px;
@@ -7830,7 +7838,7 @@ img {
       color: indianred;
       font-size: 22px; }
 
-/* line 1502, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1514, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .workinprogress {
   position: absolute;
   bottom: 0px;
@@ -7845,56 +7853,56 @@ img {
   letter-spacing: 0.03em;
   font-weight: 400;
   display: none; }
-  /* line 1517, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1529, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .workinprogress .fa {
     margin: 0 2px 0 -2px; }
 
-/* line 1524, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1536, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-logo {
   width: 230px;
   margin-bottom: 0px;
   margin-top: 0px; }
-  /* line 1529, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1541, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-menu-logo img {
     margin-left: -8px; }
 
 /* Oversigt */
-/* line 1538, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1550, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-header {
   display: block;
   margin: 30px 5% 10px 5%;
   padding: 0 15px;
   height: 80px;
   position: relative; }
-  /* line 1545, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1557, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-header .page-title {
     font-size: 50px;
     margin-bottom: 0;
     position: absolute;
     bottom: 5px; }
 
-/* line 1555, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1567, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .oversigt-logo {
   width: 240px;
   position: absolute;
   bottom: 0px;
   right: 8px; }
 
-/* line 1563, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1575, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .oversigt-nav-wrapper {
   margin: 0 15px;
   border-top: 5px solid #253a44;
   padding-top: 20px;
   padding-bottom: 10px; }
 
-/* line 1570, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1582, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .forl-btn {
   background: #ebe7c9;
   font-size: 13px;
   height: 31px;
   line-height: 31px;
   padding: 0em 12px; }
-  /* line 1577, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1589, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .forl-btn .badge {
     height: 31px;
     line-height: 31px;
@@ -7902,22 +7910,22 @@ img {
     margin-right: -12px;
     margin-left: 10px; }
 
-/* line 1587, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1599, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-row-header {
   display: block;
   margin: 20px 15px 25px;
   padding: 30px 0px;
   border-bottom: 1px solid rgba(205, 92, 92, 0.1);
   border-top: 1px solid rgba(205, 92, 92, 0.1); }
-  /* line 1594, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1606, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-row-header .item-text {
     max-width: 500px;
     margin: 0; }
 
-/* line 1603, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1615, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-title-wrapper {
   margin: 0px 0px 20px; }
-  /* line 1607, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1619, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-title-wrapper .grid-title-label {
     font-family: 'amaticbold', Helvetica, Arial, sans-serif;
     display: inline-block;
@@ -7931,7 +7939,7 @@ img {
     color: #f9f7ef;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px; }
-  /* line 1623, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1635, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-title-wrapper .item-title {
     margin: 0;
     height: 60px;
@@ -7942,17 +7950,17 @@ img {
     border-bottom-left-radius: 0px; }
 
 /* GRID ITEMS */
-/* line 1639, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1651, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-item-wrapper {
   display: block;
   margin-bottom: 30px;
   border-radius: 2px;
   overflow: hidden; }
-  /* line 1645, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1657, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-item-wrapper:hover {
     text-decoration: none;
     opacity: .7; }
-  /* line 1652, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1664, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-item-wrapper .item-label {
     padding: 0px 8px;
     height: 22px;
@@ -7963,12 +7971,12 @@ img {
     margin-right: 3px;
     float: left; }
 
-/* line 1671, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1683, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-image-wrapper {
   height: 300px;
   padding: 20px;
   position: relative; }
-  /* line 1676, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1688, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-image-wrapper .grid-image {
     width: 240px;
     margin: 0 auto;
@@ -7977,14 +7985,14 @@ img {
     ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
-  /* line 1686, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1698, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-image-wrapper .item-label {
     position: absolute;
     top: 10px;
     left: 10px;
     color: rgba(249, 247, 239, 0.9); }
 
-/* line 1694, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1706, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-item-title {
   font-family: 'amaticbold', Helvetica, Arial, sans-serif;
   color: #f9f7ef;
@@ -7995,69 +8003,69 @@ img {
   letter-spacing: 0.03em;
   line-height: 1.1; }
 
-/* line 1705, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1717, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-item {
   padding: 20px;
   background: #253a44;
   color: #f9f7ef; }
-  /* line 1712, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1724, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-item p {
     font-size: 13px;
     color: #9ebcca; }
 
-/* line 1719, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1731, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-label-wrapper {
   display: block;
   margin-bottom: 10px;
   overflow: hidden; }
 
-/* line 1729, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1741, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-madkundskab .grid-image-wrapper, .grid-madkundskab .item-label {
   background: #4ecdc4; }
-  /* line 1732, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1744, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-madkundskab .grid-image-wrapper .item-label, .grid-madkundskab .item-label .item-label {
     background: #33b5ac; }
 
-/* line 1741, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1753, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-natur-teknologi .grid-image-wrapper, .grid-natur-teknologi .item-label {
   background: #ffcc00; }
-  /* line 1744, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1756, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-natur-teknologi .grid-image-wrapper .item-label, .grid-natur-teknologi .item-label .item-label {
     background: #cca300; }
 
-/* line 1752, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1764, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-dansk .grid-image-wrapper, .grid-dansk .item-label {
   background: #ca4068; }
-  /* line 1755, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1767, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-dansk .grid-image-wrapper .item-label, .grid-dansk .item-label .item-label {
     background: #a82f52; }
 
-/* line 1763, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1775, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-matematik .grid-image-wrapper, .grid-matematik .item-label {
   background: #34b491; }
-  /* line 1766, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1778, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-matematik .grid-image-wrapper .item-label, .grid-matematik .item-label .item-label {
     background: #298c71; }
 
-/* line 1774, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1786, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-historie .grid-image-wrapper, .grid-historie .item-label {
   background: #ff5252; }
-  /* line 1777, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1789, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-historie .grid-image-wrapper .item-label, .grid-historie .item-label .item-label {
     background: #ff1f1f; }
 
-/* line 1785, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1797, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .grid-opskrift .grid-image-wrapper, .grid-opskrift .item-label {
   background: indianred; }
-  /* line 1788, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1800, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .grid-opskrift .grid-image-wrapper .item-label, .grid-opskrift .item-label .item-label {
     background: #bc3a3a; }
 
-/* line 1796, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+/* line 1808, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .beta-warning {
   color: indianred;
   font-size: 12px; }
-  /* line 1800, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  /* line 1812, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .beta-warning .fa {
     margin-right: 3px; }
 
