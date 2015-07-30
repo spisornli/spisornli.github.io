@@ -1,45 +1,51 @@
 {% for block in site.blocks %}
 {% if block.theme == include.param %}
 <div id="section-{{ block.id }}" class="section">
-    <div class="slide">
-        <div class="item-wrapper">
-            <div class="image-wrapper">
-                <div class="illu-circle">
-                    {% if block.image %}
-                    <img src="{{ block.image }}">
-                    {% else %}
-                    <img src="images/placeholder.svg">
-                    {% endif %}
-                </div>
-            </div>
-            <div class="text-wrapper">
-                <div class="task-header">
-                    <span class="label item-label">
-                        {% if block.lession %}
-                        Lektion {{ block.theme }}{{ block.lession }}
-                        {% else %}
-                        Temaforløb {{ block.theme }}
-                        {% endif %}
-                    </span>                    
-                    {% if block.time %}
-                    <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
-                    {% endif %}
-                </div>
-
-                <h1 class="item-title">{{ block.title }}</h1>
-                <p class="item-text">{{ block.intro }}</p>
-
-                <a class="btn popup-open" type="button" href="#{{ block.id }}">
-                    {% if block.lession %}
-                    Start
-                    {% else %}
-                    Introduktion
-                    {% endif %}
-
-                    <span class="badge"><i class="fa fa-arrow-right"></i></span></a>
-            </div>
+  <div class="slide">
+    <div class="item-wrapper">
+      <div class="image-wrapper">
+        <div class="illu-circle">
+          {% if block.image %}
+          <img src="{{ block.image }}">
+          {% else %}
+          <img src="images/placeholder.svg">
+          {% endif %}
         </div>
-    </div> <!-- slide end -->
+      </div>
+      <div class="text-wrapper">
+        <div class="task-header">
+          <span class="label item-label">
+            {% if block.lession %}
+            Lektion {{ block.theme }}{{ block.lession }}
+            {% else %}
+            Temaforløb {{ block.theme }}
+            {% endif %}
+          </span>                    
+          {% if block.time %}
+          <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
+          {% endif %}
+        </div>
+
+        <h1 class="item-title">{{ block.title }}</h1>
+        <p class="item-text">{{ block.intro }}</p>
+
+        <a class="btn popup-open" type="button" href="#{{ block.id }}">
+          {% if block.lession %}
+          Start
+          {% else %}
+          Introduktion
+          {% endif %}
+          <span class="badge"><i class="fa fa-arrow-right"></i></span>
+        </a>
+        {% unless block.lession %}
+        <a class="btn popup-open" type="button" href="#madopskrift">
+          madopskrft
+          <span class="badge"><i class="fa fa-arrow-right"></i></span>
+        </a>
+        {% endunless %}
+      </div>
+    </div>
+  </div> <!-- slide end -->
 </div>  <!-- section end -->
 {% endif %}
 {% endfor %}

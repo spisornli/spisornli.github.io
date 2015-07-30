@@ -2,6 +2,10 @@
   display: none;
 }
 
+#madopskrift .label {
+  background: #FF5252;
+}
+
 @media print {
  .collapse {
     display: block !important;

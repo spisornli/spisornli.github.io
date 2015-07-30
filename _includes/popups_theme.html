@@ -88,3 +88,33 @@
 </div>
 {% endif %}
 {% endfor %}
+{% for block in site.blocks %}
+{% if block.recipe == include.param %}
+<div id="{{ block.id }}" class="popup">
+    <div class="gradient-overlay"></div>
+    <button class="popup-close"></button>
+
+    <div class="popup-content">
+
+        <div class="popup-content-inner">
+            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
+            <nav id="" class="navbar task-nav">
+                <ul class="nav navbar-nav navbar-right">
+                    {% if block.pdf %}
+                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+           
+            <div class="content-block content-title-block">
+
+                <h1 class="page-title">{{ block.title }}</h1>
+            </div>
+
+            {{ block.content }}
+            
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
