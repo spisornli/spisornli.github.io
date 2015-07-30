@@ -282,7 +282,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
             overflow: hidden;
             padding: 0;
             float: left;
-            margin-left: -15px;
+            margin-left: 0px;
             margin-top: -30px;
 
             
@@ -1218,11 +1218,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         }
     
     .image-wrapper {
-        margin-top: 00px;
+        margin-top: 0px;
     }
     
     .text-wrapper {
-        left: 55px;
+        left: 70px;
         width: 600px;
     }
 
@@ -1237,7 +1237,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu-tema {
     float: left;
-    width: 370px;
+    width: 340px;
 }
 
 .home-menu-tema, .home-menu-fag {

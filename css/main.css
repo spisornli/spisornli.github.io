@@ -6795,7 +6795,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
     overflow: hidden;
     padding: 0;
     float: left;
-    margin-left: -15px;
+    margin-left: 0px;
     margin-top: -30px; }
     /* line 289, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
     .item-wrapper .image-wrapper .illu-circle {
@@ -7608,7 +7608,7 @@ img {
     margin-top: 0px; }
   /* line 1224, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .text-wrapper {
-    left: 55px;
+    left: 70px;
     width: 600px; }
 
 /* line 1232, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -7620,7 +7620,7 @@ img {
 /* line 1238, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema {
   float: left;
-  width: 370px; }
+  width: 340px; }
 
 /* line 1243, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .home-menu-tema, .home-menu-fag {
