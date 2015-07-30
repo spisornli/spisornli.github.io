@@ -28,9 +28,9 @@
                         <a role="button" data-toggle="collapse" href="#{{ block.id }}-{{ block.theme }}{{ block.lession }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.id }}-{{ block.theme }}{{ block.lession }}-goals-collapse">Læringsmål <span class="caret"></span></a>
                     </li>
                     {% endif %}
-                    {% if block.pdf %}
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    {% endif %}
+                    {% if block.lession %}
+              <li><a class="task-nav-item" href="/pdf/{{ block.theme }}{{ block.lession | downcase }}.pdf"><i class="fa fa-file"></i> PDF</a></li>
+              {% endif %}
                 </ul>
             </nav>
 

@@ -6,11 +6,18 @@
   background: #FF5252;
 }
 
+.print-header-text {
+  float:left;
+}
+.print-header-image {
+  float:right;
+}
+
 @media print {
- .collapse {
+  .collapse {
     display: block !important;
     height: auto !important;
-}
+  }
   .print-only {
     display: block;
   }
@@ -35,14 +42,9 @@
     float: right;
   }
   .print-svg {
-        width: 100%;
+    width: 100%;
     height: auto;
   }
+  a.blockpage-brand:after{content:"";}
 }
 
-  .print-header-text {
-    float:left;
-  }
-    .print-header-image {
-    float:right;
-  }

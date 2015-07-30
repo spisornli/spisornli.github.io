@@ -70,13 +70,11 @@
                 <a role="button" data-toggle="collapse" href="#{{ page.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ page.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
               </li>
               {% endif %}
-              {% if page.pdf %}
-              <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
+              {% if page.lession %}
+              <li><a class="task-nav-item" href="/pdf/{{ page.theme }}{{ page.lession | downcase }}.pdf"><i class="fa fa-file"></i> PDF</a></li>
               {% endif %}
             </ul>
           </nav>
-
-
 
           {% if page.means %}
           <div class="collapse" id="{{ page.id }}-means-collapse">
