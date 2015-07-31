@@ -45,6 +45,18 @@
     width: 100%;
     height: auto;
   }
-  a.blockpage-brand:after{content:"";}
+  a.blockpage-brand:after{
+    content:"";
+  }
+  
 }
+.blockpage-content {
+    position: inherit;
+  margin: 0 auto;
+  padding: 0 1em;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  
+  }
 
