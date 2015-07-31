@@ -1,120 +1,121 @@
 {% for block in site.blocks %}
 {% if block.theme == include.param %}
 <div id="{{ block.id }}" class="popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
+  <div class="gradient-overlay"></div>
+  <button class="popup-close"></button>
 
-    <div class="popup-content">
+  <div class="popup-content">
 
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <span class="navbar-brand">
-                    {% if block.lession %}
-                    Lektion {{ block.theme }}{{ block.lession }}
-                    {% else %}
-                    Temaforløb {{ block.theme }}
-                    {% endif %}
-                </span>
+    <div class="popup-content-inner">
+      <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
+      <nav id="" class="navbar task-nav">
+        <span class="navbar-brand">
+          {% if block.lession %}
+          Lektion {{ block.theme }}{{ block.lession }}
+          {% else %}
+          Temaforløb {{ block.theme }}
+          {% endif %}
+        </span>
 
-                <ul class="nav navbar-nav navbar-right">
-                    {% if block.means %}
-                    <li>
-                        <a role="button" data-toggle="collapse" href="#{{ block.id }}-means-collapse" aria-expanded="false" aria-controls="{{ block.id }}-means-collapse">I skal bruge <span class="caret"></span></a>
-                    </li>
-                    {% endif %}
-                    {% if block.goals %}
-                    <li>
-                        <a role="button" data-toggle="collapse" href="#{{ block.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
-                    </li>
-                    {% endif %}
-                    {% if block.lession %}
-              <li><a class="task-nav-item" href="/pdf/{{ block.theme }}{{ block.lession | downcase }}.pdf"><i class="fa fa-file"></i> PDF</a></li>
-              {% endif %}
-                </ul>
-            </nav>
-
-
-
-            {% if block.means %}
-            <div class="collapse" id="{{ block.id }}-means-collapse">
-                <div class="task-nav-list">
-                    <ul>
-                        {% for mean in block.means %}
-                        <li><i class="fa fa-check"></i> {{ mean }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>   
-            {% endif %}
-
-            {% if block.goals %}
-            <div class="collapse" id="{{ block.id }}-goals-collapse">
-                <div class="task-nav-list">
-                    <ol>
-                        {% for goal in block.goals %}
-                        <li>{{ goal }}</li>
-                        {% endfor %}
-                    </ol>
-                </div>
-            </div>   
-            {% endif %}
-            <div class="content-block content-title-block">
-                {% if block.subject %}
-                <span class="label label-lg">{{ block.subject }}</span>
-                {% endif %}
-                {% if block.time %}
-                <span class="label label-lg"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
-                {% endif %}
-
-                {% if block.assignments %}
-                <div class="task-nav-list">
-
-                    {% for i in (1..block.assignments) %}
-                    <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
-                    {% endfor %}
-
-                </div>
-                {% endif %}
-
-                <h1 class="page-title">{{ block.title }}</h1>
-            </div>
+        <ul class="nav navbar-nav navbar-right">
+          {% if block.means %}
+          <li>
+            <a role="button" data-toggle="collapse" href="#{{ block.id }}-means-collapse" aria-expanded="false" aria-controls="{{ block.id }}-means-collapse">I skal bruge <span class="caret"></span></a>
+          </li>
+          {% endif %}
+          {% if block.goals %}
+          <li>
+            <a role="button" data-toggle="collapse" href="#{{ block.id }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.id }}-goals-collapse">Læringsmål <span class="caret"></span></a>
+          </li>
+          {% endif %}
+          {% if block.lession %}
+          <li><a class="task-nav-item" href="/pdf/{{ block.theme }}{{ block.lession | downcase }}.pdf"><i class="fa fa-file"></i> PDF</a></li>
+          {% endif %}
+        </ul>
+      </nav>
 
 
-            {{ block.content }}
-            
+
+      {% if block.means %}
+      <div class="collapse" id="{{ block.id }}-means-collapse">
+        <div class="task-nav-list">
+          <ul>
+            {% for mean in block.means %}
+            <li><i class="fa fa-check"></i> {{ mean }}</li>
+            {% endfor %}
+          </ul>
         </div>
+      </div>   
+      {% endif %}
+
+      {% if block.goals %}
+      <div class="collapse" id="{{ block.id }}-goals-collapse">
+        <div class="task-nav-list">
+          <ol>
+            {% for goal in block.goals %}
+            <li>{{ goal }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      </div>   
+      {% endif %}
+      <div class="content-block content-title-block">
+        {% if block.subject %}
+        <span class="label label-lg">{{ block.subject }}</span>
+        {% endif %}
+        {% if block.time %}
+        <span class="label label-lg"><i class="fa fa-clock-o label-icon-left"></i> 90 min</span>
+        {% endif %}
+
+        {% if block.assignments %}
+        <div class="task-nav-list">
+
+          {% for i in (1..block.assignments) %}
+          <button href="#opgave-block-{{ i }}" class="btn task-btn opg-btn">Opgave {{ i }} <span class="badge"><i class="fa fa-arrow-down"></i></span></button>
+          {% endfor %}
+
+        </div>
+        {% endif %}
+
+        <h1 class="page-title">{{ block.title }}</h1>
+      </div>
+
+
+      {{ block.content }}
+
     </div>
+  </div>
 </div>
 {% endif %}
 {% endfor %}
 {% for block in site.blocks %}
 {% if block.recipe == include.param %}
 <div id="{{ block.id }}" class="popup">
-    <div class="gradient-overlay"></div>
-    <button class="popup-close"></button>
+  <div class="gradient-overlay"></div>
+  <button class="popup-close"></button>
 
-    <div class="popup-content">
+  <div class="popup-content">
 
-        <div class="popup-content-inner">
-            <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
-            <nav id="" class="navbar task-nav">
-                <ul class="nav navbar-nav navbar-right">
-                    {% if block.pdf %}
-                    <li><a class="task-nav-item" href="#"><i class="fa fa-file"></i> PDF</a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-           
-            <div class="content-block content-title-block">
+    <div class="popup-content-inner">
+      <a class="popup-brand" href="#firstPage/0"><img alt="Brand" src="images/spisornli_logo_black.svg"/></a>
+      <nav id="" class="navbar task-nav">
+        <span class="navbar-brand">
+          {{ block.recipetheme }}
+        </span>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="task-nav-item" href="/pdf/{{ block.recipe }}opskrift.pdf"><i class="fa fa-file"></i> PDF</a></li>
+        </ul>
+      </nav>
 
-                <h1 class="page-title">{{ block.title }}</h1>
-            </div>
+      <div class="content-block content-title-block">
+        <span class="label label-lg">Madopskrift</span>
+        <h1 class="page-title">{{ block.title }}</h1>
+      </div>
 
-            {{ block.content }}
-            
-        </div>
+      {{ block.content }}
+
     </div>
+  </div>
 </div>
 {% endif %}
 {% endfor %}

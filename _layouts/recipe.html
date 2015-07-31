@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <title>SpisOrnli | {{ page.title }}</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/print-lars.css">
+
+    <meta charset="utf-8">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/js/jquery.slimscroll.min.js"></script>
+    <script src="/js/jquery.fullPage.min.js"></script>
+    <script src="/js/jquery.easings.min.js"></script>
+    <script src="/js/jquery.easyModal.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body class="blockpage-body">
+
+    <div id="{{ page.id }}" class="blockpage">
+
+      <div class="blockpage-content">
+
+        <div class="blockpage-content-inner">
+          <a class="blockpage-brand" href="http://spisornli.dk"><img alt="Brand" src="/images/spisornli_logo_black.svg"/></a>
+
+          <div class="clearfix">
+            <div class="print-only print-header">
+             <div class="print-header-image">
+                  <img src="/images/Tema01_Intro02.svg">
+              </div>
+              <div class="print-header-text">
+                <span class="label label-lg">
+                  Madopskrift
+                </span>
+                <h1 class="page-title">{{ page.title }}</h1>
+              </div>
+              
+            </div>
+          </div>
+
+          <nav id="" class="navbar task-nav">
+        <span class="navbar-brand">
+          {{ page.recipetheme }}
+        </span>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="task-nav-item" href="/pdf/{{ page.recipe }}opskrift.pdf"><i class="fa fa-file"></i> PDF</a></li>
+        </ul>
+      </nav>
+
+          
+          <div class="content-block content-title-block">
+            <span class="label label-lg">
+                  Madopskrift
+                </span>
+
+            <h1 class="page-title print-hide">{{ page.title }}</h1>
+          </div>
+
+
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
