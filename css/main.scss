@@ -1376,7 +1376,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu {
     display: block;
-    margin-top: 15px;
+    margin-top: 25px;
     
     
     ul {
@@ -1391,7 +1391,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     
     li {
-        padding-right: 18px;
+        padding-right: 0;
         overflow: visible;
         float: left;
 
@@ -1403,13 +1403,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
             height: auto;
             background: transparent !important;
             color: rgba($text-color,1);
-            padding: 0;
-            margin:  0;
+            padding: 0 11px 0 10px;
+            margin: 0;
             letter-spacing: 0.0em;
             border-radius: 0;
             float: left;
             font-weight: 400;
             text-transform: none;
+            border-right: 1px solid rgba($text-color,.05);
             
             &:hover {
                 text-decoration: none;
@@ -1420,23 +1421,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         }
     }
     
-    li:last-child {
-        border-right: none;
-
+    li:first-child a {
+        padding-left: 0px;
+    }
     
+    li:last-child a {
+        border-right: none;
     }
     
     .fa {
         position: relative;
         margin-right: 5px;
-        top:1px;
+        top:0px;
         font-size: 14px;
         color: rgba($brand-primary,1);
             
         }
     
-    .fa-user {
-        top:0px;
+    .fa-list, .fa-th {
+        top:1px;
     }
     
     
