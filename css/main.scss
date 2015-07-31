@@ -933,7 +933,13 @@ img {
 
 
 
+#madopskrift {
+    
+    .label { 
+        background-color: $brand-primary;
+    }
 
+}
 
 .content-divider {
     background-color: $brand-primary;
@@ -1191,6 +1197,10 @@ img {
         text-transform: uppercase;
         line-height: 1;
         font-size: 3em;
+    }
+    
+    .label {
+        margin-bottom: 20px;
     }
 }
 
