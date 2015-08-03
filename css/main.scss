@@ -213,6 +213,17 @@ a.disabled  {
     }
 }
 
+
+dl {
+
+    dd {
+        margin:  0 0 ($line-height-computed / 2)
+    }
+
+}
+
+
+
 /* SLIDE NAVIGATION */
 
 .fp-controlArrow {
@@ -1183,7 +1194,7 @@ img {
 }
 
 
-.popup .opgave-block, .blockpage .opgave-block {
+.popup .opgave-block, .blockpage .opgave-block, .homepage .opgave-block {
     position: relative;
     display: block;
     border-radius: 4px;
