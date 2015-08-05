@@ -37,4 +37,4 @@ prose:
       - name: "goals"
         field:
           element: "textarea"
-          label: "Læringsmål"
+          label: "Lringsml"
