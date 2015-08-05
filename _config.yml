@@ -36,8 +36,9 @@ prose:
           label: "title"
       - name: "intro"
         field:
-          element: "text"
+          element: "textarea"
           label: "Introduktion"
+          alterable: true
       - name: "goals"
         field:
           element: "multiselect"
