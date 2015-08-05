@@ -30,11 +30,15 @@ prose:
   rooturl: "_blocks"
   metadata:
     _blocks:
+      - name: "title"
+      field:
+        element: "text"
+        label: "title"
       - name: "intro"
         field:
-          element: "textarea"
+          element: "text"
           label: "Introduktion"
       - name: "goals"
         field:
-          element: "textarea"
+          element: "text"
           label: "Lringsml"
