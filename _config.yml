@@ -40,5 +40,6 @@ prose:
           label: "Introduktion"
       - name: "goals"
         field:
-          element: "text"
+          element: "multiselect"
           label: "Lringsml"
+          alterable: true
