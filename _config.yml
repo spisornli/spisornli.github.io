@@ -36,11 +36,6 @@ prose:
           label: "title"
       - name: "intro"
         field:
-          element: "textarea"
+          element: "text"
           label: "Introduktion"
-          alterable: true
-      - name: "goals"
-        field:
-          element: "multiselect"
-          label: "Lringsml"
           alterable: true
