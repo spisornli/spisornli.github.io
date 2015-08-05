@@ -32,4 +32,9 @@ prose:
     _blocks:
       - name: "intro"
         field:
-          element: "text"
+          element: "textarea"
+          label: "Introduktion"
+      - name: "goals"
+        field:
+          element: "textarea"
+          label: "Læringsmål"
