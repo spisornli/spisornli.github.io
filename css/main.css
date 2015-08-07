@@ -7803,7 +7803,7 @@ img {
   display: inline-block;
   line-height: 1.4;
   margin: 12px 0 14px;
-  font-size: 90%; }
+  font-size: 70%; }
   /* line 1473, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .home-text span {
     font-weight: 400; }
@@ -8084,9 +8084,11 @@ img {
 
 /* line 1838, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .beta-warning {
+  display: block;
   color: indianred;
-  font-size: 12px; }
-  /* line 1842, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+  font-size: 12px;
+  margin-top: 10px; }
+  /* line 1844, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   .beta-warning .fa {
     margin-right: 3px; }
 

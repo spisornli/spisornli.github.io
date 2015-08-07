@@ -1468,7 +1468,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     display: inline-block;
     line-height: 1.4;
     margin: 12px 0 14px;
-    font-size: 90%;
+    font-size: 70%;
     
     span {
         font-weight: 400;
@@ -1836,8 +1836,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 
 .beta-warning {
+    display: block;
     color: rgba($brand-primary, 1);
     font-size: 12px;
+    margin-top: 10px;
 
     .fa {
         margin-right: 3px;
