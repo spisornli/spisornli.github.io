@@ -29,14 +29,12 @@
         <h1 class="item-title">{{ block.title }}</h1>
         <p class="item-text">{{ block.intro }}</p>
 
+       {% if block.lession %}
         <a class="btn popup-open" type="button" href="#{{ block.id }}">
-          {% if block.lession %}
           Start
-          {% else %}
-          Introduktion
-          {% endif %}
           <span class="badge"><i class="fa fa-arrow-right"></i></span>
         </a>
+        {% endif %}
         {% unless block.lession %}
         <a class="btn popup-open" type="button" href="#madopskrift">
           madopskrift
