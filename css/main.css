@@ -6630,6 +6630,10 @@ a.btn-info:visited {
 .row {
   margin: 0 5%; }
 
+/* line 98, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
+.formular-arrow {
+  display: block; }
+
 /* line 102, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 hr {
   background: none;
