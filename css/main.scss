@@ -1393,17 +1393,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu {
     display: block;
-    margin-top: 25px;
+    margin-top: 20px;
     
     
     ul {
         display: inline-block;
         margin: 0px;
         border-bottom: none;
-        padding: 18px 2px;
+        padding: 15px 2px 15px 2px;
         list-style-type: none;
-        border-top: 1px solid rgba($text-color,.0);
-        border-bottom: 1px solid rgba($text-color,.05);
+     
     }
     
     
@@ -1444,6 +1443,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     li:last-child a {
         border-right: none;
+        padding-right: 30px;
     }
     
     .fa {
@@ -1463,6 +1463,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 }
 
+
+.home-top-menu {
+    margin-top: 0px;
+    
+    ul {   
+        padding: 10px 2px;
+    }
+}
 
 .home-text {
     display: inline-block;
