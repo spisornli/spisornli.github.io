@@ -1393,16 +1393,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .home-menu {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     
     
     ul {
         display: inline-block;
         margin: 0px;
         border-bottom: none;
-        padding: 15px 2px 15px 2px;
+        padding: 20px 2px;
         list-style-type: none;
-     
+        border-bottom: 1px solid rgba($text-color,.05);
     }
     
     
@@ -1467,7 +1467,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .home-top-menu {
     margin-top: 0px;
     
-    ul {   
+    ul {
+        border-bottom: none;
         padding: 10px 2px;
     }
 }
@@ -1492,6 +1493,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
         display: inline-block;
         font-weight: 400;
         color:rgba($text-color,.8); 
+        margin-top: 5px;
     
     a { 
         color:rgba($text-color,1); 
@@ -1511,7 +1513,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
     
     .noah-logo {
         width: 130px;
-        margin-top: 5px;
+        margin-top: 10px;
         float: left;
         
         img {
