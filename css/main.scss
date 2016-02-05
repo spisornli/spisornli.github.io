@@ -284,14 +284,13 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 @media (min-width: 980px) {
   .carousel {
-      width: 300px;
+      max-width: 300px;
   }
-
 }
 
 
 .carousel {
-    width: 200px;
+    max-width: 200px;
 }
 
 
