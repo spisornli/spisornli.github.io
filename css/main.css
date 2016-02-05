@@ -6780,15 +6780,9 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
   font-size: 60%; }
 
 /* line 286, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
-@media (min-width:980px) {
-  .carousel {
-    width: 300px;
-  }
-}
 
 .carousel {
-  width: 200px;
-}
+  width: 300px; }
 
 /* line 290, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .carousel .item {
