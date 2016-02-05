@@ -310,6 +310,14 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
+@media (min-width: 980px) {
+  .item-wrapper .image-wrapper .illu-circle {
+    width: 300px;
+  }
+
+}
+
+
 .item-wrapper {
     display: block;
     padding: 0 20px;
@@ -339,16 +347,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
                 transform: translate(-50%, 0%);
 
             }
-
-            @media (min-width: 980px) {
-              .illu-circle {
-                width: 300px;
-              }
-
-            }
-
-
-
         }
 
 
