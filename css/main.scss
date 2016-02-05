@@ -282,10 +282,20 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
+@media (min-width: 980px) {
+  .carousel {
+      width: 300px;
+  }
+
+}
+
 
 .carousel {
-    width: 300px;
+    width: 200px;
 }
+
+
+
 
 .carousel .item {
     left: 0 !important;
@@ -310,12 +320,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 }
 
 
-@media (min-width: 980px) {
-  .item-wrapper .image-wrapper .illu-circle {
-    width: 300px;
-  }
-
-}
 
 
 .item-wrapper {
@@ -335,7 +339,7 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
             .illu-circle {
-                width: 200px;
+                width: 300px;
                 height: auto;
                 margin: 0px;
                 position: relative;
