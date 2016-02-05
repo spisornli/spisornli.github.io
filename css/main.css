@@ -6802,7 +6802,6 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 .next.left, .prev.right {
   opacity: 1;
   z-index: 1; }
-
 /* line 307, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 .active.left, .active.right {
   opacity: 0;
@@ -7631,7 +7630,7 @@ img {
 /* line 1253, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-front {
   position: absolute;
-  top: 50px;
+  top: 100px;
   width: 100%;
 
 }
