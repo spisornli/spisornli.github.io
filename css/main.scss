@@ -282,15 +282,8 @@ h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 .sma
 
 
 
-@media (min-width: 980px) {
-  .carousel {
-      max-width: 300px;
-  }
-}
-
-
 .carousel {
-    max-width: 200px;
+    width: 300px;
 }
 
 
