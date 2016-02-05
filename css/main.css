@@ -6712,8 +6712,8 @@ a.disabled {
   background: white;
   padding: .8em;
   border-radius: 50%;
-  /*ms-transform: translate(-50%,0%); 
-   	-webkit-transform: translate(-50%,0%); 
+  /*ms-transform: translate(-50%,0%);
+   	-webkit-transform: translate(-50%,0%);
     transform: translate(-50%,0%);*/ }
 
 /* line 197, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
@@ -7631,11 +7631,10 @@ img {
 /* line 1253, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
 #section-front {
   position: absolute;
-  top: 50%;
+  top: 50px;
   width: 100%;
-  ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+
+}
   /* line 1270, /Users/MRH/Documents/GitHub/spisornli.github.io/css/main.scss */
   #section-front .image-wrapper {
     margin-top: 0px; }
@@ -7717,16 +7716,16 @@ img {
     padding: 0 0 0 3px; }
 
 /* .home-menu-fag, .home-menu {
-   
+
     ul {
         overflow: hidden;
         display: inline-block;
     }
-    
+
     li {
         margin-right: 4px;
         margin-bottom: 0;
-                
+
         a {
             font-family: $headingsAmaticBold-font-family;
             background: rgba($text-color,.9);
