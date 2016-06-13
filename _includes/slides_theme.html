@@ -1,6 +1,6 @@
 {% for block in site.blocks %}
 {% if block.theme == include.param %}
-<div id="section-{{ block.newId }}" class="section">
+<div id="section-{{ block.blockId }}" class="section">
   <div class="slide">
     <div class="item-wrapper">
       <div class="image-wrapper">
@@ -20,7 +20,7 @@
             {% else %}
             Temaforløb {{ block.theme }}
             {% endif %}
-          </span>                    
+          </span>
           {% if block.time %}
           <span class="label item-label"><i class="fa fa-clock-o label-icon-left"></i> {{ block.time }}</span>
           {% endif %}
