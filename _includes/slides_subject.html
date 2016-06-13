@@ -1,6 +1,6 @@
 {% for block in site.blocks %}
 {% if block.subject == include.param %}
-<div id="section-{{ block.id }}" class="section">
+<div id="section-{{ block.blockId }}" class="section">
     <div class="slide">
         <div class="item-wrapper">
             <div class="image-wrapper">
@@ -30,7 +30,7 @@
                 <p class="item-text">{{ block.intro }}</p>
 
                {% if block.assignments %}
-                <a class="btn popup-open" type="button" href="#{{ block.id }}-{{ block.theme }}{{ block.lession }}">
+                <a class="btn popup-open" type="button" href="#{{ block.blockId }}-{{ block.theme }}{{ block.lession }}">
                     Start
                     <span class="badge"><i class="fa fa-arrow-right"></i></span>
                     </a>

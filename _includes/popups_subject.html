@@ -1,6 +1,6 @@
 {% for block in site.blocks %}
 {% if block.subject == include.param %}
-<div id="{{ block.id }}-{{ block.theme }}{{ block.lession }}" class="popup">
+<div id="{{ block.blockId }}-{{ block.theme }}{{ block.lession }}" class="popup">
     <div class="gradient-overlay"></div>
     <button class="popup-close"></button>
 
@@ -20,12 +20,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     {% if block.means %}
                     <li>
-                        <a role="button" data-toggle="collapse" href="#{{ block.id }}-{{ block.theme }}{{ block.lession }}-means-collapse" aria-expanded="false" aria-controls="{{ block.id }}-{{ block.theme }}{{ block.lession }}-means-collapse">I skal bruge <span class="caret"></span></a>
+                        <a role="button" data-toggle="collapse" href="#{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-means-collapse" aria-expanded="false" aria-controls="{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-means-collapse">I skal bruge <span class="caret"></span></a>
                     </li>
                     {% endif %}
                     {% if block.goals %}
                     <li>
-                        <a role="button" data-toggle="collapse" href="#{{ block.id }}-{{ block.theme }}{{ block.lession }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.id }}-{{ block.theme }}{{ block.lession }}-goals-collapse">Læringsmål <span class="caret"></span></a>
+                        <a role="button" data-toggle="collapse" href="#{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-goals-collapse" aria-expanded="false" aria-controls="{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-goals-collapse">Læringsmål <span class="caret"></span></a>
                     </li>
                     {% endif %}
                     {% if block.lession %}
@@ -37,7 +37,7 @@
 
 
             {% if block.means %}
-            <div class="collapse" id="{{ block.id }}-{{ block.theme }}{{ block.lession }}-means-collapse">
+            <div class="collapse" id="{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-means-collapse">
                 <div class="task-nav-list">
                     <ul>
                         {% for mean in block.means %}
@@ -49,7 +49,7 @@
             {% endif %}
 
             {% if block.goals %}
-            <div class="collapse" id="{{ block.id }}-{{ block.theme }}{{ block.lession }}-goals-collapse">
+            <div class="collapse" id="{{ block.blockId }}-{{ block.theme }}{{ block.lession }}-goals-collapse">
                 <div class="task-nav-list">
                     <ol>
                         {% for goal in block.goals %}
